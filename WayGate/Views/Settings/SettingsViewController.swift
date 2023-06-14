@@ -1,0 +1,27 @@
+//
+//  SettingsViewController.swift
+//  WayGate
+//
+//  Created by Nabeel Nazir on 02/06/2023.
+//
+
+import UIKit
+
+class SettingsViewController: UIViewController {
+
+    //MARK:- Life Cycle Methods
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
+    }
+    
+    //MARK:- UI Actions
+    @IBAction func didTapLogout(_ sender: Any) {
+        if let vc: LogoutPopupViewController = UIStoryboard.initiate(storyboard: .main) {
+            vc.modalTransitionStyle = .crossDissolve
+            vc.modalPresentationStyle = .overCurrentContext
+            present(vc, animated: true)
+        }
+    }
+}

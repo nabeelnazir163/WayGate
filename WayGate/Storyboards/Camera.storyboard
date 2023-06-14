@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CircularStd-Bold.otf">
+            <string>CircularStd-Bold</string>
+        </array>
+        <array key="CircularStd-Book.otf">
+            <string>CircularStd-Book</string>
+        </array>
+        <array key="CircularStd-Medium.otf">
+            <string>CircularStd-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Camera View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="CameraViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="CameraViewController" customModule="WayGate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Tc-ui-t5z">
+                                <rect key="frame" x="336" y="71" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="8Tc-ui-t5z" secondAttribute="height" multiplier="1:1" id="fhB-d9-hKV"/>
+                                    <constraint firstAttribute="width" constant="24" id="icO-l9-WVt"/>
+                                </constraints>
+                                <color key="tintColor" name="SecondaryText"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <connections>
+                                    <action selector="didTapCrossBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="zHM-cQ-Diy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Uo-7b-L8K">
+                                <rect key="frame" x="164" y="728" width="62" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="62" id="AFy-ss-XHM"/>
+                                    <constraint firstAttribute="width" secondItem="8Uo-7b-L8K" secondAttribute="height" multiplier="1:1" id="fny-U6-qEU"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="TakePhoto"/>
+                                <connections>
+                                    <action selector="didTapTakePhoto:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Dtn-BB-gqk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="8Uo-7b-L8K" secondAttribute="bottom" constant="20" id="KZd-9V-iNK"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="8Tc-ui-t5z" secondAttribute="trailing" constant="30" id="W9h-tf-EFJ"/>
+                            <constraint firstItem="8Tc-ui-t5z" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="24" id="pyu-Zk-2iG"/>
+                            <constraint firstItem="8Uo-7b-L8K" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="v2l-Sk-3pH"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="50" y="-2"/>
+        </scene>
+        <!--Camera Settings View Controller-->
+        <scene sceneID="nY4-xH-aqy">
+            <objects>
+                <viewController storyboardIdentifier="CameraSettingsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qwb-KA-T3J" customClass="CameraSettingsViewController" customModule="WayGate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EWz-93-jhm">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f61-ih-HRP">
+                                <rect key="frame" x="0.0" y="47" width="390" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0el-Zr-zcq">
+                                        <rect key="frame" x="15" y="0.0" width="40" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="K3y-Bn-meu"/>
+                                        </constraints>
+                                        <color key="tintColor" name="BlackBG"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal">
+                                            <imageReference key="image" image="arrow.backward" catalog="system" symbolScale="large"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTapBackBtn:" destination="qwb-KA-T3J" eventType="touchUpInside" id="ThZ-u2-kkh"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbJ-Ko-2oQ">
+                                        <rect key="frame" x="180.66666666666666" y="14.999999999999998" width="29" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" name="CircularStd-Medium" family="Circular Std" pointSize="16"/>
+                                        <color key="textColor" name="PrimaryText"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="0el-Zr-zcq" firstAttribute="leading" secondItem="f61-ih-HRP" secondAttribute="leading" constant="15" id="5jf-Fn-djN"/>
+                                    <constraint firstItem="bbJ-Ko-2oQ" firstAttribute="centerY" secondItem="f61-ih-HRP" secondAttribute="centerY" id="8Hb-wz-0H4"/>
+                                    <constraint firstItem="bbJ-Ko-2oQ" firstAttribute="centerX" secondItem="f61-ih-HRP" secondAttribute="centerX" id="KN9-uQ-yYj"/>
+                                    <constraint firstAttribute="height" constant="50" id="ZfC-0m-5uX"/>
+                                    <constraint firstAttribute="bottom" secondItem="0el-Zr-zcq" secondAttribute="bottom" id="dc5-9b-FY7"/>
+                                    <constraint firstItem="0el-Zr-zcq" firstAttribute="top" secondItem="f61-ih-HRP" secondAttribute="top" id="hAA-pi-zvI"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="eZZ-78-xfi">
+                                <rect key="frame" x="24" y="121.00000000000003" width="342" height="484.66666666666674"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="l4Z-fc-3rK">
+                                        <rect key="frame" x="0.0" y="0.0" width="342" height="97"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Model Quality" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BoB-Po-e15">
+                                                <rect key="frame" x="0.0" y="0.0" width="342" height="23"/>
+                                                <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="18"/>
+                                                <color key="textColor" name="BlackBG"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s3J-Is-h5Q">
+                                                <rect key="frame" x="0.0" y="33" width="342" height="64"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="WrA-MO-0Lj">
+                                                        <rect key="frame" x="6" y="6" width="330" height="52"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VA0-kP-cQY">
+                                                                <rect key="frame" x="0.0" y="0.0" width="110" height="52"/>
+                                                                <fontDescription key="fontDescription" name="CircularStd-Medium" family="Circular Std" pointSize="16"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="High">
+                                                                    <color key="titleColor" name="PrimaryText"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="10"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="didTapModelQuality:" destination="qwb-KA-T3J" eventType="touchUpInside" id="IZe-bl-x8e"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xiR-Y5-U3Z">
+                                                                <rect key="frame" x="110" y="0.0" width="110" height="52"/>
+                                                                <fontDescription key="fontDescription" name="CircularStd-Medium" family="Circular Std" pointSize="16"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="Medium">
+                                                                    <color key="titleColor" name="PrimaryText"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="10"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="didTapModelQuality:" destination="qwb-KA-T3J" eventType="touchUpInside" id="ZoE-99-9Wl"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tfs-6w-zHD">
+                                                                <rect key="frame" x="220" y="0.0" width="110" height="52"/>
+                                                                <fontDescription key="fontDescription" name="CircularStd-Medium" family="Circular Std" pointSize="16"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="Low">
+                                                                    <color key="titleColor" name="PrimaryText"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="10"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="didTapModelQuality:" destination="qwb-KA-T3J" eventType="touchUpInside" id="EI1-Lu-enJ"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" name="SecondaryButton"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="WrA-MO-0Lj" secondAttribute="trailing" constant="6" id="A1J-x7-5rT"/>
+                                                    <constraint firstAttribute="height" constant="64" id="MLq-bw-UGB"/>
+                                                    <constraint firstItem="WrA-MO-0Lj" firstAttribute="leading" secondItem="s3J-Is-h5Q" secondAttribute="leading" constant="6" id="TYW-aj-KnW"/>
+                                                    <constraint firstAttribute="bottom" secondItem="WrA-MO-0Lj" secondAttribute="bottom" constant="6" id="wqt-wt-DKR"/>
+                                                    <constraint firstItem="WrA-MO-0Lj" firstAttribute="top" secondItem="s3J-Is-h5Q" secondAttribute="top" constant="6" id="x28-hP-Wa9"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xkG-ww-0Pd">
+                                        <rect key="frame" x="0.0" y="121" width="342" height="97"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Texture Quality" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ex-6P-17D">
+                                                <rect key="frame" x="0.0" y="0.0" width="342" height="23"/>
+                                                <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="18"/>
+                                                <color key="textColor" name="BlackBG"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XU3-wA-MxL">
+                                                <rect key="frame" x="0.0" y="33" width="342" height="64"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="k1y-CR-4uf">
+                                                        <rect key="frame" x="6" y="6" width="330" height="52"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dSh-o3-GV5">
+                                                                <rect key="frame" x="0.0" y="0.0" width="110" height="52"/>
+                                                                <fontDescription key="fontDescription" name="CircularStd-Medium" family="Circular Std" pointSize="16"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="High">
+                                                                    <color key="titleColor" name="PrimaryText"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="10"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="didTapTextureQuality:" destination="qwb-KA-T3J" eventType="touchUpInside" id="iB6-1v-Too"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qYc-nF-AG4">
+                                                                <rect key="frame" x="110" y="0.0" width="110" height="52"/>
+                                                                <fontDescription key="fontDescription" name="CircularStd-Medium" family="Circular Std" pointSize="16"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="Medium">
+                                                                    <color key="titleColor" name="PrimaryText"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="10"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="didTapTextureQuality:" destination="qwb-KA-T3J" eventType="touchUpInside" id="tJl-ra-myU"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RIz-UD-wbL">
+                                                                <rect key="frame" x="220" y="0.0" width="110" height="52"/>
+                                                                <fontDescription key="fontDescription" name="CircularStd-Medium" family="Circular Std" pointSize="16"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="Low">
+                                                                    <color key="titleColor" name="PrimaryText"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="10"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="didTapTextureQuality:" destination="qwb-KA-T3J" eventType="touchUpInside" id="rOL-E3-XjA"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" name="SecondaryButton"/>
+                                                <constraints>
+                                                    <constraint firstItem="k1y-CR-4uf" firstAttribute="top" secondItem="XU3-wA-MxL" secondAttribute="top" constant="6" id="JZL-BG-e0R"/>
+                                                    <constraint firstAttribute="trailing" secondItem="k1y-CR-4uf" secondAttribute="trailing" constant="6" id="Nlg-vv-CnD"/>
+                                                    <constraint firstAttribute="height" constant="64" id="O8N-rM-hoE"/>
+                                                    <constraint firstItem="k1y-CR-4uf" firstAttribute="leading" secondItem="XU3-wA-MxL" secondAttribute="leading" constant="6" id="faK-MB-ZJb"/>
+                                                    <constraint firstAttribute="bottom" secondItem="k1y-CR-4uf" secondAttribute="bottom" constant="6" id="qdE-Bt-r0L"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="KEm-cM-7eu">
+                                        <rect key="frame" x="0.0" y="242" width="342" height="143"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="File Format" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0q9-8L-sTG">
+                                                <rect key="frame" x="0.0" y="0.0" width="342" height="23"/>
+                                                <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="18"/>
+                                                <color key="textColor" name="BlackBG"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="JZE-KX-ohB">
+                                                <rect key="frame" x="0.0" y="33" width="342" height="110"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="O01-QE-HFz">
+                                                        <rect key="frame" x="0.0" y="0.0" width="342" height="52"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYP-s1-thM">
+                                                                <rect key="frame" x="0.0" y="0.0" width="81" height="52"/>
+                                                                <color key="backgroundColor" name="Border"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="52" id="z9F-QT-rxZ"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="CircularStd-Medium" family="Circular Std" pointSize="16"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="OBJ">
+                                                                    <color key="titleColor" name="PrimaryText"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="10"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="didTapFileFormat:" destination="qwb-KA-T3J" eventType="touchUpInside" id="lJi-Y8-Rk3"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VMk-i1-XF2">
+                                                                <rect key="frame" x="87" y="0.0" width="81" height="52"/>
+                                                                <color key="backgroundColor" name="Border"/>
+                                                                <fontDescription key="fontDescription" name="CircularStd-Medium" family="Circular Std" pointSize="16"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="FBX">
+                                                                    <color key="titleColor" name="PrimaryText"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="10"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="didTapFileFormat:" destination="qwb-KA-T3J" eventType="touchUpInside" id="NiE-15-rgg"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8q3-o7-Ras">
+                                                                <rect key="frame" x="174" y="0.0" width="81" height="52"/>
+                                                                <color key="backgroundColor" name="Border"/>
+                                                                <fontDescription key="fontDescription" name="CircularStd-Medium" family="Circular Std" pointSize="16"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="STL">
+                                                                    <color key="titleColor" name="PrimaryText"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="10"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="didTapFileFormat:" destination="qwb-KA-T3J" eventType="touchUpInside" id="h9y-xA-smS"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FLm-m2-KZJ">
+                                                                <rect key="frame" x="261" y="0.0" width="81" height="52"/>
+                                                                <color key="backgroundColor" name="Border"/>
+                                                                <fontDescription key="fontDescription" name="CircularStd-Medium" family="Circular Std" pointSize="16"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="GLB">
+                                                                    <color key="titleColor" name="PrimaryText"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="10"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="didTapFileFormat:" destination="qwb-KA-T3J" eventType="touchUpInside" id="9Db-5I-msQ"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="GZd-kI-WLa">
+                                                        <rect key="frame" x="0.0" y="58" width="342" height="52"/>
+                                                        <subviews>
+                                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5JY-5g-AIg">
+                                                                <rect key="frame" x="0.0" y="0.0" width="81" height="52"/>
+                                                                <color key="backgroundColor" name="Border"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="52" id="kwM-fS-NFZ"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="CircularStd-Medium" family="Circular Std" pointSize="16"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="GLTF">
+                                                                    <color key="titleColor" name="PrimaryText"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="10"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="didTapFileFormat:" destination="qwb-KA-T3J" eventType="touchUpInside" id="fRw-oH-7zw"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZSr-0h-NhN">
+                                                                <rect key="frame" x="87" y="0.0" width="81" height="52"/>
+                                                                <color key="backgroundColor" name="Border"/>
+                                                                <fontDescription key="fontDescription" name="CircularStd-Medium" family="Circular Std" pointSize="16"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="USDZ">
+                                                                    <color key="titleColor" name="PrimaryText"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="10"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="didTapFileFormat:" destination="qwb-KA-T3J" eventType="touchUpInside" id="Jn7-0k-vXb"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FDB-4M-sjR">
+                                                                <rect key="frame" x="174" y="0.0" width="81" height="52"/>
+                                                                <color key="backgroundColor" name="Border"/>
+                                                                <fontDescription key="fontDescription" name="CircularStd-Medium" family="Circular Std" pointSize="16"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="PLY">
+                                                                    <color key="titleColor" name="PrimaryText"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="10"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="didTapFileFormat:" destination="qwb-KA-T3J" eventType="touchUpInside" id="78V-bB-aBC"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lJJ-k7-pWT">
+                                                                <rect key="frame" x="261" y="0.0" width="81" height="52"/>
+                                                                <color key="backgroundColor" name="Border"/>
+                                                                <fontDescription key="fontDescription" name="CircularStd-Medium" family="Circular Std" pointSize="16"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="XYZ">
+                                                                    <color key="titleColor" name="PrimaryText"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="10"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="didTapFileFormat:" destination="qwb-KA-T3J" eventType="touchUpInside" id="Wx9-nU-Obc"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="q61-cg-23F">
+                                        <rect key="frame" x="0.0" y="409" width="342" height="75.666666666666686"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5QW-mE-8J5">
+                                                <rect key="frame" x="0.0" y="0.0" width="342" height="31"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AI Object Masking" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TfZ-Xu-UVV">
+                                                        <rect key="frame" x="0.0" y="0.0" width="293" height="31"/>
+                                                        <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="18"/>
+                                                        <color key="textColor" name="BlackBG"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3iv-GG-h6G">
+                                                        <rect key="frame" x="293" y="0.0" width="51" height="31"/>
+                                                    </switch>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Identify the primary subject in images and create a standalone 3D model" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Hq-0V-u97">
+                                                <rect key="frame" x="0.0" y="35" width="342" height="40.666666666666657"/>
+                                                <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="16"/>
+                                                <color key="textColor" name="SecondaryText"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PUk-j1-urA">
+                                <rect key="frame" x="24" y="722" width="342" height="64"/>
+                                <color key="backgroundColor" name="Theme"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="vgp-k9-3ng"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="16"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Upload">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTapUpload:" destination="qwb-KA-T3J" eventType="touchUpInside" id="eXU-35-lms"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hke-EU-4PC">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YOr-XT-0bG">
+                                        <rect key="frame" x="20" y="350.66666666666669" width="350" height="143"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="w4b-iI-fgH">
+                                                <rect key="frame" x="24" y="24" width="302" height="95"/>
+                                                <subviews>
+                                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ama-On-7Mx" customClass="MultiProgressView" customModule="MultiProgressView">
+                                                        <rect key="frame" x="0.0" y="0.0" width="302" height="10"/>
+                                                        <color key="backgroundColor" name="SecondaryText"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="10" id="5L6-5s-v8p"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Uploading" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UOb-VS-Sob">
+                                                        <rect key="frame" x="108" y="22" width="86" height="23"/>
+                                                        <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="18"/>
+                                                        <color key="textColor" name="SecondaryButton"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We are uploading the photos, do not close the app" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hsk-yB-4ea">
+                                                        <rect key="frame" x="6.6666666666666572" y="57" width="289" height="38"/>
+                                                        <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="15"/>
+                                                        <color key="textColor" name="SecondaryButton"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="Ama-On-7Mx" firstAttribute="leading" secondItem="w4b-iI-fgH" secondAttribute="leading" id="4jE-Y1-auP"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" name="BlackBG"/>
+                                        <constraints>
+                                            <constraint firstItem="w4b-iI-fgH" firstAttribute="top" secondItem="YOr-XT-0bG" secondAttribute="top" constant="24" id="2uT-RA-6sy"/>
+                                            <constraint firstItem="w4b-iI-fgH" firstAttribute="leading" secondItem="YOr-XT-0bG" secondAttribute="leading" constant="24" id="PML-wy-8hd"/>
+                                            <constraint firstAttribute="bottom" secondItem="w4b-iI-fgH" secondAttribute="bottom" constant="24" id="YjX-3R-ZHC"/>
+                                            <constraint firstAttribute="trailing" secondItem="w4b-iI-fgH" secondAttribute="trailing" constant="24" id="qRB-Ty-20g"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.1803921568627451" green="0.1803921568627451" blue="0.1803921568627451" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="YOr-XT-0bG" firstAttribute="centerY" secondItem="Hke-EU-4PC" secondAttribute="centerY" id="KGj-zJ-GDc"/>
+                                    <constraint firstItem="YOr-XT-0bG" firstAttribute="centerX" secondItem="Hke-EU-4PC" secondAttribute="centerX" id="L4D-Qj-YKk"/>
+                                    <constraint firstItem="YOr-XT-0bG" firstAttribute="leading" secondItem="Hke-EU-4PC" secondAttribute="leading" constant="20" id="xik-vV-d71"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hRs-eg-RXj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hRs-eg-RXj" firstAttribute="bottom" secondItem="PUk-j1-urA" secondAttribute="bottom" constant="24" id="3QU-Ss-nMX"/>
+                            <constraint firstAttribute="bottom" secondItem="Hke-EU-4PC" secondAttribute="bottom" id="8KU-2i-Y7P"/>
+                            <constraint firstItem="hRs-eg-RXj" firstAttribute="trailing" secondItem="Hke-EU-4PC" secondAttribute="trailing" id="F60-WR-vd1"/>
+                            <constraint firstItem="f61-ih-HRP" firstAttribute="top" secondItem="hRs-eg-RXj" secondAttribute="top" id="HHx-y6-BjY"/>
+                            <constraint firstItem="Hke-EU-4PC" firstAttribute="leading" secondItem="hRs-eg-RXj" secondAttribute="leading" id="Hdt-9C-8gQ"/>
+                            <constraint firstItem="eZZ-78-xfi" firstAttribute="leading" secondItem="hRs-eg-RXj" secondAttribute="leading" constant="24" id="OU4-vd-xRS"/>
+                            <constraint firstItem="hRs-eg-RXj" firstAttribute="trailing" secondItem="f61-ih-HRP" secondAttribute="trailing" id="VqM-CM-ebd"/>
+                            <constraint firstItem="Hke-EU-4PC" firstAttribute="top" secondItem="EWz-93-jhm" secondAttribute="top" id="WTk-bi-lB5"/>
+                            <constraint firstItem="hRs-eg-RXj" firstAttribute="trailing" secondItem="eZZ-78-xfi" secondAttribute="trailing" constant="24" id="cL2-aa-b4g"/>
+                            <constraint firstItem="f61-ih-HRP" firstAttribute="leading" secondItem="hRs-eg-RXj" secondAttribute="leading" id="e7g-ma-f8D"/>
+                            <constraint firstItem="hRs-eg-RXj" firstAttribute="trailing" secondItem="PUk-j1-urA" secondAttribute="trailing" constant="24" id="jwD-NI-NGj"/>
+                            <constraint firstItem="PUk-j1-urA" firstAttribute="leading" secondItem="hRs-eg-RXj" secondAttribute="leading" constant="24" id="q0b-VJ-H4p"/>
+                            <constraint firstItem="PUk-j1-urA" firstAttribute="top" relation="greaterThanOrEqual" secondItem="eZZ-78-xfi" secondAttribute="bottom" constant="24" id="uXS-K2-iRE"/>
+                            <constraint firstItem="eZZ-78-xfi" firstAttribute="top" secondItem="f61-ih-HRP" secondAttribute="bottom" constant="24" id="vfZ-fT-2E7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="FBXFileFormatBtn" destination="VMk-i1-XF2" id="7xS-pr-fSN"/>
+                        <outlet property="GLBFileFormatBtn" destination="FLm-m2-KZJ" id="uvd-Mc-l80"/>
+                        <outlet property="GLTFFileFormatBtn" destination="5JY-5g-AIg" id="l4y-fb-oPz"/>
+                        <outlet property="OBJFileFormatBtn" destination="hYP-s1-thM" id="10h-l0-aJc"/>
+                        <outlet property="PLYFileFormatBtn" destination="FDB-4M-sjR" id="9oR-yT-RXM"/>
+                        <outlet property="STLFileFormatBtn" destination="8q3-o7-Ras" id="QIU-as-1MM"/>
+                        <outlet property="USDZFileFormatBtn" destination="ZSr-0h-NhN" id="MbL-Ir-zuI"/>
+                        <outlet property="XYZFileFormatBtn" destination="lJJ-k7-pWT" id="D56-Ex-hsR"/>
+                        <outlet property="aiMaskBtn" destination="3iv-GG-h6G" id="xTy-xh-8LE"/>
+                        <outlet property="loaderView" destination="Hke-EU-4PC" id="u58-ge-jqb"/>
+                        <outlet property="modelHighBtn" destination="VA0-kP-cQY" id="xQo-XZ-Bkf"/>
+                        <outlet property="modelLowBtn" destination="tfs-6w-zHD" id="8le-Rr-Xqy"/>
+                        <outlet property="modelMediumBtn" destination="xiR-Y5-U3Z" id="DqF-P8-tQV"/>
+                        <outlet property="progressView" destination="Ama-On-7Mx" id="1c7-nC-8Jc"/>
+                        <outlet property="textureHighBtn" destination="dSh-o3-GV5" id="sAH-vJ-LdE"/>
+                        <outlet property="textureLowBtn" destination="RIz-UD-wbL" id="7Vg-ot-Fo8"/>
+                        <outlet property="textureMediumBtn" destination="qYc-nF-AG4" id="i6g-7f-Aww"/>
+                        <outlet property="uploadLbl" destination="UOb-VS-Sob" id="6RL-nV-YrO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2FO-wy-z4D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="806" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="TakePhoto" width="62" height="62"/>
+        <image name="arrow.backward" catalog="system" width="128" height="95"/>
+        <namedColor name="BlackBG">
+            <color red="0.1803921568627451" green="0.1803921568627451" blue="0.1803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Border">
+            <color red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="PrimaryText">
+            <color red="0.24705882352941178" green="0.24705882352941178" blue="0.24705882352941178" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SecondaryButton">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SecondaryText">
+            <color red="0.59999999999999998" green="0.60392156862745094" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Theme">
+            <color red="0.5607843137254902" green="0.17647058823529413" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

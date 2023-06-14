@@ -1,0 +1,131 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name KiriAdvanceCameraKit
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import AVFoundation
+import AVKit
+import Combine
+import CoreMedia
+import Foundation
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+extension CoreMedia.CMTime {
+  public var fps: CoreFoundation.CGFloat {
+    get
+  }
+  public var time: CoreFoundation.CGFloat {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers public class AVCapturePhotoCaptureProxyDelegate : ObjectiveC.NSObject, AVFoundation.AVCapturePhotoCaptureDelegate {
+  final public let photoOutputWillBeginSubject: Combine.PassthroughSubject<(output: AVFoundation.AVCapturePhotoOutput, resolvedSettings: AVFoundation.AVCaptureResolvedPhotoSettings), Swift.Never>
+  final public let photoOutputWillCaptureSubject: Combine.PassthroughSubject<(output: AVFoundation.AVCapturePhotoOutput, resolvedSettings: AVFoundation.AVCaptureResolvedPhotoSettings), Swift.Never>
+  final public let photoOutputDidCapturePhotoSubject: Combine.PassthroughSubject<(output: AVFoundation.AVCapturePhotoOutput, resolvedSettings: AVFoundation.AVCaptureResolvedPhotoSettings), Swift.Never>
+  final public let photoOutputDidFinishProcessingPhotoSubject: Combine.PassthroughSubject<(output: AVFoundation.AVCapturePhotoOutput, photo: AVFoundation.AVCapturePhoto, error: Swift.Error?), Swift.Never>
+  final public let photoOutputDidFinishRecordingLivePhotoMovieSubject: Combine.PassthroughSubject<(output: AVFoundation.AVCapturePhotoOutput, outputFileURL: Foundation.URL, resolvedSettings: AVFoundation.AVCaptureResolvedPhotoSettings), Swift.Never>
+  final public let photoOutputDidFinishProcessingLivePhotoSubject: Combine.PassthroughSubject<(output: AVFoundation.AVCapturePhotoOutput, outputFileURL: Foundation.URL, duration: CoreMedia.CMTime, photoDisplayTime: CoreMedia.CMTime, resolvedSettings: AVFoundation.AVCaptureResolvedPhotoSettings, error: Swift.Error?), Swift.Never>
+  final public let photoOutputDidFinishCaptureSubject: Combine.PassthroughSubject<(output: AVFoundation.AVCapturePhotoOutput, resolvedSettings: AVFoundation.AVCaptureResolvedPhotoSettings, error: Swift.Error?), Swift.Never>
+  @objc public func photoOutput(_ output: AVFoundation.AVCapturePhotoOutput, willBeginCaptureFor resolvedSettings: AVFoundation.AVCaptureResolvedPhotoSettings)
+  @objc public func photoOutput(_ output: AVFoundation.AVCapturePhotoOutput, willCapturePhotoFor resolvedSettings: AVFoundation.AVCaptureResolvedPhotoSettings)
+  @objc public func photoOutput(_ output: AVFoundation.AVCapturePhotoOutput, didCapturePhotoFor resolvedSettings: AVFoundation.AVCaptureResolvedPhotoSettings)
+  @objc public func photoOutput(_ output: AVFoundation.AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVFoundation.AVCapturePhoto, error: Swift.Error?)
+  @objc public func photoOutput(_ output: AVFoundation.AVCapturePhotoOutput, didFinishRecordingLivePhotoMovieForEventualFileAt outputFileURL: Foundation.URL, resolvedSettings: AVFoundation.AVCaptureResolvedPhotoSettings)
+  @objc public func photoOutput(_ output: AVFoundation.AVCapturePhotoOutput, didFinishProcessingLivePhotoToMovieFileAt outputFileURL: Foundation.URL, duration: CoreMedia.CMTime, photoDisplayTime: CoreMedia.CMTime, resolvedSettings: AVFoundation.AVCaptureResolvedPhotoSettings, error: Swift.Error?)
+  @objc public func photoOutput(_ output: AVFoundation.AVCapturePhotoOutput, didFinishCaptureFor resolvedSettings: AVFoundation.AVCaptureResolvedPhotoSettings, error: Swift.Error?)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class CameraView<CaptureModel> : KiriAdvanceCameraKit.CaptureView where CaptureModel : KiriAdvanceCameraKit.ImageCaptureModel {
+  @_Concurrency.MainActor(unsafe) final public let captureModel: CaptureModel
+  @_Concurrency.MainActor(unsafe) @objc required override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) public func setPhotoFolderPath(_ path: Swift.String)
+  @_Concurrency.MainActor(unsafe) public func startPreview(completion: @escaping (Swift.Result<AVFoundation.AVAuthorizationStatus, Swift.Error>) -> Swift.Void)
+  @_Concurrency.MainActor(unsafe) public func takePhoto()
+  @objc deinit
+}
+public enum EnvType {
+  case test
+  case product
+  public static func == (a: KiriAdvanceCameraKit.EnvType, b: KiriAdvanceCameraKit.EnvType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum CameraErrorType : Swift.Error {
+  case accountNotExist
+  case authentication
+  case exhausted
+  case SDK
+  case uninitialized
+  public static func == (a: KiriAdvanceCameraKit.CameraErrorType, b: KiriAdvanceCameraKit.CameraErrorType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class CameraKit {
+  public typealias Completion = (Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void
+  public static let share: KiriAdvanceCameraKit.CameraKit
+  public func setup(envType: KiriAdvanceCameraKit.EnvType, account: Swift.String, password: Swift.String, completion: @escaping KiriAdvanceCameraKit.CameraKit.Completion)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class AdvanceImageCaptureModel : KiriAdvanceCameraKit.ImageCaptureModel {
+  public enum ValueType<T> : Swift.Equatable where T : Swift.Equatable {
+    case value(T)
+    case auto
+    public static func == (a: KiriAdvanceCameraKit.AdvanceImageCaptureModel.ValueType<T>, b: KiriAdvanceCameraKit.AdvanceImageCaptureModel.ValueType<T>) -> Swift.Bool
+  }
+  public var isOpenAdvance: Swift.Bool {
+    get
+    set
+  }
+  public var isoValue: KiriAdvanceCameraKit.AdvanceImageCaptureModel.ValueType<CoreFoundation.CGFloat> {
+    get
+    set
+  }
+  public var shutterValue: KiriAdvanceCameraKit.AdvanceImageCaptureModel.ValueType<CoreFoundation.CGFloat> {
+    get
+    set
+  }
+  public var evValue: CoreFoundation.CGFloat {
+    get
+    set
+  }
+  public var isoRange: Swift.ClosedRange<CoreFoundation.CGFloat>?
+  public var shutterRange: Swift.ClosedRange<CoreFoundation.CGFloat>?
+  @objc required dynamic public init()
+  final public let isoValueSubject: Combine.PassthroughSubject<CoreFoundation.CGFloat, Swift.Never>
+  final public let shutterSubject: Combine.PassthroughSubject<CoreFoundation.CGFloat, Swift.Never>
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class CaptureModel : ObjectiveC.NSObject {
+  public var device: AVFoundation.AVCaptureDevice? {
+    get
+  }
+  final public let photoOutput: AVFoundation.AVCapturePhotoOutput
+  final public let videoOutput: AVFoundation.AVCaptureMovieFileOutput
+  @objc required override dynamic public init()
+  open func selectFormat(device: AVFoundation.AVCaptureDevice) throws
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class ImageCaptureModel : KiriAdvanceCameraKit.CaptureModel {
+  final public let captureProxy: KiriAdvanceCameraKit.AVCapturePhotoCaptureProxyDelegate
+  @objc required dynamic public init()
+  public func takePhoto()
+  override open func selectFormat(device: AVFoundation.AVCaptureDevice) throws
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class CaptureView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutSubviews()
+  @objc deinit
+}
+extension KiriAdvanceCameraKit.EnvType : Swift.Equatable {}
+extension KiriAdvanceCameraKit.EnvType : Swift.Hashable {}
+extension KiriAdvanceCameraKit.CameraErrorType : Swift.Equatable {}
+extension KiriAdvanceCameraKit.CameraErrorType : Swift.Hashable {}

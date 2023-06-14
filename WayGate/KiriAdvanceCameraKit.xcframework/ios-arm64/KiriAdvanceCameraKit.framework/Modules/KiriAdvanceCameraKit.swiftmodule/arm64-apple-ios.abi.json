@@ -1,0 +1,4450 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "CoreMedia",
+        "printedName": "CoreMedia",
+        "declKind": "Import",
+        "moduleName": "KiriAdvanceCameraKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KiriAdvanceCameraKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "KiriAdvanceCameraKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "KiriAdvanceCameraKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AVCapturePhotoCaptureProxyDelegate",
+        "printedName": "AVCapturePhotoCaptureProxyDelegate",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "photoOutputWillBeginSubject",
+            "printedName": "photoOutputWillBeginSubject",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PassthroughSubject",
+                "printedName": "Combine.PassthroughSubject<(output: AVFoundation.AVCapturePhotoOutput, resolvedSettings: AVFoundation.AVCaptureResolvedPhotoSettings), Swift.Never>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(output: AVFoundation.AVCapturePhotoOutput, resolvedSettings: AVFoundation.AVCaptureResolvedPhotoSettings)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AVCapturePhotoOutput",
+                        "printedName": "AVFoundation.AVCapturePhotoOutput",
+                        "usr": "c:objc(cs)AVCapturePhotoOutput"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AVCaptureResolvedPhotoSettings",
+                        "printedName": "AVFoundation.AVCaptureResolvedPhotoSettings",
+                        "usr": "c:objc(cs)AVCaptureResolvedPhotoSettings"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ],
+                "usr": "s:7Combine18PassthroughSubjectC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20KiriAdvanceCameraKit34AVCapturePhotoCaptureProxyDelegateC27photoOutputWillBeginSubject7Combine011PassthroughN0CySo0efK0C6output_So0e8ResolvedF8SettingsC08resolvedS0ts5NeverOGvp",
+            "mangledName": "$s20KiriAdvanceCameraKit34AVCapturePhotoCaptureProxyDelegateC27photoOutputWillBeginSubject7Combine011PassthroughN0CySo0efK0C6output_So0e8ResolvedF8SettingsC08resolvedS0ts5NeverOGvp",
+            "moduleName": "KiriAdvanceCameraKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PassthroughSubject",
+                    "printedName": "Combine.PassthroughSubject<(output: AVFoundation.AVCapturePhotoOutput, resolvedSettings: AVFoundation.AVCaptureResolvedPhotoSettings), Swift.Never>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(output: AVFoundation.AVCapturePhotoOutput, resolvedSettings: AVFoundation.AVCaptureResolvedPhotoSettings)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "AVCapturePhotoOutput",
+                            "printedName": "AVFoundation.AVCapturePhotoOutput",
+                            "usr": "c:objc(cs)AVCapturePhotoOutput"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "AVCaptureResolvedPhotoSettings",
+                            "printedName": "AVFoundation.AVCaptureResolvedPhotoSettings",
+                            "usr": "c:objc(cs)AVCaptureResolvedPhotoSettings"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Never",
+                        "printedName": "Swift.Never",
+                        "usr": "s:s5NeverO"
+                      }
+                    ],
+                    "usr": "s:7Combine18PassthroughSubjectC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20KiriAdvanceCameraKit34AVCapturePhotoCaptureProxyDelegateC27photoOutputWillBeginSubject7Combine011PassthroughN0CySo0efK0C6output_So0e8ResolvedF8SettingsC08resolvedS0ts5NeverOGvg",
+                "mangledName": "$s20KiriAdvanceCameraKit34AVCapturePhotoCaptureProxyDelegateC27photoOutputWillBeginSubject7Combine011PassthroughN0CySo0efK0C6output_So0e8ResolvedF8SettingsC08resolvedS0ts5NeverOGvg",
+                "moduleName": "KiriAdvanceCameraKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "photoOutputWillCaptureSubject",
+            "printedName": "photoOutputWillCaptureSubject",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PassthroughSubject",
+                "printedName": "Combine.PassthroughSubject<(output: AVFoundation.AVCapturePhotoOutput, resolvedSettings: AVFoundation.AVCaptureResolvedPhotoSettings), Swift.Never>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(output: AVFoundation.AVCapturePhotoOutput, resolvedSettings: AVFoundation.AVCaptureResolvedPhotoSettings)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AVCapturePhotoOutput",
+                        "printedName": "AVFoundation.AVCapturePhotoOutput",
+                        "usr": "c:objc(cs)AVCapturePhotoOutput"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AVCaptureResolvedPhotoSettings",
+                        "printedName": "AVFoundation.AVCaptureResolvedPhotoSettings",
+                        "usr": "c:objc(cs)AVCaptureResolvedPhotoSettings"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ],
+                "usr": "s:7Combine18PassthroughSubjectC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20KiriAdvanceCameraKit34AVCapturePhotoCaptureProxyDelegateC015photoOutputWillG7Subject7Combine011PassthroughM0CySo0efK0C6output_So0e8ResolvedF8SettingsC08resolvedR0ts5NeverOGvp",
+            "mangledName": "$s20KiriAdvanceCameraKit34AVCapturePhotoCaptureProxyDelegateC015photoOutputWillG7Subject7Combine011PassthroughM0CySo0efK0C6output_So0e8ResolvedF8SettingsC08resolvedR0ts5NeverOGvp",
+            "moduleName": "KiriAdvanceCameraKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PassthroughSubject",
+                    "printedName": "Combine.PassthroughSubject<(output: AVFoundation.AVCapturePhotoOutput, resolvedSettings: AVFoundation.AVCaptureResolvedPhotoSettings), Swift.Never>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(output: AVFoundation.AVCapturePhotoOutput, resolvedSettings: AVFoundation.AVCaptureResolvedPhotoSettings)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "AVCapturePhotoOutput",
+                            "printedName": "AVFoundation.AVCapturePhotoOutput",
+                            "usr": "c:objc(cs)AVCapturePhotoOutput"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "AVCaptureResolvedPhotoSettings",
+                            "printedName": "AVFoundation.AVCaptureResolvedPhotoSettings",
+                            "usr": "c:objc(cs)AVCaptureResolvedPhotoSettings"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Never",
+                        "printedName": "Swift.Never",
+                        "usr": "s:s5NeverO"
+                      }
+                    ],
+                    "usr": "s:7Combine18PassthroughSubjectC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20KiriAdvanceCameraKit34AVCapturePhotoCaptureProxyDelegateC015photoOutputWillG7Subject7Combine011PassthroughM0CySo0efK0C6output_So0e8ResolvedF8SettingsC08resolvedR0ts5NeverOGvg",
+                "mangledName": "$s20KiriAdvanceCameraKit34AVCapturePhotoCaptureProxyDelegateC015photoOutputWillG7Subject7Combine011PassthroughM0CySo0efK0C6output_So0e8ResolvedF8SettingsC08resolvedR0ts5NeverOGvg",
+                "moduleName": "KiriAdvanceCameraKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "photoOutputDidCapturePhotoSubject",
+            "printedName": "photoOutputDidCapturePhotoSubject",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PassthroughSubject",
+                "printedName": "Combine.PassthroughSubject<(output: AVFoundation.AVCapturePhotoOutput, resolvedSettings: AVFoundation.AVCaptureResolvedPhotoSettings), Swift.Never>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(output: AVFoundation.AVCapturePhotoOutput, resolvedSettings: AVFoundation.AVCaptureResolvedPhotoSettings)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AVCapturePhotoOutput",
+                        "printedName": "AVFoundation.AVCapturePhotoOutput",
+                        "usr": "c:objc(cs)AVCapturePhotoOutput"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AVCaptureResolvedPhotoSettings",
+                        "printedName": "AVFoundation.AVCaptureResolvedPhotoSettings",
+                        "usr": "c:objc(cs)AVCaptureResolvedPhotoSettings"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ],
+                "usr": "s:7Combine18PassthroughSubjectC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20KiriAdvanceCameraKit34AVCapturePhotoCaptureProxyDelegateC014photoOutputDidgF7Subject7Combine011PassthroughM0CySo0efK0C6output_So0e8ResolvedF8SettingsC08resolvedR0ts5NeverOGvp",
+            "mangledName": "$s20KiriAdvanceCameraKit34AVCapturePhotoCaptureProxyDelegateC014photoOutputDidgF7Subject7Combine011PassthroughM0CySo0efK0C6output_So0e8ResolvedF8SettingsC08resolvedR0ts5NeverOGvp",
+            "moduleName": "KiriAdvanceCameraKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PassthroughSubject",
+                    "printedName": "Combine.PassthroughSubject<(output: AVFoundation.AVCapturePhotoOutput, resolvedSettings: AVFoundation.AVCaptureResolvedPhotoSettings), Swift.Never>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(output: AVFoundation.AVCapturePhotoOutput, resolvedSettings: AVFoundation.AVCaptureResolvedPhotoSettings)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "AVCapturePhotoOutput",
+                            "printedName": "AVFoundation.AVCapturePhotoOutput",
+                            "usr": "c:objc(cs)AVCapturePhotoOutput"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "AVCaptureResolvedPhotoSettings",
+                            "printedName": "AVFoundation.AVCaptureResolvedPhotoSettings",
+                            "usr": "c:objc(cs)AVCaptureResolvedPhotoSettings"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Never",
+                        "printedName": "Swift.Never",
+                        "usr": "s:s5NeverO"
+                      }
+                    ],
+                    "usr": "s:7Combine18PassthroughSubjectC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20KiriAdvanceCameraKit34AVCapturePhotoCaptureProxyDelegateC014photoOutputDidgF7Subject7Combine011PassthroughM0CySo0efK0C6output_So0e8ResolvedF8SettingsC08resolvedR0ts5NeverOGvg",
+                "mangledName": "$s20KiriAdvanceCameraKit34AVCapturePhotoCaptureProxyDelegateC014photoOutputDidgF7Subject7Combine011PassthroughM0CySo0efK0C6output_So0e8ResolvedF8SettingsC08resolvedR0ts5NeverOGvg",
+                "moduleName": "KiriAdvanceCameraKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "photoOutputDidFinishProcessingPhotoSubject",
+            "printedName": "photoOutputDidFinishProcessingPhotoSubject",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PassthroughSubject",
+                "printedName": "Combine.PassthroughSubject<(output: AVFoundation.AVCapturePhotoOutput, photo: AVFoundation.AVCapturePhoto, error: Swift.Error?), Swift.Never>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(output: AVFoundation.AVCapturePhotoOutput, photo: AVFoundation.AVCapturePhoto, error: Swift.Error?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AVCapturePhotoOutput",
+                        "printedName": "AVFoundation.AVCapturePhotoOutput",
+                        "usr": "c:objc(cs)AVCapturePhotoOutput"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AVCapturePhoto",
+                        "printedName": "AVFoundation.AVCapturePhoto",
+                        "usr": "c:objc(cs)AVCapturePhoto"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Error?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ],
+                "usr": "s:7Combine18PassthroughSubjectC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20KiriAdvanceCameraKit34AVCapturePhotoCaptureProxyDelegateC030photoOutputDidFinishProcessingF7Subject7Combine011PassthroughO0CySo0efK0C6output_So0eF0C0J0s5Error_pSg5errorts5NeverOGvp",
+            "mangledName": "$s20KiriAdvanceCameraKit34AVCapturePhotoCaptureProxyDelegateC030photoOutputDidFinishProcessingF7Subject7Combine011PassthroughO0CySo0efK0C6output_So0eF0C0J0s5Error_pSg5errorts5NeverOGvp",
+            "moduleName": "KiriAdvanceCameraKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PassthroughSubject",
+                    "printedName": "Combine.PassthroughSubject<(output: AVFoundation.AVCapturePhotoOutput, photo: AVFoundation.AVCapturePhoto, error: Swift.Error?), Swift.Never>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(output: AVFoundation.AVCapturePhotoOutput, photo: AVFoundation.AVCapturePhoto, error: Swift.Error?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "AVCapturePhotoOutput",
+                            "printedName": "AVFoundation.AVCapturePhotoOutput",
+                            "usr": "c:objc(cs)AVCapturePhotoOutput"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "AVCapturePhoto",
+                            "printedName": "AVFoundation.AVCapturePhoto",
+                            "usr": "c:objc(cs)AVCapturePhoto"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.Error?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Error",
+                                "printedName": "Swift.Error",
+                                "usr": "s:s5ErrorP"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Never",
+                        "printedName": "Swift.Never",
+                        "usr": "s:s5NeverO"
+                      }
+                    ],
+                    "usr": "s:7Combine18PassthroughSubjectC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20KiriAdvanceCameraKit34AVCapturePhotoCaptureProxyDelegateC030photoOutputDidFinishProcessingF7Subject7Combine011PassthroughO0CySo0efK0C6output_So0eF0C0J0s5Error_pSg5errorts5NeverOGvg",
+                "mangledName": "$s20KiriAdvanceCameraKit34AVCapturePhotoCaptureProxyDelegateC030photoOutputDidFinishProcessingF7Subject7Combine011PassthroughO0CySo0efK0C6output_So0eF0C0J0s5Error_pSg5errorts5NeverOGvg",
+                "moduleName": "KiriAdvanceCameraKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "photoOutputDidFinishRecordingLivePhotoMovieSubject",
+            "printedName": "photoOutputDidFinishRecordingLivePhotoMovieSubject",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PassthroughSubject",
+                "printedName": "Combine.PassthroughSubject<(output: AVFoundation.AVCapturePhotoOutput, outputFileURL: Foundation.URL, resolvedSettings: AVFoundation.AVCaptureResolvedPhotoSettings), Swift.Never>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(output: AVFoundation.AVCapturePhotoOutput, outputFileURL: Foundation.URL, resolvedSettings: AVFoundation.AVCaptureResolvedPhotoSettings)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AVCapturePhotoOutput",
+                        "printedName": "AVFoundation.AVCapturePhotoOutput",
+                        "usr": "c:objc(cs)AVCapturePhotoOutput"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URL",
+                        "printedName": "Foundation.URL",
+                        "usr": "s:10Foundation3URLV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AVCaptureResolvedPhotoSettings",
+                        "printedName": "AVFoundation.AVCaptureResolvedPhotoSettings",
+                        "usr": "c:objc(cs)AVCaptureResolvedPhotoSettings"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ],
+                "usr": "s:7Combine18PassthroughSubjectC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20KiriAdvanceCameraKit34AVCapturePhotoCaptureProxyDelegateC033photoOutputDidFinishRecordingLiveF12MovieSubject7Combine011PassthroughQ0CySo0efK0C6output_10Foundation3URLV0t4FileV0So0e8ResolvedF8SettingsC08resolvedY0ts5NeverOGvp",
+            "mangledName": "$s20KiriAdvanceCameraKit34AVCapturePhotoCaptureProxyDelegateC033photoOutputDidFinishRecordingLiveF12MovieSubject7Combine011PassthroughQ0CySo0efK0C6output_10Foundation3URLV0t4FileV0So0e8ResolvedF8SettingsC08resolvedY0ts5NeverOGvp",
+            "moduleName": "KiriAdvanceCameraKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PassthroughSubject",
+                    "printedName": "Combine.PassthroughSubject<(output: AVFoundation.AVCapturePhotoOutput, outputFileURL: Foundation.URL, resolvedSettings: AVFoundation.AVCaptureResolvedPhotoSettings), Swift.Never>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(output: AVFoundation.AVCapturePhotoOutput, outputFileURL: Foundation.URL, resolvedSettings: AVFoundation.AVCaptureResolvedPhotoSettings)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "AVCapturePhotoOutput",
+                            "printedName": "AVFoundation.AVCapturePhotoOutput",
+                            "usr": "c:objc(cs)AVCapturePhotoOutput"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "URL",
+                            "printedName": "Foundation.URL",
+                            "usr": "s:10Foundation3URLV"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "AVCaptureResolvedPhotoSettings",
+                            "printedName": "AVFoundation.AVCaptureResolvedPhotoSettings",
+                            "usr": "c:objc(cs)AVCaptureResolvedPhotoSettings"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Never",
+                        "printedName": "Swift.Never",
+                        "usr": "s:s5NeverO"
+                      }
+                    ],
+                    "usr": "s:7Combine18PassthroughSubjectC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20KiriAdvanceCameraKit34AVCapturePhotoCaptureProxyDelegateC033photoOutputDidFinishRecordingLiveF12MovieSubject7Combine011PassthroughQ0CySo0efK0C6output_10Foundation3URLV0t4FileV0So0e8ResolvedF8SettingsC08resolvedY0ts5NeverOGvg",
+                "mangledName": "$s20KiriAdvanceCameraKit34AVCapturePhotoCaptureProxyDelegateC033photoOutputDidFinishRecordingLiveF12MovieSubject7Combine011PassthroughQ0CySo0efK0C6output_10Foundation3URLV0t4FileV0So0e8ResolvedF8SettingsC08resolvedY0ts5NeverOGvg",
+                "moduleName": "KiriAdvanceCameraKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "photoOutputDidFinishProcessingLivePhotoSubject",
+            "printedName": "photoOutputDidFinishProcessingLivePhotoSubject",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PassthroughSubject",
+                "printedName": "Combine.PassthroughSubject<(output: AVFoundation.AVCapturePhotoOutput, outputFileURL: Foundation.URL, duration: CoreMedia.CMTime, photoDisplayTime: CoreMedia.CMTime, resolvedSettings: AVFoundation.AVCaptureResolvedPhotoSettings, error: Swift.Error?), Swift.Never>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(output: AVFoundation.AVCapturePhotoOutput, outputFileURL: Foundation.URL, duration: CoreMedia.CMTime, photoDisplayTime: CoreMedia.CMTime, resolvedSettings: AVFoundation.AVCaptureResolvedPhotoSettings, error: Swift.Error?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AVCapturePhotoOutput",
+                        "printedName": "AVFoundation.AVCapturePhotoOutput",
+                        "usr": "c:objc(cs)AVCapturePhotoOutput"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URL",
+                        "printedName": "Foundation.URL",
+                        "usr": "s:10Foundation3URLV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CMTime",
+                        "printedName": "CoreMedia.CMTime",
+                        "usr": "c:@SA@CMTime"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CMTime",
+                        "printedName": "CoreMedia.CMTime",
+                        "usr": "c:@SA@CMTime"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AVCaptureResolvedPhotoSettings",
+                        "printedName": "AVFoundation.AVCaptureResolvedPhotoSettings",
+                        "usr": "c:objc(cs)AVCaptureResolvedPhotoSettings"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Error?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ],
+                "usr": "s:7Combine18PassthroughSubjectC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20KiriAdvanceCameraKit34AVCapturePhotoCaptureProxyDelegateC034photoOutputDidFinishProcessingLiveF7Subject7Combine011PassthroughP0CySo0efK0C6output_10Foundation3URLV0s4FileU0So6CMTimea8durationAP0J11DisplayTimeSo0e8ResolvedF8SettingsC16resolvedSettingss5Error_pSg5errorts5NeverOGvp",
+            "mangledName": "$s20KiriAdvanceCameraKit34AVCapturePhotoCaptureProxyDelegateC034photoOutputDidFinishProcessingLiveF7Subject7Combine011PassthroughP0CySo0efK0C6output_10Foundation3URLV0s4FileU0So6CMTimea8durationAP0J11DisplayTimeSo0e8ResolvedF8SettingsC16resolvedSettingss5Error_pSg5errorts5NeverOGvp",
+            "moduleName": "KiriAdvanceCameraKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PassthroughSubject",
+                    "printedName": "Combine.PassthroughSubject<(output: AVFoundation.AVCapturePhotoOutput, outputFileURL: Foundation.URL, duration: CoreMedia.CMTime, photoDisplayTime: CoreMedia.CMTime, resolvedSettings: AVFoundation.AVCaptureResolvedPhotoSettings, error: Swift.Error?), Swift.Never>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(output: AVFoundation.AVCapturePhotoOutput, outputFileURL: Foundation.URL, duration: CoreMedia.CMTime, photoDisplayTime: CoreMedia.CMTime, resolvedSettings: AVFoundation.AVCaptureResolvedPhotoSettings, error: Swift.Error?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "AVCapturePhotoOutput",
+                            "printedName": "AVFoundation.AVCapturePhotoOutput",
+                            "usr": "c:objc(cs)AVCapturePhotoOutput"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "URL",
+                            "printedName": "Foundation.URL",
+                            "usr": "s:10Foundation3URLV"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CMTime",
+                            "printedName": "CoreMedia.CMTime",
+                            "usr": "c:@SA@CMTime"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CMTime",
+                            "printedName": "CoreMedia.CMTime",
+                            "usr": "c:@SA@CMTime"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "AVCaptureResolvedPhotoSettings",
+                            "printedName": "AVFoundation.AVCaptureResolvedPhotoSettings",
+                            "usr": "c:objc(cs)AVCaptureResolvedPhotoSettings"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.Error?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Error",
+                                "printedName": "Swift.Error",
+                                "usr": "s:s5ErrorP"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Never",
+                        "printedName": "Swift.Never",
+                        "usr": "s:s5NeverO"
+                      }
+                    ],
+                    "usr": "s:7Combine18PassthroughSubjectC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20KiriAdvanceCameraKit34AVCapturePhotoCaptureProxyDelegateC034photoOutputDidFinishProcessingLiveF7Subject7Combine011PassthroughP0CySo0efK0C6output_10Foundation3URLV0s4FileU0So6CMTimea8durationAP0J11DisplayTimeSo0e8ResolvedF8SettingsC16resolvedSettingss5Error_pSg5errorts5NeverOGvg",
+                "mangledName": "$s20KiriAdvanceCameraKit34AVCapturePhotoCaptureProxyDelegateC034photoOutputDidFinishProcessingLiveF7Subject7Combine011PassthroughP0CySo0efK0C6output_10Foundation3URLV0s4FileU0So6CMTimea8durationAP0J11DisplayTimeSo0e8ResolvedF8SettingsC16resolvedSettingss5Error_pSg5errorts5NeverOGvg",
+                "moduleName": "KiriAdvanceCameraKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "photoOutputDidFinishCaptureSubject",
+            "printedName": "photoOutputDidFinishCaptureSubject",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PassthroughSubject",
+                "printedName": "Combine.PassthroughSubject<(output: AVFoundation.AVCapturePhotoOutput, resolvedSettings: AVFoundation.AVCaptureResolvedPhotoSettings, error: Swift.Error?), Swift.Never>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(output: AVFoundation.AVCapturePhotoOutput, resolvedSettings: AVFoundation.AVCaptureResolvedPhotoSettings, error: Swift.Error?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AVCapturePhotoOutput",
+                        "printedName": "AVFoundation.AVCapturePhotoOutput",
+                        "usr": "c:objc(cs)AVCapturePhotoOutput"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AVCaptureResolvedPhotoSettings",
+                        "printedName": "AVFoundation.AVCaptureResolvedPhotoSettings",
+                        "usr": "c:objc(cs)AVCaptureResolvedPhotoSettings"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Error?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ],
+                "usr": "s:7Combine18PassthroughSubjectC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20KiriAdvanceCameraKit34AVCapturePhotoCaptureProxyDelegateC020photoOutputDidFinishG7Subject7Combine011PassthroughN0CySo0efK0C6output_So0e8ResolvedF8SettingsC08resolvedS0s5Error_pSg5errorts5NeverOGvp",
+            "mangledName": "$s20KiriAdvanceCameraKit34AVCapturePhotoCaptureProxyDelegateC020photoOutputDidFinishG7Subject7Combine011PassthroughN0CySo0efK0C6output_So0e8ResolvedF8SettingsC08resolvedS0s5Error_pSg5errorts5NeverOGvp",
+            "moduleName": "KiriAdvanceCameraKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PassthroughSubject",
+                    "printedName": "Combine.PassthroughSubject<(output: AVFoundation.AVCapturePhotoOutput, resolvedSettings: AVFoundation.AVCaptureResolvedPhotoSettings, error: Swift.Error?), Swift.Never>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(output: AVFoundation.AVCapturePhotoOutput, resolvedSettings: AVFoundation.AVCaptureResolvedPhotoSettings, error: Swift.Error?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "AVCapturePhotoOutput",
+                            "printedName": "AVFoundation.AVCapturePhotoOutput",
+                            "usr": "c:objc(cs)AVCapturePhotoOutput"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "AVCaptureResolvedPhotoSettings",
+                            "printedName": "AVFoundation.AVCaptureResolvedPhotoSettings",
+                            "usr": "c:objc(cs)AVCaptureResolvedPhotoSettings"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.Error?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Error",
+                                "printedName": "Swift.Error",
+                                "usr": "s:s5ErrorP"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Never",
+                        "printedName": "Swift.Never",
+                        "usr": "s:s5NeverO"
+                      }
+                    ],
+                    "usr": "s:7Combine18PassthroughSubjectC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20KiriAdvanceCameraKit34AVCapturePhotoCaptureProxyDelegateC020photoOutputDidFinishG7Subject7Combine011PassthroughN0CySo0efK0C6output_So0e8ResolvedF8SettingsC08resolvedS0s5Error_pSg5errorts5NeverOGvg",
+                "mangledName": "$s20KiriAdvanceCameraKit34AVCapturePhotoCaptureProxyDelegateC020photoOutputDidFinishG7Subject7Combine011PassthroughN0CySo0efK0C6output_So0e8ResolvedF8SettingsC08resolvedS0s5Error_pSg5errorts5NeverOGvg",
+                "moduleName": "KiriAdvanceCameraKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "photoOutput",
+            "printedName": "photoOutput(_:willBeginCaptureFor:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVCapturePhotoOutput",
+                "printedName": "AVFoundation.AVCapturePhotoOutput",
+                "usr": "c:objc(cs)AVCapturePhotoOutput"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVCaptureResolvedPhotoSettings",
+                "printedName": "AVFoundation.AVCaptureResolvedPhotoSettings",
+                "usr": "c:objc(cs)AVCaptureResolvedPhotoSettings"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KiriAdvanceCameraKit@objc(cs)AVCapturePhotoCaptureProxyDelegate(im)captureOutput:willBeginCaptureForResolvedSettings:",
+            "mangledName": "$s20KiriAdvanceCameraKit34AVCapturePhotoCaptureProxyDelegateC11photoOutput_09willBeginG3ForySo0efK0C_So0e8ResolvedF8SettingsCtF",
+            "moduleName": "KiriAdvanceCameraKit",
+            "objc_name": "captureOutput:willBeginCaptureForResolvedSettings:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "photoOutput",
+            "printedName": "photoOutput(_:willCapturePhotoFor:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVCapturePhotoOutput",
+                "printedName": "AVFoundation.AVCapturePhotoOutput",
+                "usr": "c:objc(cs)AVCapturePhotoOutput"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVCaptureResolvedPhotoSettings",
+                "printedName": "AVFoundation.AVCaptureResolvedPhotoSettings",
+                "usr": "c:objc(cs)AVCaptureResolvedPhotoSettings"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KiriAdvanceCameraKit@objc(cs)AVCapturePhotoCaptureProxyDelegate(im)captureOutput:willCapturePhotoForResolvedSettings:",
+            "mangledName": "$s20KiriAdvanceCameraKit34AVCapturePhotoCaptureProxyDelegateC11photoOutput_04willgF3ForySo0efK0C_So0e8ResolvedF8SettingsCtF",
+            "moduleName": "KiriAdvanceCameraKit",
+            "objc_name": "captureOutput:willCapturePhotoForResolvedSettings:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "photoOutput",
+            "printedName": "photoOutput(_:didCapturePhotoFor:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVCapturePhotoOutput",
+                "printedName": "AVFoundation.AVCapturePhotoOutput",
+                "usr": "c:objc(cs)AVCapturePhotoOutput"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVCaptureResolvedPhotoSettings",
+                "printedName": "AVFoundation.AVCaptureResolvedPhotoSettings",
+                "usr": "c:objc(cs)AVCaptureResolvedPhotoSettings"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KiriAdvanceCameraKit@objc(cs)AVCapturePhotoCaptureProxyDelegate(im)captureOutput:didCapturePhotoForResolvedSettings:",
+            "mangledName": "$s20KiriAdvanceCameraKit34AVCapturePhotoCaptureProxyDelegateC11photoOutput_03didgF3ForySo0efK0C_So0e8ResolvedF8SettingsCtF",
+            "moduleName": "KiriAdvanceCameraKit",
+            "objc_name": "captureOutput:didCapturePhotoForResolvedSettings:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "photoOutput",
+            "printedName": "photoOutput(_:didFinishProcessingPhoto:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVCapturePhotoOutput",
+                "printedName": "AVFoundation.AVCapturePhotoOutput",
+                "usr": "c:objc(cs)AVCapturePhotoOutput"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVCapturePhoto",
+                "printedName": "AVFoundation.AVCapturePhoto",
+                "usr": "c:objc(cs)AVCapturePhoto"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Error?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KiriAdvanceCameraKit@objc(cs)AVCapturePhotoCaptureProxyDelegate(im)captureOutput:didFinishProcessingPhoto:error:",
+            "mangledName": "$s20KiriAdvanceCameraKit34AVCapturePhotoCaptureProxyDelegateC11photoOutput_019didFinishProcessingF05errorySo0efK0C_So0eF0Cs5Error_pSgtF",
+            "moduleName": "KiriAdvanceCameraKit",
+            "objc_name": "captureOutput:didFinishProcessingPhoto:error:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "photoOutput",
+            "printedName": "photoOutput(_:didFinishRecordingLivePhotoMovieForEventualFileAt:resolvedSettings:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVCapturePhotoOutput",
+                "printedName": "AVFoundation.AVCapturePhotoOutput",
+                "usr": "c:objc(cs)AVCapturePhotoOutput"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVCaptureResolvedPhotoSettings",
+                "printedName": "AVFoundation.AVCaptureResolvedPhotoSettings",
+                "usr": "c:objc(cs)AVCaptureResolvedPhotoSettings"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KiriAdvanceCameraKit@objc(cs)AVCapturePhotoCaptureProxyDelegate(im)captureOutput:didFinishRecordingLivePhotoMovieForEventualFileAtURL:resolvedSettings:",
+            "mangledName": "$s20KiriAdvanceCameraKit34AVCapturePhotoCaptureProxyDelegateC11photoOutput_022didFinishRecordingLiveF22MovieForEventualFileAt16resolvedSettingsySo0efK0C_10Foundation3URLVSo0e8ResolvedfV0CtF",
+            "moduleName": "KiriAdvanceCameraKit",
+            "objc_name": "captureOutput:didFinishRecordingLivePhotoMovieForEventualFileAtURL:resolvedSettings:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "photoOutput",
+            "printedName": "photoOutput(_:didFinishProcessingLivePhotoToMovieFileAt:duration:photoDisplayTime:resolvedSettings:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVCapturePhotoOutput",
+                "printedName": "AVFoundation.AVCapturePhotoOutput",
+                "usr": "c:objc(cs)AVCapturePhotoOutput"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CMTime",
+                "printedName": "CoreMedia.CMTime",
+                "usr": "c:@SA@CMTime"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CMTime",
+                "printedName": "CoreMedia.CMTime",
+                "usr": "c:@SA@CMTime"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVCaptureResolvedPhotoSettings",
+                "printedName": "AVFoundation.AVCaptureResolvedPhotoSettings",
+                "usr": "c:objc(cs)AVCaptureResolvedPhotoSettings"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Error?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KiriAdvanceCameraKit@objc(cs)AVCapturePhotoCaptureProxyDelegate(im)captureOutput:didFinishProcessingLivePhotoToMovieFileAtURL:duration:photoDisplayTime:resolvedSettings:error:",
+            "mangledName": "$s20KiriAdvanceCameraKit34AVCapturePhotoCaptureProxyDelegateC11photoOutput_023didFinishProcessingLiveF13ToMovieFileAt8duration0J11DisplayTime16resolvedSettings5errorySo0efK0C_10Foundation3URLVSo6CMTimeaAPSo0e8ResolvedfX0Cs5Error_pSgtF",
+            "moduleName": "KiriAdvanceCameraKit",
+            "objc_name": "captureOutput:didFinishProcessingLivePhotoToMovieFileAtURL:duration:photoDisplayTime:resolvedSettings:error:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "photoOutput",
+            "printedName": "photoOutput(_:didFinishCaptureFor:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVCapturePhotoOutput",
+                "printedName": "AVFoundation.AVCapturePhotoOutput",
+                "usr": "c:objc(cs)AVCapturePhotoOutput"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVCaptureResolvedPhotoSettings",
+                "printedName": "AVFoundation.AVCaptureResolvedPhotoSettings",
+                "usr": "c:objc(cs)AVCaptureResolvedPhotoSettings"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Error?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KiriAdvanceCameraKit@objc(cs)AVCapturePhotoCaptureProxyDelegate(im)captureOutput:didFinishCaptureForResolvedSettings:error:",
+            "mangledName": "$s20KiriAdvanceCameraKit34AVCapturePhotoCaptureProxyDelegateC11photoOutput_09didFinishG3For5errorySo0efK0C_So0e8ResolvedF8SettingsCs5Error_pSgtF",
+            "moduleName": "KiriAdvanceCameraKit",
+            "objc_name": "captureOutput:didFinishCaptureForResolvedSettings:error:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AVCapturePhotoCaptureProxyDelegate",
+                "printedName": "KiriAdvanceCameraKit.AVCapturePhotoCaptureProxyDelegate",
+                "usr": "c:@M@KiriAdvanceCameraKit@objc(cs)AVCapturePhotoCaptureProxyDelegate"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@KiriAdvanceCameraKit@objc(cs)AVCapturePhotoCaptureProxyDelegate(im)init",
+            "mangledName": "$s20KiriAdvanceCameraKit34AVCapturePhotoCaptureProxyDelegateCACycfc",
+            "moduleName": "KiriAdvanceCameraKit",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@KiriAdvanceCameraKit@objc(cs)AVCapturePhotoCaptureProxyDelegate",
+        "mangledName": "$s20KiriAdvanceCameraKit34AVCapturePhotoCaptureProxyDelegateC",
+        "moduleName": "KiriAdvanceCameraKit",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "KiriAdvanceCameraKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVKit",
+        "printedName": "AVKit",
+        "declKind": "Import",
+        "moduleName": "KiriAdvanceCameraKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "KiriAdvanceCameraKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CameraView",
+        "printedName": "CameraView",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "captureModel",
+            "printedName": "captureModel",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20KiriAdvanceCameraKit0C4ViewC12captureModelxvp",
+            "mangledName": "$s20KiriAdvanceCameraKit0C4ViewC12captureModelxvp",
+            "moduleName": "KiriAdvanceCameraKit",
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20KiriAdvanceCameraKit0C4ViewC12captureModelxvg",
+                "mangledName": "$s20KiriAdvanceCameraKit0C4ViewC12captureModelxvg",
+                "moduleName": "KiriAdvanceCameraKit",
+                "genericSig": "<τ_0_0 where τ_0_0 : KiriAdvanceCameraKit.ImageCaptureModel>",
+                "sugared_genericSig": "<CaptureModel where CaptureModel : KiriAdvanceCameraKit.ImageCaptureModel>",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(frame:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CameraView",
+                "printedName": "KiriAdvanceCameraKit.CameraView<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:20KiriAdvanceCameraKit0C4ViewC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:20KiriAdvanceCameraKit0C4ViewC5frameACyxGSo6CGRectV_tcfc",
+            "mangledName": "$s20KiriAdvanceCameraKit0C4ViewC5frameACyxGSo6CGRectV_tcfc",
+            "moduleName": "KiriAdvanceCameraKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : KiriAdvanceCameraKit.ImageCaptureModel>",
+            "sugared_genericSig": "<CaptureModel where CaptureModel : KiriAdvanceCameraKit.ImageCaptureModel>",
+            "overriding": true,
+            "objc_name": "initWithFrame:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl",
+              "Required"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(coder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "KiriAdvanceCameraKit.CameraView<τ_0_0>?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CameraView",
+                    "printedName": "KiriAdvanceCameraKit.CameraView<τ_0_0>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:20KiriAdvanceCameraKit0C4ViewC"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSCoder",
+                "printedName": "Foundation.NSCoder",
+                "usr": "c:objc(cs)NSCoder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:20KiriAdvanceCameraKit0C4ViewC5coderACyxGSgSo7NSCoderC_tcfc",
+            "mangledName": "$s20KiriAdvanceCameraKit0C4ViewC5coderACyxGSgSo7NSCoderC_tcfc",
+            "moduleName": "KiriAdvanceCameraKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : KiriAdvanceCameraKit.ImageCaptureModel>",
+            "sugared_genericSig": "<CaptureModel where CaptureModel : KiriAdvanceCameraKit.ImageCaptureModel>",
+            "overriding": true,
+            "objc_name": "initWithCoder:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl",
+              "Required"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "setPhotoFolderPath",
+            "printedName": "setPhotoFolderPath(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20KiriAdvanceCameraKit0C4ViewC18setPhotoFolderPathyySSF",
+            "mangledName": "$s20KiriAdvanceCameraKit0C4ViewC18setPhotoFolderPathyySSF",
+            "moduleName": "KiriAdvanceCameraKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : KiriAdvanceCameraKit.ImageCaptureModel>",
+            "sugared_genericSig": "<CaptureModel where CaptureModel : KiriAdvanceCameraKit.ImageCaptureModel>",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startPreview",
+            "printedName": "startPreview(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<AVFoundation.AVAuthorizationStatus, Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<AVFoundation.AVAuthorizationStatus, Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AVAuthorizationStatus",
+                        "printedName": "AVFoundation.AVAuthorizationStatus",
+                        "usr": "c:@E@AVAuthorizationStatus"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20KiriAdvanceCameraKit0C4ViewC12startPreview10completionyys6ResultOySo21AVAuthorizationStatusVs5Error_pGc_tF",
+            "mangledName": "$s20KiriAdvanceCameraKit0C4ViewC12startPreview10completionyys6ResultOySo21AVAuthorizationStatusVs5Error_pGc_tF",
+            "moduleName": "KiriAdvanceCameraKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : KiriAdvanceCameraKit.ImageCaptureModel>",
+            "sugared_genericSig": "<CaptureModel where CaptureModel : KiriAdvanceCameraKit.ImageCaptureModel>",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "takePhoto",
+            "printedName": "takePhoto()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20KiriAdvanceCameraKit0C4ViewC9takePhotoyyF",
+            "mangledName": "$s20KiriAdvanceCameraKit0C4ViewC9takePhotoyyF",
+            "moduleName": "KiriAdvanceCameraKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : KiriAdvanceCameraKit.ImageCaptureModel>",
+            "sugared_genericSig": "<CaptureModel where CaptureModel : KiriAdvanceCameraKit.ImageCaptureModel>",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:20KiriAdvanceCameraKit0C4ViewC",
+        "mangledName": "$s20KiriAdvanceCameraKit0C4ViewC",
+        "moduleName": "KiriAdvanceCameraKit",
+        "genericSig": "<τ_0_0 where τ_0_0 : KiriAdvanceCameraKit.ImageCaptureModel>",
+        "sugared_genericSig": "<CaptureModel where CaptureModel : KiriAdvanceCameraKit.ImageCaptureModel>",
+        "isOpen": true,
+        "declAttributes": [
+          "Custom",
+          "AccessControl"
+        ],
+        "superclassUsr": "c:@M@KiriAdvanceCameraKit@objc(cs)CaptureView",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "KiriAdvanceCameraKit.CaptureView",
+          "UIKit.UIView",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "__DefaultCustomPlaygroundQuickLookable",
+            "printedName": "__DefaultCustomPlaygroundQuickLookable",
+            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "KiriAdvanceCameraKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "KiriAdvanceCameraKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KiriAdvanceCameraKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "EnvType",
+        "printedName": "EnvType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "test",
+            "printedName": "test",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KiriAdvanceCameraKit.EnvType.Type) -> KiriAdvanceCameraKit.EnvType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EnvType",
+                    "printedName": "KiriAdvanceCameraKit.EnvType",
+                    "usr": "s:20KiriAdvanceCameraKit7EnvTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KiriAdvanceCameraKit.EnvType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EnvType",
+                        "printedName": "KiriAdvanceCameraKit.EnvType",
+                        "usr": "s:20KiriAdvanceCameraKit7EnvTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:20KiriAdvanceCameraKit7EnvTypeO4testyA2CmF",
+            "mangledName": "$s20KiriAdvanceCameraKit7EnvTypeO4testyA2CmF",
+            "moduleName": "KiriAdvanceCameraKit"
+          },
+          {
+            "kind": "Var",
+            "name": "product",
+            "printedName": "product",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KiriAdvanceCameraKit.EnvType.Type) -> KiriAdvanceCameraKit.EnvType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EnvType",
+                    "printedName": "KiriAdvanceCameraKit.EnvType",
+                    "usr": "s:20KiriAdvanceCameraKit7EnvTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KiriAdvanceCameraKit.EnvType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EnvType",
+                        "printedName": "KiriAdvanceCameraKit.EnvType",
+                        "usr": "s:20KiriAdvanceCameraKit7EnvTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:20KiriAdvanceCameraKit7EnvTypeO7productyA2CmF",
+            "mangledName": "$s20KiriAdvanceCameraKit7EnvTypeO7productyA2CmF",
+            "moduleName": "KiriAdvanceCameraKit"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "EnvType",
+                "printedName": "KiriAdvanceCameraKit.EnvType",
+                "usr": "s:20KiriAdvanceCameraKit7EnvTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "EnvType",
+                "printedName": "KiriAdvanceCameraKit.EnvType",
+                "usr": "s:20KiriAdvanceCameraKit7EnvTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20KiriAdvanceCameraKit7EnvTypeO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s20KiriAdvanceCameraKit7EnvTypeO2eeoiySbAC_ACtFZ",
+            "moduleName": "KiriAdvanceCameraKit",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20KiriAdvanceCameraKit7EnvTypeO9hashValueSivp",
+            "mangledName": "$s20KiriAdvanceCameraKit7EnvTypeO9hashValueSivp",
+            "moduleName": "KiriAdvanceCameraKit",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20KiriAdvanceCameraKit7EnvTypeO9hashValueSivg",
+                "mangledName": "$s20KiriAdvanceCameraKit7EnvTypeO9hashValueSivg",
+                "moduleName": "KiriAdvanceCameraKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20KiriAdvanceCameraKit7EnvTypeO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s20KiriAdvanceCameraKit7EnvTypeO4hash4intoys6HasherVz_tF",
+            "moduleName": "KiriAdvanceCameraKit",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:20KiriAdvanceCameraKit7EnvTypeO",
+        "mangledName": "$s20KiriAdvanceCameraKit7EnvTypeO",
+        "moduleName": "KiriAdvanceCameraKit",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CameraErrorType",
+        "printedName": "CameraErrorType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "accountNotExist",
+            "printedName": "accountNotExist",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KiriAdvanceCameraKit.CameraErrorType.Type) -> KiriAdvanceCameraKit.CameraErrorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CameraErrorType",
+                    "printedName": "KiriAdvanceCameraKit.CameraErrorType",
+                    "usr": "s:20KiriAdvanceCameraKit0C9ErrorTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KiriAdvanceCameraKit.CameraErrorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CameraErrorType",
+                        "printedName": "KiriAdvanceCameraKit.CameraErrorType",
+                        "usr": "s:20KiriAdvanceCameraKit0C9ErrorTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:20KiriAdvanceCameraKit0C9ErrorTypeO15accountNotExistyA2CmF",
+            "mangledName": "$s20KiriAdvanceCameraKit0C9ErrorTypeO15accountNotExistyA2CmF",
+            "moduleName": "KiriAdvanceCameraKit",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "authentication",
+            "printedName": "authentication",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KiriAdvanceCameraKit.CameraErrorType.Type) -> KiriAdvanceCameraKit.CameraErrorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CameraErrorType",
+                    "printedName": "KiriAdvanceCameraKit.CameraErrorType",
+                    "usr": "s:20KiriAdvanceCameraKit0C9ErrorTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KiriAdvanceCameraKit.CameraErrorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CameraErrorType",
+                        "printedName": "KiriAdvanceCameraKit.CameraErrorType",
+                        "usr": "s:20KiriAdvanceCameraKit0C9ErrorTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:20KiriAdvanceCameraKit0C9ErrorTypeO14authenticationyA2CmF",
+            "mangledName": "$s20KiriAdvanceCameraKit0C9ErrorTypeO14authenticationyA2CmF",
+            "moduleName": "KiriAdvanceCameraKit",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "exhausted",
+            "printedName": "exhausted",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KiriAdvanceCameraKit.CameraErrorType.Type) -> KiriAdvanceCameraKit.CameraErrorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CameraErrorType",
+                    "printedName": "KiriAdvanceCameraKit.CameraErrorType",
+                    "usr": "s:20KiriAdvanceCameraKit0C9ErrorTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KiriAdvanceCameraKit.CameraErrorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CameraErrorType",
+                        "printedName": "KiriAdvanceCameraKit.CameraErrorType",
+                        "usr": "s:20KiriAdvanceCameraKit0C9ErrorTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:20KiriAdvanceCameraKit0C9ErrorTypeO9exhaustedyA2CmF",
+            "mangledName": "$s20KiriAdvanceCameraKit0C9ErrorTypeO9exhaustedyA2CmF",
+            "moduleName": "KiriAdvanceCameraKit",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "SDK",
+            "printedName": "SDK",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KiriAdvanceCameraKit.CameraErrorType.Type) -> KiriAdvanceCameraKit.CameraErrorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CameraErrorType",
+                    "printedName": "KiriAdvanceCameraKit.CameraErrorType",
+                    "usr": "s:20KiriAdvanceCameraKit0C9ErrorTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KiriAdvanceCameraKit.CameraErrorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CameraErrorType",
+                        "printedName": "KiriAdvanceCameraKit.CameraErrorType",
+                        "usr": "s:20KiriAdvanceCameraKit0C9ErrorTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:20KiriAdvanceCameraKit0C9ErrorTypeO3SDKyA2CmF",
+            "mangledName": "$s20KiriAdvanceCameraKit0C9ErrorTypeO3SDKyA2CmF",
+            "moduleName": "KiriAdvanceCameraKit",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "uninitialized",
+            "printedName": "uninitialized",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KiriAdvanceCameraKit.CameraErrorType.Type) -> KiriAdvanceCameraKit.CameraErrorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CameraErrorType",
+                    "printedName": "KiriAdvanceCameraKit.CameraErrorType",
+                    "usr": "s:20KiriAdvanceCameraKit0C9ErrorTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KiriAdvanceCameraKit.CameraErrorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CameraErrorType",
+                        "printedName": "KiriAdvanceCameraKit.CameraErrorType",
+                        "usr": "s:20KiriAdvanceCameraKit0C9ErrorTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:20KiriAdvanceCameraKit0C9ErrorTypeO13uninitializedyA2CmF",
+            "mangledName": "$s20KiriAdvanceCameraKit0C9ErrorTypeO13uninitializedyA2CmF",
+            "moduleName": "KiriAdvanceCameraKit",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CameraErrorType",
+                "printedName": "KiriAdvanceCameraKit.CameraErrorType",
+                "usr": "s:20KiriAdvanceCameraKit0C9ErrorTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CameraErrorType",
+                "printedName": "KiriAdvanceCameraKit.CameraErrorType",
+                "usr": "s:20KiriAdvanceCameraKit0C9ErrorTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20KiriAdvanceCameraKit0C9ErrorTypeO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s20KiriAdvanceCameraKit0C9ErrorTypeO2eeoiySbAC_ACtFZ",
+            "moduleName": "KiriAdvanceCameraKit",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20KiriAdvanceCameraKit0C9ErrorTypeO9hashValueSivp",
+            "mangledName": "$s20KiriAdvanceCameraKit0C9ErrorTypeO9hashValueSivp",
+            "moduleName": "KiriAdvanceCameraKit",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20KiriAdvanceCameraKit0C9ErrorTypeO9hashValueSivg",
+                "mangledName": "$s20KiriAdvanceCameraKit0C9ErrorTypeO9hashValueSivg",
+                "moduleName": "KiriAdvanceCameraKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20KiriAdvanceCameraKit0C9ErrorTypeO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s20KiriAdvanceCameraKit0C9ErrorTypeO4hash4intoys6HasherVz_tF",
+            "moduleName": "KiriAdvanceCameraKit",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:20KiriAdvanceCameraKit0C9ErrorTypeO",
+        "mangledName": "$s20KiriAdvanceCameraKit0C9ErrorTypeO",
+        "moduleName": "KiriAdvanceCameraKit",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CameraKit",
+        "printedName": "CameraKit",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "share",
+            "printedName": "share",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CameraKit",
+                "printedName": "KiriAdvanceCameraKit.CameraKit",
+                "usr": "s:20KiriAdvanceCameraKit0cD0C"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20KiriAdvanceCameraKit0cD0C5shareACvpZ",
+            "mangledName": "$s20KiriAdvanceCameraKit0cD0C5shareACvpZ",
+            "moduleName": "KiriAdvanceCameraKit",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CameraKit",
+                    "printedName": "KiriAdvanceCameraKit.CameraKit",
+                    "usr": "s:20KiriAdvanceCameraKit0cD0C"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20KiriAdvanceCameraKit0cD0C5shareACvgZ",
+                "mangledName": "$s20KiriAdvanceCameraKit0cD0C5shareACvgZ",
+                "moduleName": "KiriAdvanceCameraKit",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "setup",
+            "printedName": "setup(envType:account:password:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "EnvType",
+                "printedName": "KiriAdvanceCameraKit.EnvType",
+                "usr": "s:20KiriAdvanceCameraKit7EnvTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<(), Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<(), Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20KiriAdvanceCameraKit0cD0C5setup7envType7account8password10completionyAA03EnvG0O_S2Sys6ResultOyyts5Error_pGctF",
+            "mangledName": "$s20KiriAdvanceCameraKit0cD0C5setup7envType7account8password10completionyAA03EnvG0O_S2Sys6ResultOyyts5Error_pGctF",
+            "moduleName": "KiriAdvanceCameraKit",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:20KiriAdvanceCameraKit0cD0C",
+        "mangledName": "$s20KiriAdvanceCameraKit0cD0C",
+        "moduleName": "KiriAdvanceCameraKit",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KiriAdvanceCameraKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KiriAdvanceCameraKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "KiriAdvanceCameraKit"
+      },
+      {
+        "kind": "Import",
+        "name": "AVKit",
+        "printedName": "AVKit",
+        "declKind": "Import",
+        "moduleName": "KiriAdvanceCameraKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AdvanceImageCaptureModel",
+        "printedName": "AdvanceImageCaptureModel",
+        "children": [
+          {
+            "kind": "TypeDecl",
+            "name": "ValueType",
+            "printedName": "ValueType",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "value",
+                "printedName": "value",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "GenericFunction",
+                    "printedName": "<τ_0_0 where τ_0_0 : Swift.Equatable> (KiriAdvanceCameraKit.AdvanceImageCaptureModel.ValueType<τ_0_0>.Type) -> (τ_0_0) -> KiriAdvanceCameraKit.AdvanceImageCaptureModel.ValueType<τ_0_0>",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(τ_0_0) -> KiriAdvanceCameraKit.AdvanceImageCaptureModel.ValueType<τ_0_0>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ValueType",
+                            "printedName": "KiriAdvanceCameraKit.AdvanceImageCaptureModel.ValueType<τ_0_0>",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "GenericTypeParam",
+                                "printedName": "τ_0_0"
+                              }
+                            ],
+                            "usr": "s:20KiriAdvanceCameraKit0B17ImageCaptureModelC9ValueTypeO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "KiriAdvanceCameraKit.AdvanceImageCaptureModel.ValueType<τ_0_0>.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ValueType",
+                            "printedName": "KiriAdvanceCameraKit.AdvanceImageCaptureModel.ValueType<τ_0_0>",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "GenericTypeParam",
+                                "printedName": "τ_0_0"
+                              }
+                            ],
+                            "usr": "s:20KiriAdvanceCameraKit0B17ImageCaptureModelC9ValueTypeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:20KiriAdvanceCameraKit0B17ImageCaptureModelC9ValueTypeO5valueyAEy_xGxcAGmSQRzlF",
+                "mangledName": "$s20KiriAdvanceCameraKit0B17ImageCaptureModelC9ValueTypeO5valueyAEy_xGxcAGmSQRzlF",
+                "moduleName": "KiriAdvanceCameraKit"
+              },
+              {
+                "kind": "Var",
+                "name": "auto",
+                "printedName": "auto",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "GenericFunction",
+                    "printedName": "<τ_0_0 where τ_0_0 : Swift.Equatable> (KiriAdvanceCameraKit.AdvanceImageCaptureModel.ValueType<τ_0_0>.Type) -> KiriAdvanceCameraKit.AdvanceImageCaptureModel.ValueType<τ_0_0>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ValueType",
+                        "printedName": "KiriAdvanceCameraKit.AdvanceImageCaptureModel.ValueType<τ_0_0>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          }
+                        ],
+                        "usr": "s:20KiriAdvanceCameraKit0B17ImageCaptureModelC9ValueTypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "KiriAdvanceCameraKit.AdvanceImageCaptureModel.ValueType<τ_0_0>.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ValueType",
+                            "printedName": "KiriAdvanceCameraKit.AdvanceImageCaptureModel.ValueType<τ_0_0>",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "GenericTypeParam",
+                                "printedName": "τ_0_0"
+                              }
+                            ],
+                            "usr": "s:20KiriAdvanceCameraKit0B17ImageCaptureModelC9ValueTypeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:20KiriAdvanceCameraKit0B17ImageCaptureModelC9ValueTypeO4autoyAEy_xGAGmSQRzlF",
+                "mangledName": "$s20KiriAdvanceCameraKit0B17ImageCaptureModelC9ValueTypeO4autoyAEy_xGAGmSQRzlF",
+                "moduleName": "KiriAdvanceCameraKit"
+              },
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ValueType",
+                    "printedName": "KiriAdvanceCameraKit.AdvanceImageCaptureModel.ValueType<τ_0_0>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:20KiriAdvanceCameraKit0B17ImageCaptureModelC9ValueTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ValueType",
+                    "printedName": "KiriAdvanceCameraKit.AdvanceImageCaptureModel.ValueType<τ_0_0>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:20KiriAdvanceCameraKit0B17ImageCaptureModelC9ValueTypeO"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:20KiriAdvanceCameraKit0B17ImageCaptureModelC9ValueTypeO2eeoiySbAEy_xG_AGtFZ",
+                "mangledName": "$s20KiriAdvanceCameraKit0B17ImageCaptureModelC9ValueTypeO2eeoiySbAEy_xG_AGtFZ",
+                "moduleName": "KiriAdvanceCameraKit",
+                "genericSig": "<τ_0_0 where τ_0_0 : Swift.Equatable>",
+                "sugared_genericSig": "<T where T : Swift.Equatable>",
+                "static": true,
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:20KiriAdvanceCameraKit0B17ImageCaptureModelC9ValueTypeO",
+            "mangledName": "$s20KiriAdvanceCameraKit0B17ImageCaptureModelC9ValueTypeO",
+            "moduleName": "KiriAdvanceCameraKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.Equatable>",
+            "sugared_genericSig": "<T where T : Swift.Equatable>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isOpenAdvance",
+            "printedName": "isOpenAdvance",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20KiriAdvanceCameraKit0B17ImageCaptureModelC06isOpenB0Sbvp",
+            "mangledName": "$s20KiriAdvanceCameraKit0B17ImageCaptureModelC06isOpenB0Sbvp",
+            "moduleName": "KiriAdvanceCameraKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20KiriAdvanceCameraKit0B17ImageCaptureModelC06isOpenB0Sbvg",
+                "mangledName": "$s20KiriAdvanceCameraKit0B17ImageCaptureModelC06isOpenB0Sbvg",
+                "moduleName": "KiriAdvanceCameraKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20KiriAdvanceCameraKit0B17ImageCaptureModelC06isOpenB0Sbvs",
+                "mangledName": "$s20KiriAdvanceCameraKit0B17ImageCaptureModelC06isOpenB0Sbvs",
+                "moduleName": "KiriAdvanceCameraKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20KiriAdvanceCameraKit0B17ImageCaptureModelC06isOpenB0SbvM",
+                "mangledName": "$s20KiriAdvanceCameraKit0B17ImageCaptureModelC06isOpenB0SbvM",
+                "moduleName": "KiriAdvanceCameraKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isoValue",
+            "printedName": "isoValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ValueType",
+                "printedName": "KiriAdvanceCameraKit.AdvanceImageCaptureModel.ValueType<CoreGraphics.CGFloat>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "usr": "s:20KiriAdvanceCameraKit0B17ImageCaptureModelC9ValueTypeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20KiriAdvanceCameraKit0B17ImageCaptureModelC8isoValueAC0I4TypeOy_14CoreFoundation7CGFloatVGvp",
+            "mangledName": "$s20KiriAdvanceCameraKit0B17ImageCaptureModelC8isoValueAC0I4TypeOy_12CoreGraphics7CGFloatVGvp",
+            "moduleName": "KiriAdvanceCameraKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ValueType",
+                    "printedName": "KiriAdvanceCameraKit.AdvanceImageCaptureModel.ValueType<CoreGraphics.CGFloat>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CGFloat",
+                        "printedName": "CoreGraphics.CGFloat",
+                        "usr": "s:14CoreFoundation7CGFloatV"
+                      }
+                    ],
+                    "usr": "s:20KiriAdvanceCameraKit0B17ImageCaptureModelC9ValueTypeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20KiriAdvanceCameraKit0B17ImageCaptureModelC8isoValueAC0I4TypeOy_14CoreFoundation7CGFloatVGvg",
+                "mangledName": "$s20KiriAdvanceCameraKit0B17ImageCaptureModelC8isoValueAC0I4TypeOy_12CoreGraphics7CGFloatVGvg",
+                "moduleName": "KiriAdvanceCameraKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ValueType",
+                    "printedName": "KiriAdvanceCameraKit.AdvanceImageCaptureModel.ValueType<CoreGraphics.CGFloat>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CGFloat",
+                        "printedName": "CoreGraphics.CGFloat",
+                        "usr": "s:14CoreFoundation7CGFloatV"
+                      }
+                    ],
+                    "usr": "s:20KiriAdvanceCameraKit0B17ImageCaptureModelC9ValueTypeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20KiriAdvanceCameraKit0B17ImageCaptureModelC8isoValueAC0I4TypeOy_14CoreFoundation7CGFloatVGvs",
+                "mangledName": "$s20KiriAdvanceCameraKit0B17ImageCaptureModelC8isoValueAC0I4TypeOy_12CoreGraphics7CGFloatVGvs",
+                "moduleName": "KiriAdvanceCameraKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20KiriAdvanceCameraKit0B17ImageCaptureModelC8isoValueAC0I4TypeOy_14CoreFoundation7CGFloatVGvM",
+                "mangledName": "$s20KiriAdvanceCameraKit0B17ImageCaptureModelC8isoValueAC0I4TypeOy_12CoreGraphics7CGFloatVGvM",
+                "moduleName": "KiriAdvanceCameraKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "shutterValue",
+            "printedName": "shutterValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ValueType",
+                "printedName": "KiriAdvanceCameraKit.AdvanceImageCaptureModel.ValueType<CoreGraphics.CGFloat>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "usr": "s:20KiriAdvanceCameraKit0B17ImageCaptureModelC9ValueTypeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20KiriAdvanceCameraKit0B17ImageCaptureModelC12shutterValueAC0I4TypeOy_14CoreFoundation7CGFloatVGvp",
+            "mangledName": "$s20KiriAdvanceCameraKit0B17ImageCaptureModelC12shutterValueAC0I4TypeOy_12CoreGraphics7CGFloatVGvp",
+            "moduleName": "KiriAdvanceCameraKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ValueType",
+                    "printedName": "KiriAdvanceCameraKit.AdvanceImageCaptureModel.ValueType<CoreGraphics.CGFloat>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CGFloat",
+                        "printedName": "CoreGraphics.CGFloat",
+                        "usr": "s:14CoreFoundation7CGFloatV"
+                      }
+                    ],
+                    "usr": "s:20KiriAdvanceCameraKit0B17ImageCaptureModelC9ValueTypeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20KiriAdvanceCameraKit0B17ImageCaptureModelC12shutterValueAC0I4TypeOy_14CoreFoundation7CGFloatVGvg",
+                "mangledName": "$s20KiriAdvanceCameraKit0B17ImageCaptureModelC12shutterValueAC0I4TypeOy_12CoreGraphics7CGFloatVGvg",
+                "moduleName": "KiriAdvanceCameraKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ValueType",
+                    "printedName": "KiriAdvanceCameraKit.AdvanceImageCaptureModel.ValueType<CoreGraphics.CGFloat>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CGFloat",
+                        "printedName": "CoreGraphics.CGFloat",
+                        "usr": "s:14CoreFoundation7CGFloatV"
+                      }
+                    ],
+                    "usr": "s:20KiriAdvanceCameraKit0B17ImageCaptureModelC9ValueTypeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20KiriAdvanceCameraKit0B17ImageCaptureModelC12shutterValueAC0I4TypeOy_14CoreFoundation7CGFloatVGvs",
+                "mangledName": "$s20KiriAdvanceCameraKit0B17ImageCaptureModelC12shutterValueAC0I4TypeOy_12CoreGraphics7CGFloatVGvs",
+                "moduleName": "KiriAdvanceCameraKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20KiriAdvanceCameraKit0B17ImageCaptureModelC12shutterValueAC0I4TypeOy_14CoreFoundation7CGFloatVGvM",
+                "mangledName": "$s20KiriAdvanceCameraKit0B17ImageCaptureModelC12shutterValueAC0I4TypeOy_12CoreGraphics7CGFloatVGvM",
+                "moduleName": "KiriAdvanceCameraKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "evValue",
+            "printedName": "evValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20KiriAdvanceCameraKit0B17ImageCaptureModelC7evValue14CoreFoundation7CGFloatVvp",
+            "mangledName": "$s20KiriAdvanceCameraKit0B17ImageCaptureModelC7evValue12CoreGraphics7CGFloatVvp",
+            "moduleName": "KiriAdvanceCameraKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20KiriAdvanceCameraKit0B17ImageCaptureModelC7evValue14CoreFoundation7CGFloatVvg",
+                "mangledName": "$s20KiriAdvanceCameraKit0B17ImageCaptureModelC7evValue12CoreGraphics7CGFloatVvg",
+                "moduleName": "KiriAdvanceCameraKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20KiriAdvanceCameraKit0B17ImageCaptureModelC7evValue14CoreFoundation7CGFloatVvs",
+                "mangledName": "$s20KiriAdvanceCameraKit0B17ImageCaptureModelC7evValue12CoreGraphics7CGFloatVvs",
+                "moduleName": "KiriAdvanceCameraKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20KiriAdvanceCameraKit0B17ImageCaptureModelC7evValue14CoreFoundation7CGFloatVvM",
+                "mangledName": "$s20KiriAdvanceCameraKit0B17ImageCaptureModelC7evValue12CoreGraphics7CGFloatVvM",
+                "moduleName": "KiriAdvanceCameraKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isoRange",
+            "printedName": "isoRange",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.ClosedRange<CoreGraphics.CGFloat>?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ClosedRange",
+                    "printedName": "Swift.ClosedRange<CoreGraphics.CGFloat>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CGFloat",
+                        "printedName": "CoreGraphics.CGFloat",
+                        "usr": "s:14CoreFoundation7CGFloatV"
+                      }
+                    ],
+                    "usr": "s:SN"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20KiriAdvanceCameraKit0B17ImageCaptureModelC8isoRangeSNy14CoreFoundation7CGFloatVGSgvp",
+            "mangledName": "$s20KiriAdvanceCameraKit0B17ImageCaptureModelC8isoRangeSNy12CoreGraphics7CGFloatVGSgvp",
+            "moduleName": "KiriAdvanceCameraKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.ClosedRange<CoreGraphics.CGFloat>?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ClosedRange",
+                        "printedName": "Swift.ClosedRange<CoreGraphics.CGFloat>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CGFloat",
+                            "printedName": "CoreGraphics.CGFloat",
+                            "usr": "s:14CoreFoundation7CGFloatV"
+                          }
+                        ],
+                        "usr": "s:SN"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20KiriAdvanceCameraKit0B17ImageCaptureModelC8isoRangeSNy14CoreFoundation7CGFloatVGSgvg",
+                "mangledName": "$s20KiriAdvanceCameraKit0B17ImageCaptureModelC8isoRangeSNy12CoreGraphics7CGFloatVGSgvg",
+                "moduleName": "KiriAdvanceCameraKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.ClosedRange<CoreGraphics.CGFloat>?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ClosedRange",
+                        "printedName": "Swift.ClosedRange<CoreGraphics.CGFloat>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CGFloat",
+                            "printedName": "CoreGraphics.CGFloat",
+                            "usr": "s:14CoreFoundation7CGFloatV"
+                          }
+                        ],
+                        "usr": "s:SN"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20KiriAdvanceCameraKit0B17ImageCaptureModelC8isoRangeSNy14CoreFoundation7CGFloatVGSgvs",
+                "mangledName": "$s20KiriAdvanceCameraKit0B17ImageCaptureModelC8isoRangeSNy12CoreGraphics7CGFloatVGSgvs",
+                "moduleName": "KiriAdvanceCameraKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20KiriAdvanceCameraKit0B17ImageCaptureModelC8isoRangeSNy14CoreFoundation7CGFloatVGSgvM",
+                "mangledName": "$s20KiriAdvanceCameraKit0B17ImageCaptureModelC8isoRangeSNy12CoreGraphics7CGFloatVGSgvM",
+                "moduleName": "KiriAdvanceCameraKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "shutterRange",
+            "printedName": "shutterRange",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.ClosedRange<CoreGraphics.CGFloat>?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ClosedRange",
+                    "printedName": "Swift.ClosedRange<CoreGraphics.CGFloat>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CGFloat",
+                        "printedName": "CoreGraphics.CGFloat",
+                        "usr": "s:14CoreFoundation7CGFloatV"
+                      }
+                    ],
+                    "usr": "s:SN"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20KiriAdvanceCameraKit0B17ImageCaptureModelC12shutterRangeSNy14CoreFoundation7CGFloatVGSgvp",
+            "mangledName": "$s20KiriAdvanceCameraKit0B17ImageCaptureModelC12shutterRangeSNy12CoreGraphics7CGFloatVGSgvp",
+            "moduleName": "KiriAdvanceCameraKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.ClosedRange<CoreGraphics.CGFloat>?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ClosedRange",
+                        "printedName": "Swift.ClosedRange<CoreGraphics.CGFloat>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CGFloat",
+                            "printedName": "CoreGraphics.CGFloat",
+                            "usr": "s:14CoreFoundation7CGFloatV"
+                          }
+                        ],
+                        "usr": "s:SN"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20KiriAdvanceCameraKit0B17ImageCaptureModelC12shutterRangeSNy14CoreFoundation7CGFloatVGSgvg",
+                "mangledName": "$s20KiriAdvanceCameraKit0B17ImageCaptureModelC12shutterRangeSNy12CoreGraphics7CGFloatVGSgvg",
+                "moduleName": "KiriAdvanceCameraKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.ClosedRange<CoreGraphics.CGFloat>?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ClosedRange",
+                        "printedName": "Swift.ClosedRange<CoreGraphics.CGFloat>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CGFloat",
+                            "printedName": "CoreGraphics.CGFloat",
+                            "usr": "s:14CoreFoundation7CGFloatV"
+                          }
+                        ],
+                        "usr": "s:SN"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20KiriAdvanceCameraKit0B17ImageCaptureModelC12shutterRangeSNy14CoreFoundation7CGFloatVGSgvs",
+                "mangledName": "$s20KiriAdvanceCameraKit0B17ImageCaptureModelC12shutterRangeSNy12CoreGraphics7CGFloatVGSgvs",
+                "moduleName": "KiriAdvanceCameraKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20KiriAdvanceCameraKit0B17ImageCaptureModelC12shutterRangeSNy14CoreFoundation7CGFloatVGSgvM",
+                "mangledName": "$s20KiriAdvanceCameraKit0B17ImageCaptureModelC12shutterRangeSNy12CoreGraphics7CGFloatVGSgvM",
+                "moduleName": "KiriAdvanceCameraKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AdvanceImageCaptureModel",
+                "printedName": "KiriAdvanceCameraKit.AdvanceImageCaptureModel",
+                "usr": "c:@M@KiriAdvanceCameraKit@objc(cs)AdvanceImageCaptureModel"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@KiriAdvanceCameraKit@objc(cs)AdvanceImageCaptureModel(im)init",
+            "mangledName": "$s20KiriAdvanceCameraKit0B17ImageCaptureModelCACycfc",
+            "moduleName": "KiriAdvanceCameraKit",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Required",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "isoValueSubject",
+            "printedName": "isoValueSubject",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PassthroughSubject",
+                "printedName": "Combine.PassthroughSubject<CoreGraphics.CGFloat, Swift.Never>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ],
+                "usr": "s:7Combine18PassthroughSubjectC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20KiriAdvanceCameraKit0B17ImageCaptureModelC15isoValueSubject7Combine011PassthroughJ0Cy14CoreFoundation7CGFloatVs5NeverOGvp",
+            "mangledName": "$s20KiriAdvanceCameraKit0B17ImageCaptureModelC15isoValueSubject7Combine011PassthroughJ0Cy12CoreGraphics7CGFloatVs5NeverOGvp",
+            "moduleName": "KiriAdvanceCameraKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PassthroughSubject",
+                    "printedName": "Combine.PassthroughSubject<CoreGraphics.CGFloat, Swift.Never>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CGFloat",
+                        "printedName": "CoreGraphics.CGFloat",
+                        "usr": "s:14CoreFoundation7CGFloatV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Never",
+                        "printedName": "Swift.Never",
+                        "usr": "s:s5NeverO"
+                      }
+                    ],
+                    "usr": "s:7Combine18PassthroughSubjectC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20KiriAdvanceCameraKit0B17ImageCaptureModelC15isoValueSubject7Combine011PassthroughJ0Cy14CoreFoundation7CGFloatVs5NeverOGvg",
+                "mangledName": "$s20KiriAdvanceCameraKit0B17ImageCaptureModelC15isoValueSubject7Combine011PassthroughJ0Cy12CoreGraphics7CGFloatVs5NeverOGvg",
+                "moduleName": "KiriAdvanceCameraKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "shutterSubject",
+            "printedName": "shutterSubject",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PassthroughSubject",
+                "printedName": "Combine.PassthroughSubject<CoreGraphics.CGFloat, Swift.Never>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ],
+                "usr": "s:7Combine18PassthroughSubjectC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20KiriAdvanceCameraKit0B17ImageCaptureModelC14shutterSubject7Combine011PassthroughI0Cy14CoreFoundation7CGFloatVs5NeverOGvp",
+            "mangledName": "$s20KiriAdvanceCameraKit0B17ImageCaptureModelC14shutterSubject7Combine011PassthroughI0Cy12CoreGraphics7CGFloatVs5NeverOGvp",
+            "moduleName": "KiriAdvanceCameraKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PassthroughSubject",
+                    "printedName": "Combine.PassthroughSubject<CoreGraphics.CGFloat, Swift.Never>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CGFloat",
+                        "printedName": "CoreGraphics.CGFloat",
+                        "usr": "s:14CoreFoundation7CGFloatV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Never",
+                        "printedName": "Swift.Never",
+                        "usr": "s:s5NeverO"
+                      }
+                    ],
+                    "usr": "s:7Combine18PassthroughSubjectC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20KiriAdvanceCameraKit0B17ImageCaptureModelC14shutterSubject7Combine011PassthroughI0Cy14CoreFoundation7CGFloatVs5NeverOGvg",
+                "mangledName": "$s20KiriAdvanceCameraKit0B17ImageCaptureModelC14shutterSubject7Combine011PassthroughI0Cy12CoreGraphics7CGFloatVs5NeverOGvg",
+                "moduleName": "KiriAdvanceCameraKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@KiriAdvanceCameraKit@objc(cs)AdvanceImageCaptureModel",
+        "mangledName": "$s20KiriAdvanceCameraKit0B17ImageCaptureModelC",
+        "moduleName": "KiriAdvanceCameraKit",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:@M@KiriAdvanceCameraKit@objc(cs)ImageCaptureModel",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "KiriAdvanceCameraKit.ImageCaptureModel",
+          "KiriAdvanceCameraKit.CaptureModel",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KiriAdvanceCameraKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVKit",
+        "printedName": "AVKit",
+        "declKind": "Import",
+        "moduleName": "KiriAdvanceCameraKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "KiriAdvanceCameraKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CaptureModel",
+        "printedName": "CaptureModel",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "device",
+            "printedName": "device",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AVFoundation.AVCaptureDevice?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AVCaptureDevice",
+                    "printedName": "AVFoundation.AVCaptureDevice",
+                    "usr": "c:objc(cs)AVCaptureDevice"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20KiriAdvanceCameraKit12CaptureModelC6deviceSo15AVCaptureDeviceCSgvp",
+            "mangledName": "$s20KiriAdvanceCameraKit12CaptureModelC6deviceSo15AVCaptureDeviceCSgvp",
+            "moduleName": "KiriAdvanceCameraKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "AVFoundation.AVCaptureDevice?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AVCaptureDevice",
+                        "printedName": "AVFoundation.AVCaptureDevice",
+                        "usr": "c:objc(cs)AVCaptureDevice"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20KiriAdvanceCameraKit12CaptureModelC6deviceSo15AVCaptureDeviceCSgvg",
+                "mangledName": "$s20KiriAdvanceCameraKit12CaptureModelC6deviceSo15AVCaptureDeviceCSgvg",
+                "moduleName": "KiriAdvanceCameraKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "photoOutput",
+            "printedName": "photoOutput",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AVCapturePhotoOutput",
+                "printedName": "AVFoundation.AVCapturePhotoOutput",
+                "usr": "c:objc(cs)AVCapturePhotoOutput"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20KiriAdvanceCameraKit12CaptureModelC11photoOutputSo014AVCapturePhotoH0Cvp",
+            "mangledName": "$s20KiriAdvanceCameraKit12CaptureModelC11photoOutputSo014AVCapturePhotoH0Cvp",
+            "moduleName": "KiriAdvanceCameraKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "Final",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AVCapturePhotoOutput",
+                    "printedName": "AVFoundation.AVCapturePhotoOutput",
+                    "usr": "c:objc(cs)AVCapturePhotoOutput"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20KiriAdvanceCameraKit12CaptureModelC11photoOutputSo014AVCapturePhotoH0Cvg",
+                "mangledName": "$s20KiriAdvanceCameraKit12CaptureModelC11photoOutputSo014AVCapturePhotoH0Cvg",
+                "moduleName": "KiriAdvanceCameraKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "videoOutput",
+            "printedName": "videoOutput",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AVCaptureMovieFileOutput",
+                "printedName": "AVFoundation.AVCaptureMovieFileOutput",
+                "usr": "c:objc(cs)AVCaptureMovieFileOutput"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20KiriAdvanceCameraKit12CaptureModelC11videoOutputSo018AVCaptureMovieFileH0Cvp",
+            "mangledName": "$s20KiriAdvanceCameraKit12CaptureModelC11videoOutputSo018AVCaptureMovieFileH0Cvp",
+            "moduleName": "KiriAdvanceCameraKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "Final",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AVCaptureMovieFileOutput",
+                    "printedName": "AVFoundation.AVCaptureMovieFileOutput",
+                    "usr": "c:objc(cs)AVCaptureMovieFileOutput"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20KiriAdvanceCameraKit12CaptureModelC11videoOutputSo018AVCaptureMovieFileH0Cvg",
+                "mangledName": "$s20KiriAdvanceCameraKit12CaptureModelC11videoOutputSo018AVCaptureMovieFileH0Cvg",
+                "moduleName": "KiriAdvanceCameraKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CaptureModel",
+                "printedName": "KiriAdvanceCameraKit.CaptureModel",
+                "usr": "c:@M@KiriAdvanceCameraKit@objc(cs)CaptureModel"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@KiriAdvanceCameraKit@objc(cs)CaptureModel(im)init",
+            "mangledName": "$s20KiriAdvanceCameraKit12CaptureModelCACycfc",
+            "moduleName": "KiriAdvanceCameraKit",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "Required",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "selectFormat",
+            "printedName": "selectFormat(device:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVCaptureDevice",
+                "printedName": "AVFoundation.AVCaptureDevice",
+                "usr": "c:objc(cs)AVCaptureDevice"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20KiriAdvanceCameraKit12CaptureModelC12selectFormat6deviceySo15AVCaptureDeviceC_tKF",
+            "mangledName": "$s20KiriAdvanceCameraKit12CaptureModelC12selectFormat6deviceySo15AVCaptureDeviceC_tKF",
+            "moduleName": "KiriAdvanceCameraKit",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@KiriAdvanceCameraKit@objc(cs)CaptureModel",
+        "mangledName": "$s20KiriAdvanceCameraKit12CaptureModelC",
+        "moduleName": "KiriAdvanceCameraKit",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KiriAdvanceCameraKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVKit",
+        "printedName": "AVKit",
+        "declKind": "Import",
+        "moduleName": "KiriAdvanceCameraKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "KiriAdvanceCameraKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ImageCaptureModel",
+        "printedName": "ImageCaptureModel",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "captureProxy",
+            "printedName": "captureProxy",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AVCapturePhotoCaptureProxyDelegate",
+                "printedName": "KiriAdvanceCameraKit.AVCapturePhotoCaptureProxyDelegate",
+                "usr": "c:@M@KiriAdvanceCameraKit@objc(cs)AVCapturePhotoCaptureProxyDelegate"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20KiriAdvanceCameraKit17ImageCaptureModelC12captureProxyAA014AVCapturePhotofI8DelegateCvp",
+            "mangledName": "$s20KiriAdvanceCameraKit17ImageCaptureModelC12captureProxyAA014AVCapturePhotofI8DelegateCvp",
+            "moduleName": "KiriAdvanceCameraKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "Final",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AVCapturePhotoCaptureProxyDelegate",
+                    "printedName": "KiriAdvanceCameraKit.AVCapturePhotoCaptureProxyDelegate",
+                    "usr": "c:@M@KiriAdvanceCameraKit@objc(cs)AVCapturePhotoCaptureProxyDelegate"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20KiriAdvanceCameraKit17ImageCaptureModelC12captureProxyAA014AVCapturePhotofI8DelegateCvg",
+                "mangledName": "$s20KiriAdvanceCameraKit17ImageCaptureModelC12captureProxyAA014AVCapturePhotofI8DelegateCvg",
+                "moduleName": "KiriAdvanceCameraKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ImageCaptureModel",
+                "printedName": "KiriAdvanceCameraKit.ImageCaptureModel",
+                "usr": "c:@M@KiriAdvanceCameraKit@objc(cs)ImageCaptureModel"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@KiriAdvanceCameraKit@objc(cs)ImageCaptureModel(im)init",
+            "mangledName": "$s20KiriAdvanceCameraKit17ImageCaptureModelCACycfc",
+            "moduleName": "KiriAdvanceCameraKit",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Required",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "takePhoto",
+            "printedName": "takePhoto()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20KiriAdvanceCameraKit17ImageCaptureModelC9takePhotoyyF",
+            "mangledName": "$s20KiriAdvanceCameraKit17ImageCaptureModelC9takePhotoyyF",
+            "moduleName": "KiriAdvanceCameraKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "selectFormat",
+            "printedName": "selectFormat(device:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVCaptureDevice",
+                "printedName": "AVFoundation.AVCaptureDevice",
+                "usr": "c:objc(cs)AVCaptureDevice"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20KiriAdvanceCameraKit17ImageCaptureModelC12selectFormat6deviceySo15AVCaptureDeviceC_tKF",
+            "mangledName": "$s20KiriAdvanceCameraKit17ImageCaptureModelC12selectFormat6deviceySo15AVCaptureDeviceC_tKF",
+            "moduleName": "KiriAdvanceCameraKit",
+            "overriding": true,
+            "isOpen": true,
+            "declAttributes": [
+              "Override",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@KiriAdvanceCameraKit@objc(cs)ImageCaptureModel",
+        "mangledName": "$s20KiriAdvanceCameraKit17ImageCaptureModelC",
+        "moduleName": "KiriAdvanceCameraKit",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:@M@KiriAdvanceCameraKit@objc(cs)CaptureModel",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "KiriAdvanceCameraKit.CaptureModel",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVKit",
+        "printedName": "AVKit",
+        "declKind": "Import",
+        "moduleName": "KiriAdvanceCameraKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CaptureView",
+        "printedName": "CaptureView",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(frame:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CaptureView",
+                "printedName": "KiriAdvanceCameraKit.CaptureView",
+                "usr": "c:@M@KiriAdvanceCameraKit@objc(cs)CaptureView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@KiriAdvanceCameraKit@objc(cs)CaptureView(im)initWithFrame:",
+            "mangledName": "$s20KiriAdvanceCameraKit11CaptureViewC5frameACSo6CGRectV_tcfc",
+            "moduleName": "KiriAdvanceCameraKit",
+            "overriding": true,
+            "objc_name": "initWithFrame:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(coder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "KiriAdvanceCameraKit.CaptureView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CaptureView",
+                    "printedName": "KiriAdvanceCameraKit.CaptureView",
+                    "usr": "c:@M@KiriAdvanceCameraKit@objc(cs)CaptureView"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSCoder",
+                "printedName": "Foundation.NSCoder",
+                "usr": "c:objc(cs)NSCoder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@KiriAdvanceCameraKit@objc(cs)CaptureView(im)initWithCoder:",
+            "mangledName": "$s20KiriAdvanceCameraKit11CaptureViewC5coderACSgSo7NSCoderC_tcfc",
+            "moduleName": "KiriAdvanceCameraKit",
+            "overriding": true,
+            "objc_name": "initWithCoder:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl",
+              "Required"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "layoutSubviews",
+            "printedName": "layoutSubviews()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KiriAdvanceCameraKit@objc(cs)CaptureView(im)layoutSubviews",
+            "mangledName": "$s20KiriAdvanceCameraKit11CaptureViewC14layoutSubviewsyyF",
+            "moduleName": "KiriAdvanceCameraKit",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "layoutSubviews",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@KiriAdvanceCameraKit@objc(cs)CaptureView",
+        "mangledName": "$s20KiriAdvanceCameraKit11CaptureViewC",
+        "moduleName": "KiriAdvanceCameraKit",
+        "isOpen": true,
+        "declAttributes": [
+          "Custom",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UIView",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIView",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "__DefaultCustomPlaygroundQuickLookable",
+            "printedName": "__DefaultCustomPlaygroundQuickLookable",
+            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CMTime",
+        "printedName": "CMTime",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "fps",
+            "printedName": "fps",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:So6CMTimea20KiriAdvanceCameraKitE3fps14CoreFoundation7CGFloatVvp",
+            "mangledName": "$sSo6CMTimea20KiriAdvanceCameraKitE3fps12CoreGraphics7CGFloatVvp",
+            "moduleName": "KiriAdvanceCameraKit",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So6CMTimea20KiriAdvanceCameraKitE3fps14CoreFoundation7CGFloatVvg",
+                "mangledName": "$sSo6CMTimea20KiriAdvanceCameraKitE3fps12CoreGraphics7CGFloatVvg",
+                "moduleName": "KiriAdvanceCameraKit",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "time",
+            "printedName": "time",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:So6CMTimea20KiriAdvanceCameraKitE4time14CoreFoundation7CGFloatVvp",
+            "mangledName": "$sSo6CMTimea20KiriAdvanceCameraKitE4time12CoreGraphics7CGFloatVvp",
+            "moduleName": "KiriAdvanceCameraKit",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So6CMTimea20KiriAdvanceCameraKitE4time14CoreFoundation7CGFloatVvg",
+                "mangledName": "$sSo6CMTimea20KiriAdvanceCameraKitE4time12CoreGraphics7CGFloatVvg",
+                "moduleName": "KiriAdvanceCameraKit",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "c:@SA@CMTime",
+        "moduleName": "CoreMedia",
+        "intro_iOS": "4.0",
+        "declAttributes": [
+          "Available"
+        ],
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Comparable",
+            "printedName": "Comparable",
+            "usr": "s:SL",
+            "mangledName": "$sSL"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSValue",
+                    "printedName": "Foundation.NSValue",
+                    "usr": "c:objc(cs)NSValue"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/aria\/Documents\/GitHub\/KIRI-CameraKit-iOS\/Sources\/CameraKit\/CameraView.swift",
+      "kind": "Array",
+      "offset": 608,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/aria\/Documents\/GitHub\/KIRI-CameraKit-iOS\/Sources\/AdvanceCameraKit\/AVCaptureDevice+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 155,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/aria\/Documents\/GitHub\/KIRI-CameraKit-iOS\/Sources\/AdvanceCameraKit\/AVCaptureDevice+Extensions.swift",
+      "kind": "FloatLiteral",
+      "offset": 158,
+      "length": 3,
+      "value": "0.3"
+    },
+    {
+      "filePath": "\/Users\/aria\/Documents\/GitHub\/KIRI-CameraKit-iOS\/Sources\/AdvanceCameraKit\/AVCaptureDevice+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 196,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/aria\/Documents\/GitHub\/KIRI-CameraKit-iOS\/Sources\/AdvanceCameraKit\/AVCaptureDevice+Extensions.swift",
+      "kind": "FloatLiteral",
+      "offset": 199,
+      "length": 4,
+      "value": "0.3"
+    },
+    {
+      "filePath": "\/Users\/aria\/Documents\/GitHub\/KIRI-CameraKit-iOS\/Sources\/CameraKit\/CameraKit.swift",
+      "kind": "BooleanLiteral",
+      "offset": 620,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/aria\/Documents\/GitHub\/KIRI-CameraKit-iOS\/Sources\/AdvanceCameraKit\/AdvanceImageCaptureModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 327,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/aria\/Documents\/GitHub\/KIRI-CameraKit-iOS\/Sources\/AdvanceCameraKit\/AdvanceImageCaptureModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 668,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/aria\/Documents\/GitHub\/KIRI-CameraKit-iOS\/Sources\/AdvanceCameraKit\/AdvanceImageCaptureModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 870,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/aria\/Documents\/GitHub\/KIRI-CameraKit-iOS\/Sources\/AdvanceCameraKit\/AdvanceImageCaptureModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 926,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/aria\/Documents\/GitHub\/KIRI-CameraKit-iOS\/Sources\/AdvanceCameraKit\/AdvanceImageCaptureModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3328,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/aria\/Documents\/GitHub\/KIRI-CameraKit-iOS\/Sources\/AdvanceCameraKit\/AdvanceImageCaptureModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3357,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/aria\/Documents\/GitHub\/KIRI-CameraKit-iOS\/Sources\/CameraKit\/CaptureModel.swift",
+      "kind": "Array",
+      "offset": 398,
+      "length": 2,
+      "value": "[]"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+framework module KiriAdvanceCameraKit {
+  header "KiriAdvanceCameraKit-Swift.h"
+  requires objc
+}
