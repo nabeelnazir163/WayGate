@@ -8,10 +8,29 @@
 import UIKit
 import Lottie
 
+let window = UIApplication.shared.connectedScenes
+        .filter({$0.activationState == .foregroundActive})
+        .map({$0 as? UIWindowScene})
+        .compactMap({$0})
+        .first?.windows
+        .filter({$0.isKeyWindow}).first
+
 class Commons {
     
     static let ActivityViewTag = 121
     static let LoaderBGView = 122
+    
+    static func showAlert(title: String = "WayGate", msg: String)  {
+        window?.endEditing(true)
+        let alert = UIAlertController(title: title, message: msg, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        
+        if let vc = UIApplication.topViewController() {
+            vc.present(alert, animated: true, completion: nil)
+        } else if let window = UIApplication.shared.windows.first {
+            window.rootViewController?.present(alert, animated: true, completion: nil)
+        }
+    }
     
     static func goToMain() {
         if let vc: TabbarViewController = UIStoryboard.initiate(storyboard: .main) {

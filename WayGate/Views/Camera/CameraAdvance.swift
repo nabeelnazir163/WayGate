@@ -260,9 +260,11 @@ struct CameraAdvance: View {
                 if let token = response.dataObject {
                     Constants.token = token
                     openViewController()
+                } else {
+                    Commons.showAlert(msg: response.message ?? "")
                 }
             case .failed(let error):
-                print(error.localizedDescription)
+                Commons.showAlert(msg: error.localizedDescription)
             }
         }
     }

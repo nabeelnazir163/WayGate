@@ -25,6 +25,10 @@ class HomeViewController: UIViewController {
         Commons.deleteDirectory(name: "/CameraKit/")
         setupUI()
         getNFTs()
+        homeTV.setUpRefresherControll(tintColor: .theme) { [weak self] in
+            guard let `self` = self else { return }
+            self.getNFTs(showLoader: false)
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -47,18 +51,23 @@ class HomeViewController: UIViewController {
     }
     
     //MARK:- API Call
-    private func getNFTs() {
-        Commons.showActivityIndicator()
+    private func getNFTs(showLoader: Bool = true) {
+        if showLoader {
+            Commons.showActivityIndicator()
+        }
         WebServicesManager.shared.getHomeNFTs { [weak self] result in
             Commons.hideActivityIndicator()
             guard let `self` = self else { return }
+            self.homeTV.stopRefresher()
             switch result {
             case .success(let baseResponse):
                 if let nftsList = baseResponse.dataObject?.nfts {
                     self.nfts = nftsList
+                } else {
+                    Commons.showAlert(msg: baseResponse.message ?? "")
                 }
             case .failed(let error):
-                print(error.localizedDescription)
+                Commons.showAlert(msg: error.localizedDescription)
             }
         }
     }

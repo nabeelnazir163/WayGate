@@ -126,9 +126,13 @@ class CameraSettingsViewController: UIViewController {
                 if let data = response.dataObject {
                     Constants.serializeToken = data
                     self.updateNFTStatus()
+                } else {
+                    self.loaderView.isHidden = true
+                    Commons.showAlert(msg: response.message ?? "")
                 }
             case .failed(let error):
-                print(error.localizedDescription)
+                self.loaderView.isHidden = true
+                Commons.showAlert(msg: error.localizedDescription)
             }
         }
     }
@@ -141,9 +145,13 @@ class CameraSettingsViewController: UIViewController {
             case .success(let response):
                 if response.status == 200 {
                     Commons.goToMain()
+                } else {
+                    self.loaderView.isHidden = true
+                    Commons.showAlert(msg: response.message ?? "")
                 }
             case .failed(let error):
-                print("Errorr:",error.localizedDescription)
+                self.loaderView.isHidden = true
+                Commons.showAlert(msg: error.localizedDescription)
             }
         }
     }

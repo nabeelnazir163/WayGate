@@ -54,9 +54,11 @@ class LoginViewController: UIViewController {
                 if let user = response.dataObject {
                     UserDefaultsConfig.user = user
                     Commons.goToMain()
+                } else {
+                    Commons.showAlert(msg: response.message ?? "")
                 }
             case .failed(let error):
-                print(error.localizedDescription)
+                Commons.showAlert(msg: error.localizedDescription)
             }
         }
     }
