@@ -100,6 +100,46 @@ struct CameraAdvance: View {
                     
                 }.padding(.horizontal, 30)
                 
+                Spacer()
+                    .frame(height: 10)
+                
+                VStack(spacing: 10) {
+                    let currentCount = CGFloat($currentPhotosCount.wrappedValue)
+                    let maxCount = CGFloat(maximumPhotosLimit)
+                    if currentPhotosCount <= 40 {
+                        ProgressView(value: currentCount, total: maxCount)
+                            .accentColor(.primaryRed)
+                            .frame(width: UIScreen.screenWidth - 30, height: 6)
+                    } else if currentPhotosCount > 40 && currentPhotosCount <= 100 {
+                        ProgressView(value: currentCount, total: maxCount)
+                            .accentColor(.JungleGreen)
+                            .frame(width: UIScreen.screenWidth - 30, height: 6)
+                    } else if currentPhotosCount > 100 {
+                        ProgressView(value: currentCount, total: maxCount)
+                            .accentColor(.theme)
+                            .frame(width: UIScreen.screenWidth - 30, height: 6)
+                    }
+                    
+                    HStack {
+                        Text("Acceptable")
+                            .font(Font.CircularSTDMedium(with: 15))
+                            .foregroundColor(.white)
+                        
+                        Spacer()
+                        
+                        Text("Optimal")
+                            .font(Font.CircularSTDRegular(with: 15))
+                            .foregroundColor(.white)
+                        
+                        Spacer()
+                        
+                        Text("Ultimate")
+                            .font(Font.CircularSTDMedium(with: 15))
+                            .foregroundColor(.white)
+                    }
+                    .padding(.horizontal, 15)
+                }
+                .frame(width: UIScreen.screenWidth, height: 50)
             }
             .padding(.bottom, 50)
         }

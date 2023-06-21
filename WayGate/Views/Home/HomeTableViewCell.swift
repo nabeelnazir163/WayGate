@@ -28,13 +28,17 @@ class HomeTableViewCell: UITableViewCell {
                 statusBtn.borderWidth = 2
                 statusBtn.borderColor = .primaryRed
                 statusBtn.setTitleColor(.primaryRed, for: .normal)
-            case .COMPLETED, .PROCESSED, .INPROCESSING, .none:
+            case .COMPLETED, .PROCESSED, .none:
                 statusBtn.backgroundColor = .JungleGreen
                 statusBtn.borderWidth = 0
                 statusBtn.setTitleColor(.white, for: .normal)
                 if nft.status == .PROCESSED || nft.status == .COMPLETED {
                     statusBtn.setTitle("View", for: .normal)
                 }
+            case .INPROCESSING:
+                statusBtn.backgroundColor = .secondaryButton
+                statusBtn.borderWidth = 0
+                statusBtn.setTitleColor(.primaryText, for: .normal)
             }
         }
     }

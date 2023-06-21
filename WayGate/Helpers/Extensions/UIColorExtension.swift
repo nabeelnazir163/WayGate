@@ -20,4 +20,7 @@ extension UIColor {
 
 extension Color {
     static let blackBG = Color("BlackBG")
+    static let primaryRed = Color("PrimaryRed")
+    static let JungleGreen = Color("JungleGreen")
+    static let theme = Color("Theme")
 }
