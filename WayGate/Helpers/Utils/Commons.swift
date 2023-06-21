@@ -87,8 +87,8 @@ class Commons {
             window.addSubview(animationView)
 
             animationView.translatesAutoresizingMaskIntoConstraints = false
-            animationView.widthAnchor.constraint(equalToConstant: 50).isActive = true
-            animationView.heightAnchor.constraint(equalToConstant: 50).isActive = true
+            animationView.widthAnchor.constraint(equalToConstant: 100).isActive = true
+            animationView.heightAnchor.constraint(equalToConstant: 100).isActive = true
             animationView.centerXAnchor.constraint(equalTo: window.centerXAnchor).isActive = true
             animationView.centerYAnchor.constraint(equalTo: window.centerYAnchor).isActive = true
 
