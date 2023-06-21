@@ -12,7 +12,7 @@ struct ModelDisplay: View {
     @Environment(\.safeAreaInsets) private var safeAreaInsets
     let sceneView = SceneView(frame: .zero)
     
-    @State var startLoadingView = true
+    @State var startLoadingView = false
     
     var nftItem: NFTItem?
     var dismissAction: (() -> Void)
@@ -21,6 +21,10 @@ struct ModelDisplay: View {
         ZStack() {
             UIViewPreview {
                 sceneView
+            }
+            
+            if startLoadingView {
+                customLoader
             }
             
             VStack(alignment: .trailing) {
@@ -42,9 +46,6 @@ struct ModelDisplay: View {
             .padding(.trailing, 20)
             .frame(width: UIScreen.screenWidth)
             
-            if startLoadingView {
-                customLoader
-            }
         }
         .edgesIgnoringSafeArea(.vertical)
         .onAppear {
