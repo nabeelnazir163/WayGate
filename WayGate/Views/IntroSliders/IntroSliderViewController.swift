@@ -30,7 +30,7 @@ class IntroSliderViewController: UIViewController {
     //MARK:- UI Actions
     @IBAction func didTapGetStarted(_ sender: Any) {
         UserDefaultsConfig.isFirstLaunch = false
-        Commons.goToMain()
+        Commons.goToLogin()
     }
 }
 
