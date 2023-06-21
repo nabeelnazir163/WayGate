@@ -273,6 +273,7 @@ struct CameraAdvance: View {
         if let vc: CameraSettingsViewController = UIStoryboard.initiate(storyboard: .camera) {
             vc.modalTransitionStyle = .crossDissolve
             vc.modalPresentationStyle = .overFullScreen
+            vc.nftId = nftItem?._id
             UIApplication.topViewController()?.present(vc, animated: true)
         }
     }

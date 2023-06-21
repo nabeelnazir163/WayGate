@@ -94,6 +94,8 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             openCamera(item: item)
         } else if item.status == .PROCESSED {
             open3DModel(item: item)
+        } else if item.status == .INPROCESSING {
+            Commons.showAlert(msg: "Please wait, Your 3D model is in process")
         }
     }
     

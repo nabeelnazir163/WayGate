@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		421E949E2A335A9A007F6981 /* MultiProgressView in Frameworks */ = {isa = PBXBuildFile; productRef = 421E949D2A335A9A007F6981 /* MultiProgressView */; };
-		42209FFA2A38F49100F1AA3E /* Waffle.obj in Resources */ = {isa = PBXBuildFile; fileRef = 42209FF92A38F49100F1AA3E /* Waffle.obj */; };
 		4223033A2A38C8A900B83982 /* Model3DKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 422303382A38C87700B83982 /* Model3DKit.framework */; };
 		4223033B2A38C8A900B83982 /* Model3DKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 422303382A38C87700B83982 /* Model3DKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		422F9B842A2B4DDC0005182F /* Camera.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 422F9B832A2B4DDC0005182F /* Camera.xcassets */; };
@@ -96,7 +95,6 @@
 		4220427B2A29BCA400C0C5C1 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		4220427D2A29BD8900C0C5C1 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		4220427F2A29BE9C00C0C5C1 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
-		42209FF92A38F49100F1AA3E /* Waffle.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Waffle.obj; sourceTree = "<group>"; };
 		422303382A38C87700B83982 /* Model3DKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Model3DKit.framework; sourceTree = "<group>"; };
 		422F9B832A2B4DDC0005182F /* Camera.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Camera.xcassets; sourceTree = "<group>"; };
 		423D8FC02A3330C6001B90ED /* UIApplicationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtension.swift; sourceTree = "<group>"; };
@@ -291,7 +289,6 @@
 			isa = PBXGroup;
 			children = (
 				422303382A38C87700B83982 /* Model3DKit.framework */,
-				42209FF92A38F49100F1AA3E /* Waffle.obj */,
 				429620612A2E63FC006AEF27 /* KiriAdvanceCameraKit.xcframework */,
 				42AC6DD32A29248C00717E46 /* Views */,
 				42AC6DCE2A291E1900717E46 /* Storyboards */,
@@ -478,7 +475,6 @@
 				42DCA4DC2A2A0F95001EA88F /* Main.storyboard in Resources */,
 				42DCA4F12A2A0FB2001EA88F /* CircularStd-Light.otf in Resources */,
 				42DCA4F22A2A0FB2001EA88F /* CircularStd-Medium.otf in Resources */,
-				42209FFA2A38F49100F1AA3E /* Waffle.obj in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
