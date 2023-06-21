@@ -15,4 +15,7 @@ class Constants {
     static var serializeToken = ""
     
     static let folderName: String = "CameraKit"
+    
+    static let privacyPolicyURL = "https://dev.thewaygate.io/privacy-policy-mobile"
+    static let termsAndConditionURL = "https://dev.thewaygate.io/terms-and-conditions-mobile"
 }

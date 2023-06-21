@@ -17,6 +17,20 @@ class SettingsViewController: UIViewController {
     }
     
     //MARK:- UI Actions
+    @IBAction func didTapPrivacyBtn(_ sender: Any) {
+        let url = URL(string: Constants.privacyPolicyURL)!
+        if UIApplication.shared.canOpenURL(url) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
+    }
+    
+    @IBAction func didTapTermsBtn(_ sender: Any) {
+        let url = URL(string: Constants.termsAndConditionURL)!
+        if UIApplication.shared.canOpenURL(url) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
+    }
+    
     @IBAction func didTapLogout(_ sender: Any) {
         if let vc: LogoutPopupViewController = UIStoryboard.initiate(storyboard: .main) {
             vc.modalTransitionStyle = .crossDissolve

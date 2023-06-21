@@ -8,8 +8,8 @@
 import Foundation
 
 class URLs {
-    static let SERVER_BASE_URL = "https://dev-api.thewaygate.io/"
-    static let KIRI_BASE_URL = "http://3.20.175.91:9999/v1/"
+    static let SERVER_BASE_URL = "https://stg-api.thewaygate.io/"
+    static let KIRI_BASE_URL = "https://partner.kiri-engine.com/v2/"
 }
 
 enum EndPoint: String {
