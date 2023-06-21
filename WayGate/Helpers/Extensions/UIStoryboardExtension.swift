@@ -30,5 +30,6 @@ extension UIStoryboard {
         case auth = "Auth"
         case main = "Main"
         case camera = "Camera"
+        case splash = "SplashIntermediate"
     }
 }

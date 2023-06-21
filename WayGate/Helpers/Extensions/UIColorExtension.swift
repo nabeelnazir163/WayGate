@@ -16,6 +16,9 @@ extension UIColor {
     static let border = UIColor(named: "Border")!
     static let JungleGreen = UIColor(named: "JungleGreen")!
     static let primaryRed = UIColor(named: "PrimaryRed")!
+    static let introGray = UIColor(named: "IntroGray")!
+    static let introPink = UIColor(named: "IntroPink")!
+    static let introBlue = UIColor(named: "IntroBlue")!
 }
 
 extension Color {

@@ -45,4 +45,7 @@ struct UserDefault<T: Codable> {
 struct UserDefaultsConfig {
     @UserDefault("user", defaultValue: nil)
     static var user: User?
+    
+    @UserDefault("isFirstLaunch", defaultValue: true)
+    static var isFirstLaunch: Bool
 }

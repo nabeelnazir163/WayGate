@@ -26,10 +26,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
     
     private func setupLandingScreen() {
-        if UserDefaultsConfig.user.isSome {
-            Commons.goToMain()
+        if UserDefaultsConfig.isFirstLaunch {
+            Commons.goToWelcomeView()
         } else {
-            Commons.goToLogin()
+            if UserDefaultsConfig.user.isSome {
+                Commons.goToMain()
+            } else {
+                Commons.goToLogin()
+            }
         }
     }
     

@@ -12,29 +12,68 @@ struct ModelDisplay: View {
     @Environment(\.safeAreaInsets) private var safeAreaInsets
     let sceneView = SceneView(frame: .zero)
     
+    @State var startLoadingView = true
+    
     var nftItem: NFTItem?
     var dismissAction: (() -> Void)
     
     var body: some View {
-        ZStack(alignment: .topTrailing) {
+        ZStack() {
             UIViewPreview {
                 sceneView
             }
+            
             VStack(alignment: .trailing) {
-                Button {
-                    dismissAction()
-                } label: {
-                    Image(systemName: "xmark.circle.fill")
-                        .resizable()
-                        .foregroundColor(Color.gray)
-                        .frame(width: 24, height: 24)
+                HStack {
+                    Spacer()
+                    
+                    Button {
+                        dismissAction()
+                    } label: {
+                        Image(systemName: "xmark.circle.fill")
+                            .resizable()
+                            .foregroundColor(Color.gray)
+                            .frame(width: 40, height: 40)
+                    }
                 }
-            }.padding(20)
+                Spacer()
+            }
+            .padding(.top, safeAreaInsets.top + 10)
+            .padding(.trailing, 20)
+            .frame(width: UIScreen.screenWidth)
+            
+            if startLoadingView {
+                customLoader
+            }
         }
-        .padding()
+        .edgesIgnoringSafeArea(.vertical)
         .onAppear {
             downloadObjFile()
         }
+    }
+    
+    var customLoader: some View {
+        ZStack(alignment: .center) {
+            VStack(spacing: 10) {
+                ProgressView()
+                    .progressViewStyle(CircularProgressViewStyle(tint: Color.white))
+                
+                Text("Please wait")
+                    .font(.CircularSTDMedium(with: 16))
+                    .foregroundColor(.white)
+                
+                Text("Rendering in process")
+                    .font(.CircularSTDRegular(with: 14))
+                    .foregroundColor(.white)
+            }
+            .padding(40)
+            .background(Color.blackBG)
+            .cornerRadius(10)
+            
+        }
+        .frame(height: UIScreen.screenHeight)
+        .frame(width: UIScreen.screenWidth)
+        .background(Color.black.opacity(0.5))
     }
     
     private func downloadObjFile() {
@@ -78,7 +117,7 @@ struct ModelDisplay: View {
     }
     
     private func downloadFile(with url: URL, completion: @escaping (URL?, Bool)-> Void) {
-        Commons.showActivityIndicator()
+        startLoadingView = true
         let sessionConfig = URLSessionConfiguration.default
         let session = URLSession(configuration: sessionConfig)
         
@@ -86,7 +125,7 @@ struct ModelDisplay: View {
         
         let task = session.downloadTask(with: request) { (tempLocalUrl, response, error) in
             DispatchQueue.main.async {
-                Commons.hideActivityIndicator()
+                startLoadingView = false
                 if let tempLocalUrl = tempLocalUrl, error == nil {
                     // Success
                     if let statusCode = (response as? HTTPURLResponse)?.statusCode {
@@ -96,7 +135,6 @@ struct ModelDisplay: View {
                         completion(nil, false)
                     }
                 } else {
-                    print(error?.localizedDescription)
                     completion(nil, false)
                 }
             }

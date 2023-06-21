@@ -36,4 +36,12 @@ extension UIScrollView {
     public func stopRefresher() {
         refreshControl?.endRefreshing()
     }
+    
+    public var currentPage: Int {
+        get {
+            let x = self.contentOffset.x
+            let w = self.bounds.size.width
+            return Int(ceil(x/w))
+        }
+    };
 }

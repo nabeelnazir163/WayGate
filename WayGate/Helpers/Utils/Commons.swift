@@ -32,6 +32,13 @@ class Commons {
         }
     }
     
+    static func goToWelcomeView() {
+        if let vc: IntroSliderViewController = UIStoryboard.initiate(storyboard: .splash) {
+            UIApplication.shared.windows.first?.rootViewController = vc
+            UIApplication.shared.windows.first?.makeKeyAndVisible()
+        }
+    }
+    
     static func goToMain() {
         if let vc: TabbarViewController = UIStoryboard.initiate(storyboard: .main) {
             UIApplication.shared.windows.first?.rootViewController = vc

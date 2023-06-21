@@ -24,6 +24,10 @@
 		42772DEC2A2B468E00AFE194 /* Camera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42772DEB2A2B468E00AFE194 /* Camera.storyboard */; };
 		42772DEF2A2B46A600AFE194 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42772DEE2A2B46A600AFE194 /* CameraViewController.swift */; };
 		428699872A37822D00D496B9 /* 3DModelDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428699862A37822D00D496B9 /* 3DModelDisplay.swift */; };
+		4292E0242A4343D0009A14A4 /* SplashIntermediate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4292E0232A4343D0009A14A4 /* SplashIntermediate.storyboard */; };
+		4292E0282A43446E009A14A4 /* IntroSliderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4292E0262A43446E009A14A4 /* IntroSliderCollectionViewCell.swift */; };
+		4292E0292A43446E009A14A4 /* IntroSliderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4292E0272A43446E009A14A4 /* IntroSliderCollectionViewCell.xib */; };
+		4292E02B2A434699009A14A4 /* IntroSliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4292E02A2A434699009A14A4 /* IntroSliderViewController.swift */; };
 		42C4270B2A4230A700567ACA /* UIScrollViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C4270A2A4230A700567ACA /* UIScrollViewExtension.swift */; };
 		42DCA4D02A2A0F7B001EA88F /* LogoutPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424026682A29CA8C009F4594 /* LogoutPopupViewController.swift */; };
 		42DCA4D12A2A0F7B001EA88F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424026662A29C910009F4594 /* SettingsViewController.swift */; };
@@ -118,6 +122,10 @@
 		42772DEB2A2B468E00AFE194 /* Camera.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Camera.storyboard; sourceTree = "<group>"; };
 		42772DEE2A2B46A600AFE194 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		428699862A37822D00D496B9 /* 3DModelDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3DModelDisplay.swift; sourceTree = "<group>"; };
+		4292E0232A4343D0009A14A4 /* SplashIntermediate.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashIntermediate.storyboard; sourceTree = "<group>"; };
+		4292E0262A43446E009A14A4 /* IntroSliderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroSliderCollectionViewCell.swift; sourceTree = "<group>"; };
+		4292E0272A43446E009A14A4 /* IntroSliderCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IntroSliderCollectionViewCell.xib; sourceTree = "<group>"; };
+		4292E02A2A434699009A14A4 /* IntroSliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroSliderViewController.swift; sourceTree = "<group>"; };
 		429620612A2E63FC006AEF27 /* KiriAdvanceCameraKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = KiriAdvanceCameraKit.xcframework; sourceTree = "<group>"; };
 		4297EAB52A2926E6007AE286 /* NSObjectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
 		42AC6DC82A29116A00717E46 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
@@ -225,6 +233,16 @@
 			path = "3D Model Display";
 			sourceTree = "<group>";
 		};
+		4292E0252A434451009A14A4 /* IntroSliders */ = {
+			isa = PBXGroup;
+			children = (
+				4292E0262A43446E009A14A4 /* IntroSliderCollectionViewCell.swift */,
+				4292E0272A43446E009A14A4 /* IntroSliderCollectionViewCell.xib */,
+				4292E02A2A434699009A14A4 /* IntroSliderViewController.swift */,
+			);
+			path = IntroSliders;
+			sourceTree = "<group>";
+		};
 		42AC6DCE2A291E1900717E46 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
@@ -232,6 +250,7 @@
 				424026AF2A29F372009F4594 /* LaunchScreen.storyboard */,
 				42AC6DCF2A291E2D00717E46 /* Main.storyboard */,
 				42772DEB2A2B468E00AFE194 /* Camera.storyboard */,
+				4292E0232A4343D0009A14A4 /* SplashIntermediate.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -239,6 +258,7 @@
 		42AC6DD32A29248C00717E46 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4292E0252A434451009A14A4 /* IntroSliders */,
 				428699852A37821100D496B9 /* 3D Model Display */,
 				42772DED2A2B469D00AFE194 /* Camera */,
 				424026652A29C906009F4594 /* Settings */,
@@ -469,12 +489,14 @@
 				42DCA4DB2A2A0F93001EA88F /* LaunchScreen.storyboard in Resources */,
 				42DCA4EF2A2A0FB2001EA88F /* CircularStd-Book.otf in Resources */,
 				42DCA4EC2A2A0FAD001EA88F /* Color.xcassets in Resources */,
+				4292E0242A4343D0009A14A4 /* SplashIntermediate.storyboard in Resources */,
 				42DCA4DA2A2A0F8F001EA88F /* Auth.storyboard in Resources */,
 				42DCA4EE2A2A0FB2001EA88F /* CircularStd-Black.otf in Resources */,
 				42DCA4D72A2A0F86001EA88F /* HomeTableViewCell.xib in Resources */,
 				42ED47EB2A2F9BFF00C63786 /* Loader.json in Resources */,
 				42DCA4EA2A2A0FAD001EA88F /* Assets.xcassets in Resources */,
 				42DCA4EB2A2A0FAD001EA88F /* Auth.xcassets in Resources */,
+				4292E0292A43446E009A14A4 /* IntroSliderCollectionViewCell.xib in Resources */,
 				42DCA4DC2A2A0F95001EA88F /* Main.storyboard in Resources */,
 				42DCA4F12A2A0FB2001EA88F /* CircularStd-Light.otf in Resources */,
 				42DCA4F22A2A0FB2001EA88F /* CircularStd-Medium.otf in Resources */,
@@ -490,9 +512,11 @@
 			files = (
 				42DCA4D52A2A0F83001EA88F /* LoginViewController.swift in Sources */,
 				42DCA4D62A2A0F83001EA88F /* ForgotPasswordViewController.swift in Sources */,
+				4292E0282A43446E009A14A4 /* IntroSliderCollectionViewCell.swift in Sources */,
 				42DCA4E52A2A0FA4001EA88F /* UIFontExtension.swift in Sources */,
 				428699872A37822D00D496B9 /* 3DModelDisplay.swift in Sources */,
 				42ED47DB2A2F931E00C63786 /* User.swift in Sources */,
+				4292E02B2A434699009A14A4 /* IntroSliderViewController.swift in Sources */,
 				42DCA4E32A2A0FA4001EA88F /* UIColorExtension.swift in Sources */,
 				423D8FC32A333232001B90ED /* CameraSettingsViewController.swift in Sources */,
 				4255C3632A32FF8600FD7995 /* UIViewPreview.swift in Sources */,
