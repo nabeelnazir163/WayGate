@@ -11,10 +11,14 @@ import SwiftUI
 class HomeViewController: UIViewController {
     //MARK:- Outlets
     @IBOutlet weak var homeTV: UITableView!
+    @IBOutlet weak var descriptiveStackView: UIStackView!
+    @IBOutlet weak var noDraftView: UIStackView!
     
     //MARK:- Constants
     private var nfts: [NFTItem] = [NFTItem]() {
         didSet {
+            noDraftView.isHidden = !nfts.isEmpty
+            descriptiveStackView.isHidden = nfts.isEmpty
             homeTV.reloadData()
         }
     }
@@ -22,6 +26,8 @@ class HomeViewController: UIViewController {
     //MARK:- Life Cycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        noDraftView.isHidden = true
+        descriptiveStackView.isHidden = true
         Commons.deleteDirectory(name: "/CameraKit/")
         setupUI()
         getNFTs()

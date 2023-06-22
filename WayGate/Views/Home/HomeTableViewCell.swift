@@ -33,12 +33,13 @@ class HomeTableViewCell: UITableViewCell {
                 statusBtn.borderWidth = 0
                 statusBtn.setTitleColor(.white, for: .normal)
                 if nft.status == .PROCESSED || nft.status == .COMPLETED {
-                    statusBtn.setTitle("View", for: .normal)
+                    statusBtn.setTitle("View NFT", for: .normal)
                 }
             case .INPROCESSING:
                 statusBtn.backgroundColor = .secondaryButton
                 statusBtn.borderWidth = 0
                 statusBtn.setTitleColor(.primaryText, for: .normal)
+                statusBtn.setTitle("Processing", for: .normal)
             }
         }
     }

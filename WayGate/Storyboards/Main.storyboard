@@ -41,19 +41,44 @@
                                 <rect key="frame" x="25" y="123" width="343" height="555.33333333333337"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
-                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="UEn-fU-F7J">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="nMj-HR-Zjx">
                                 <rect key="frame" x="25" y="698.33333333333337" width="343" height="30.666666666666629"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="InfoIcon" translatesAutoresizingMaskIntoConstraints="NO" id="x6k-xe-iGq">
-                                        <rect key="frame" x="0.0" y="0.0" width="15" height="15"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="15" id="aFA-7u-bcQ"/>
-                                            <constraint firstAttribute="width" secondItem="x6k-xe-iGq" secondAttribute="height" multiplier="1:1" id="zpY-Xv-JR6"/>
-                                        </constraints>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="UEn-fU-F7J">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="30.666666666666668"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="InfoIcon" translatesAutoresizingMaskIntoConstraints="NO" id="x6k-xe-iGq">
+                                                <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="20" id="aFA-7u-bcQ"/>
+                                                    <constraint firstAttribute="width" secondItem="x6k-xe-iGq" secondAttribute="height" multiplier="1:1" id="zpY-Xv-JR6"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="After rendering your 3D model is uploaded to web. Please review &amp; mint your NFT." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTY-Ue-5CO">
+                                                <rect key="frame" x="30" y="0.0" width="313" height="30.666666666666668"/>
+                                                <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="12"/>
+                                                <color key="textColor" name="SecondaryText"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="g5b-0J-X71">
+                                <rect key="frame" x="25" y="325.66666666666669" width="343" height="200.66666666666669"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NoDraft" translatesAutoresizingMaskIntoConstraints="NO" id="Bfz-HH-MNj">
+                                        <rect key="frame" x="119.66666666666666" y="0.0" width="104" height="104"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your 3D graphic have been ploaded to web. Please check &amp; mint your NFT." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTY-Ue-5CO">
-                                        <rect key="frame" x="25" y="0.0" width="318" height="30.666666666666668"/>
-                                        <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="12"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Drafts Added" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kad-Ms-hnq">
+                                        <rect key="frame" x="58.000000000000014" y="116" width="227.33333333333337" height="37"/>
+                                        <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="29"/>
+                                        <color key="textColor" name="BlackBG"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Generate a new NFT Draft from the web application using same account to create 3D models." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UEb-Fz-qqU">
+                                        <rect key="frame" x="3.3333333333333428" y="165" width="336.33333333333326" height="35.666666666666657"/>
+                                        <fontDescription key="fontDescription" name="CircularStd-Medium" family="Circular Std" pointSize="14"/>
                                         <color key="textColor" name="SecondaryText"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -64,26 +89,31 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="qaK-AA-DDS" firstAttribute="top" secondItem="X0u-dX-ozV" secondAttribute="bottom" constant="20" id="B7z-3s-kwy"/>
-                            <constraint firstItem="UEn-fU-F7J" firstAttribute="top" secondItem="qaK-AA-DDS" secondAttribute="bottom" constant="20" id="EAt-2V-kQg"/>
-                            <constraint firstItem="UEn-fU-F7J" firstAttribute="leading" secondItem="JMg-1J-Jgx" secondAttribute="leading" constant="25" id="Na3-2r-EG5"/>
-                            <constraint firstItem="JMg-1J-Jgx" firstAttribute="bottom" secondItem="UEn-fU-F7J" secondAttribute="bottom" constant="40" id="OqQ-xq-mq5"/>
+                            <constraint firstItem="g5b-0J-X71" firstAttribute="centerX" secondItem="v65-Wt-4zi" secondAttribute="centerX" id="JrG-fb-Twz"/>
                             <constraint firstItem="JMg-1J-Jgx" firstAttribute="trailing" secondItem="qaK-AA-DDS" secondAttribute="trailing" constant="25" id="WCu-Nu-due"/>
+                            <constraint firstAttribute="trailing" secondItem="nMj-HR-Zjx" secondAttribute="trailing" constant="25" id="X6n-v0-21g"/>
+                            <constraint firstItem="nMj-HR-Zjx" firstAttribute="leading" secondItem="JMg-1J-Jgx" secondAttribute="leading" constant="25" id="XHc-EY-Id9"/>
                             <constraint firstItem="X0u-dX-ozV" firstAttribute="centerX" secondItem="v65-Wt-4zi" secondAttribute="centerX" id="f0y-nW-7gb"/>
                             <constraint firstItem="qaK-AA-DDS" firstAttribute="leading" secondItem="JMg-1J-Jgx" secondAttribute="leading" constant="25" id="gae-Nu-XbG"/>
-                            <constraint firstItem="JMg-1J-Jgx" firstAttribute="trailing" secondItem="UEn-fU-F7J" secondAttribute="trailing" constant="25" id="l84-Sm-BaI"/>
+                            <constraint firstItem="nMj-HR-Zjx" firstAttribute="top" secondItem="qaK-AA-DDS" secondAttribute="bottom" constant="20" id="hjc-5H-kN8"/>
+                            <constraint firstItem="g5b-0J-X71" firstAttribute="leading" secondItem="v65-Wt-4zi" secondAttribute="leading" constant="25" id="nV6-3m-rNc"/>
+                            <constraint firstItem="g5b-0J-X71" firstAttribute="centerY" secondItem="v65-Wt-4zi" secondAttribute="centerY" id="rPJ-o9-f9q"/>
                             <constraint firstItem="X0u-dX-ozV" firstAttribute="top" secondItem="JMg-1J-Jgx" secondAttribute="top" constant="20" id="rV5-ql-SSA"/>
+                            <constraint firstItem="JMg-1J-Jgx" firstAttribute="bottom" secondItem="nMj-HR-Zjx" secondAttribute="bottom" constant="40" id="xhs-m4-pZf"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="HomeTabbarIcon" selectedImage="HomeSelected" id="x86-xs-Bun"/>
                     <connections>
+                        <outlet property="descriptiveStackView" destination="UEn-fU-F7J" id="3jd-bq-wfi"/>
                         <outlet property="homeTV" destination="qaK-AA-DDS" id="J1v-uy-uFZ"/>
+                        <outlet property="noDraftView" destination="g5b-0J-X71" id="byj-pI-6Iv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YDs-Ku-JkR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-639" y="600"/>
         </scene>
-        <!--Setting-->
+        <!--Settings-->
         <scene sceneID="1Aw-S4-5sO">
             <objects>
                 <viewController storyboardIdentifier="SettingsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="scP-tw-gVn" customClass="SettingsViewController" customModule="WayGate" customModuleProvider="target" sceneMemberID="viewController">
@@ -294,7 +324,7 @@
                             <constraint firstItem="n9w-mn-gij" firstAttribute="centerX" secondItem="iCD-wn-Pju" secondAttribute="centerX" id="tOT-DD-M7S"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Setting" image="SettingTabbarIcon" selectedImage="SettingSelected" id="AkN-4e-fe5"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="SettingTabbarIcon" selectedImage="SettingSelected" id="AkN-4e-fe5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IXh-6o-0oW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -462,11 +492,15 @@
         <image name="InfoIcon" width="18" height="18"/>
         <image name="Logo" width="250" height="35.666667938232422"/>
         <image name="Logout" width="24" height="24"/>
+        <image name="NoDraft" width="104" height="104"/>
         <image name="PrivacyPolicy" width="24" height="24"/>
         <image name="SettingSelected" width="32" height="32"/>
         <image name="SettingTabbarIcon" width="32" height="32"/>
         <image name="TermsAndCond" width="24" height="24"/>
         <image name="chevron.right" catalog="system" width="97" height="128"/>
+        <namedColor name="BlackBG">
+            <color red="0.1803921568627451" green="0.1803921568627451" blue="0.1803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="Border">
             <color red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
