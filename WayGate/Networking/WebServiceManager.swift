@@ -21,6 +21,12 @@ class WebServicesManager {
         CoreWebService.sendRequest(requestURL: URLs.SERVER_BASE_URL + EndPoint.login.path(), method: .post, paramters: params, showMessageType: .none, callBack: callBack)
     }
     
+    func forgotPassword(with email: String?, callBack: RequestCompletionBlock<BaseResponse<EmptyResponse>>.CompletionResponse?) {
+        var params = [String: Any]()
+        params["email"] = email
+        CoreWebService.sendRequest(requestURL: URLs.SERVER_BASE_URL + EndPoint.forgotPassword.path(), method: .post, paramters: params, showMessageType: .none, callBack: callBack)
+    }
+    
     //MARK:- Home
     func getHomeNFTs(callBack: RequestCompletionBlock<BaseResponse<NFT>>.CompletionResponse?) {
         let params = [String:Any]()

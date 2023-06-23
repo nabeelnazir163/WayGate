@@ -270,7 +270,7 @@
                                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G96-Ov-DEu">
                                                                 <rect key="frame" x="30" y="0.0" width="285" height="72"/>
                                                                 <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="16"/>
-                                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done"/>
                                                             </textField>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -360,6 +360,10 @@
                             <constraint firstItem="kND-g0-FZF" firstAttribute="top" secondItem="j1q-Vk-5Ni" secondAttribute="bottom" constant="60" id="wCi-xt-86W"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTF" destination="G96-Ov-DEu" id="jYM-N2-E98"/>
+                        <outlet property="resetPasswordBtn" destination="uxv-Ia-Vkm" id="Cnz-fF-Ivh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ntj-oU-ll3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -15,6 +15,7 @@ class URLs {
 enum EndPoint: String {
     //Login
     case login = "user/signin"
+    case forgotPassword = "user/forget_password"
     
     //NFTS
     case homeNFTs = "nftDraft/list_nft"
