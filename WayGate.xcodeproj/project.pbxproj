@@ -76,6 +76,7 @@
 		42ED47EB2A2F9BFF00C63786 /* Loader.json in Resources */ = {isa = PBXBuildFile; fileRef = 42ED47EA2A2F9BFF00C63786 /* Loader.json */; };
 		42ED47ED2A2FA0C700C63786 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42ED47EC2A2FA0C700C63786 /* UIButtonExtension.swift */; };
 		42ED47EF2A2FA88400C63786 /* NFT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42ED47EE2A2FA88400C63786 /* NFT.swift */; };
+		42FCCB692A45AF1400C768B8 /* Switches in Frameworks */ = {isa = PBXBuildFile; productRef = 42FCCB682A45AF1400C768B8 /* Switches */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -172,6 +173,7 @@
 				4223033A2A38C8A900B83982 /* Model3DKit.framework in Frameworks */,
 				42DCA4F92A2A1054001EA88F /* ObjectMapper in Frameworks */,
 				423E42402A2E652F0039B0B2 /* KiriAdvanceCameraKit.xcframework in Frameworks */,
+				42FCCB692A45AF1400C768B8 /* Switches in Frameworks */,
 				42DCA4F62A2A103E001EA88F /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,6 +435,7 @@
 				42DCA4F82A2A1054001EA88F /* ObjectMapper */,
 				42ED47E82A2F9BBB00C63786 /* Lottie */,
 				421E949D2A335A9A007F6981 /* MultiProgressView */,
+				42FCCB682A45AF1400C768B8 /* Switches */,
 			);
 			productName = WayGate;
 			productReference = 42DCA4BC2A2A0EE5001EA88F /* WayGate.app */;
@@ -467,6 +470,7 @@
 				42DCA4F72A2A1054001EA88F /* XCRemoteSwiftPackageReference "ObjectMapper" */,
 				42ED47E72A2F9BBB00C63786 /* XCRemoteSwiftPackageReference "lottie-spm" */,
 				421E949C2A335A9A007F6981 /* XCRemoteSwiftPackageReference "MultiProgressView" */,
+				42FCCB672A45AF1400C768B8 /* XCRemoteSwiftPackageReference "Switch-Animations" */,
 			);
 			productRefGroup = 42F3E1EF2A28F906007485B0 /* Products */;
 			projectDirPath = "";
@@ -810,6 +814,14 @@
 				minimumVersion = 4.2.0;
 			};
 		};
+		42FCCB672A45AF1400C768B8 /* XCRemoteSwiftPackageReference "Switch-Animations" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jwd-ali/Switch-Animations.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -832,6 +844,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 42ED47E72A2F9BBB00C63786 /* XCRemoteSwiftPackageReference "lottie-spm" */;
 			productName = Lottie;
+		};
+		42FCCB682A45AF1400C768B8 /* Switches */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42FCCB672A45AF1400C768B8 /* XCRemoteSwiftPackageReference "Switch-Animations" */;
+			productName = Switches;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

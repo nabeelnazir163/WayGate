@@ -8,13 +8,14 @@
 import SwiftUI
 import UIKit
 import KiriAdvanceCameraKit
+import Switches
 
 struct CameraAdvance: View {
     let cameraView = CameraView<AdvanceImageCaptureModel>()
     
     @Environment(\.safeAreaInsets) private var safeAreaInsets
     
-    @State var autoCameraMode = true
+    @State var isManualOn = false
     
     @State var isExposureSelected = false
     @State var isISOSelected = false
@@ -53,12 +54,11 @@ struct CameraAdvance: View {
                             .frame(width: 24, height: 24)
                     }
                     
-                    Toggle("Auto", isOn: $autoCameraMode)
-                        .labelsHidden()
-                        .rotationEffect(Angle(degrees: -90))
-                        .toggleStyle(SwitchToggleStyle(tint: Color.yellow))
+                    CustomToggle(isOn: $isManualOn)
+                        .frame(width: 40, height: 20)
+                        .rotationEffect(Angle(degrees: 90))
                     
-                    if !autoCameraMode {
+                    if isManualOn {
                         manualSettingsView
                     }
                 }
@@ -144,8 +144,8 @@ struct CameraAdvance: View {
             .padding(.bottom, 50)
         }
         .edgesIgnoringSafeArea(.all)
-        .onChange(of: autoCameraMode) { newValue in
-            cameraView.captureModel.isOpenAdvance = !newValue
+        .onChange(of: isManualOn) { newValue in
+            cameraView.captureModel.isOpenAdvance = newValue
         }
         .onChange(of: evValue) { newValue in
             cameraView.captureModel.evValue = newValue
@@ -322,5 +322,31 @@ struct CameraAdvance: View {
 struct CameraAdvance_Previews: PreviewProvider {
     static var previews: some View {
         CameraAdvance(dismissAction: {})
+    }
+}
+
+struct CustomToggle: UIViewRepresentable {
+    
+    @Binding var isOn: Bool
+    
+    func makeUIView(context: Context) -> YapSwitch {
+        let toggle = YapSwitch()
+        toggle.offImage = UIImage(named: "MOff")
+        toggle.onImage = UIImage(named: "AOff")
+        toggle.onTintColor = .theme
+        toggle.thumbImage = UIImage(named: "AutoThumb")
+        toggle.valueChange = { value in
+            if value {
+                toggle.thumbImage = UIImage(named: "ManualThumb")
+            } else {
+                toggle.thumbImage = UIImage(named: "AutoThumb")
+            }
+            isOn = value
+        }
+        return toggle
+    }
+    
+    func updateUIView(_ toggle: YapSwitch, context: Context) {
+        
     }
 }

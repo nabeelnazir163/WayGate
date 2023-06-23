@@ -101,7 +101,9 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         } else if item.status == .PROCESSED {
             open3DModel(item: item)
         } else if item.status == .INPROCESSING {
-            Commons.showAlert(msg: "Please wait, Your 3D model is in process")
+            Commons.showAlert(msg: "Please wait, your 3D model is in process")
+        } else if item.status == .FAILED {
+            Commons.showAlert(msg: "The image quality does not meet the minimum requirements. Please retry creating a new model with higher resolution and improved clarity for accurate model rendering.")
         }
     }
     

@@ -39,7 +39,7 @@ class HomeTableViewCell: UITableViewCell {
                 statusBtn.backgroundColor = .secondaryButton
                 statusBtn.borderWidth = 0
                 statusBtn.setTitleColor(.primaryText, for: .normal)
-                statusBtn.setTitle("Processing", for: .normal)
+                statusBtn.setTitle("In Process", for: .normal)
             }
         }
     }
