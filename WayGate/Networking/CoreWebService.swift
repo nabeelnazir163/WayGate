@@ -266,6 +266,7 @@ public class CoreWebService: NSObject {
                 if let code = dict["code"] as? Int {
                     statusCode = code
                 }
+                let message = dict["message"] as? String
                 let _: ResponseBlock<AnyObject> = { (_ sender: AnyObject) in
                     
                 }
@@ -277,7 +278,7 @@ public class CoreWebService: NSObject {
                         callBack?(.failed(AppError.ignoreError(message: error.localizedDescription)))
                     }
                 } else {
-                    callBack?(.failed(AppError.gernalError(message: error?.localizedDescription ?? "")))
+                    callBack?(.failed(AppError.gernalError(message: message ?? "")))
                 }
             }
             else {
@@ -285,7 +286,7 @@ public class CoreWebService: NSObject {
                     guard error.localizedDescription.lowercased() != "cancelled".lowercased() else {
                         return
                     }
-                    callBack?(.failed(AppError.gernalError(message: error.localizedDescription)))
+                    callBack?(.failed(AppError.gernalError(message: "Something went wrong")))
                     return
                 }
                 if let htmlData = String(data: data, encoding: .ascii)  as? T {
