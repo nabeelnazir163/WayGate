@@ -20,6 +20,7 @@
 		4255C3632A32FF8600FD7995 /* UIViewPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4255C3622A32FF8600FD7995 /* UIViewPreview.swift */; };
 		4255C3652A3303E900FD7995 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4255C3642A3303E900FD7995 /* Constants.swift */; };
 		425C3ABF2A42E42500C5DD41 /* UIScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425C3ABE2A42E42500C5DD41 /* UIScreen.swift */; };
+		426DC02C2A46CA8800BA1FB1 /* UITapGestureExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426DC02B2A46CA8800BA1FB1 /* UITapGestureExtension.swift */; };
 		42713CB42A2BB700008B63D6 /* CameraAdvance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42713CB32A2BB700008B63D6 /* CameraAdvance.swift */; };
 		42772DEC2A2B468E00AFE194 /* Camera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42772DEB2A2B468E00AFE194 /* Camera.storyboard */; };
 		42772DEF2A2B46A600AFE194 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42772DEE2A2B46A600AFE194 /* CameraViewController.swift */; };
@@ -118,6 +119,7 @@
 		4255C3622A32FF8600FD7995 /* UIViewPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewPreview.swift; sourceTree = "<group>"; };
 		4255C3642A3303E900FD7995 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		425C3ABE2A42E42500C5DD41 /* UIScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScreen.swift; sourceTree = "<group>"; };
+		426DC02B2A46CA8800BA1FB1 /* UITapGestureExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITapGestureExtension.swift; sourceTree = "<group>"; };
 		42713CB32A2BB700008B63D6 /* CameraAdvance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraAdvance.swift; sourceTree = "<group>"; };
 		427209BF2A29FAA3002256A8 /* CameraKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CameraKit.framework; path = ../../../../Downloads/CameraKit.framework; sourceTree = "<group>"; };
 		42772DEB2A2B468E00AFE194 /* Camera.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Camera.storyboard; sourceTree = "<group>"; };
@@ -350,6 +352,7 @@
 			isa = PBXGroup;
 			children = (
 				42F3E2102A28FD59007485B0 /* StringExtension.swift */,
+				426DC02B2A46CA8800BA1FB1 /* UITapGestureExtension.swift */,
 				4297EAB52A2926E6007AE286 /* NSObjectExtension.swift */,
 				42F3E2122A290079007485B0 /* DataDictionary.swift */,
 				42AC6DCA2A29176E00717E46 /* UIViewExtension.swift */,
@@ -527,6 +530,7 @@
 				42DCA4D32A2A0F7E001EA88F /* MainNavController.swift in Sources */,
 				42DCA4E42A2A0FA4001EA88F /* UIViewControllerExtension.swift in Sources */,
 				42DCA4E22A2A0FA4001EA88F /* DataDictionary.swift in Sources */,
+				426DC02C2A46CA8800BA1FB1 /* UITapGestureExtension.swift in Sources */,
 				42DCA4E62A2A0FA4001EA88F /* NSObjectExtension.swift in Sources */,
 				42DCA4D42A2A0F83001EA88F /* EmailVerificationSuccessVCViewController.swift in Sources */,
 				42DCA4D02A2A0F7B001EA88F /* LogoutPopupViewController.swift in Sources */,

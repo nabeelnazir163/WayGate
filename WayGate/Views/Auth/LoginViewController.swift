@@ -28,6 +28,7 @@ class LoginViewController: UIViewController {
     private func setupUI (){
         setupAttributedLabel()
         setupTextField()
+        addGesture()
     }
     
     private func setupTextField() {
@@ -42,6 +43,25 @@ class LoginViewController: UIViewController {
             .normal(" and ")
             .bold("Privacy policy")
             .normal(".")
+    }
+    
+    private func addGesture() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(didTapPrivacyLbl))
+        termsAndConditionLabel.isUserInteractionEnabled = true
+        termsAndConditionLabel.addGestureRecognizer(tap)
+    }
+    
+    
+    @objc private func didTapPrivacyLbl(_ gesture: UITapGestureRecognizer) {
+        if gesture.didTapAttributedString("Privacy policy", in: termsAndConditionLabel) {
+            if let url = URL(string: Constants.privacyPolicyURL), UIApplication.shared.canOpenURL(url) {
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            }
+        } else if gesture.didTapAttributedString("Waygate Terms of service", in: termsAndConditionLabel) {
+            if let url = URL(string: Constants.termsAndConditionURL), UIApplication.shared.canOpenURL(url) {
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            }
+        }
     }
     
     //MARK:- API URL
