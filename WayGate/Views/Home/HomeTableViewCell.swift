@@ -19,27 +19,30 @@ class HomeTableViewCell: UITableViewCell {
             guard let nft = nft else { return }
             titleLbl.text = nft.title
             descLbl.text = nft.description
-            
-            statusBtn.setTitle(nft.status?.rawValue.lowercased().capitalized, for: .normal)
-            
+                        
             switch nft.status {
-            case .DRAFT, .FAILED:
+            case .DRAFT:
                 statusBtn.backgroundColor = .clear
                 statusBtn.borderWidth = 2
                 statusBtn.borderColor = .primaryRed
                 statusBtn.setTitleColor(.primaryRed, for: .normal)
-            case .COMPLETED, .PROCESSED, .none:
+                statusBtn.setTitle("DRAFT", for: .normal)
+            case .FAILED, .none:
+                statusBtn.backgroundColor = .primaryRed
+                statusBtn.borderWidth = 2
+                statusBtn.borderColor = .primaryRed
+                statusBtn.setTitleColor(.white, for: .normal)
+                statusBtn.setTitle("DRAFT", for: .normal)
+            case .COMPLETED, .PROCESSED:
                 statusBtn.backgroundColor = .JungleGreen
                 statusBtn.borderWidth = 0
                 statusBtn.setTitleColor(.white, for: .normal)
-                if nft.status == .PROCESSED || nft.status == .COMPLETED {
-                    statusBtn.setTitle("View NFT", for: .normal)
-                }
+                statusBtn.setTitle("VIEW", for: .normal)
             case .INPROCESSING:
                 statusBtn.backgroundColor = .secondaryButton
                 statusBtn.borderWidth = 0
                 statusBtn.setTitleColor(.primaryText, for: .normal)
-                statusBtn.setTitle("In Process", for: .normal)
+                statusBtn.setTitle("IN PROCESS", for: .normal)
             }
         }
     }
