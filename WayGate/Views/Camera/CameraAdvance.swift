@@ -237,7 +237,7 @@ struct CameraAdvance: View {
                         .frame(width: 30, height: 30)
                         .foregroundColor(isShutterSelected ? Color.white : .gray)
                     
-                    Text("SS: 1/\(Int(shutterValue))")
+                    Text("SS: 1/\(Int(shutterValue * 100))")
                         .font(Font.CircularSTDRegular(with: 15))
                         .foregroundColor(isShutterSelected ? Color.white : .gray)
                 }
@@ -255,7 +255,7 @@ struct CameraAdvance: View {
                         .offset(x: -50, y: 0)
                         .rotationEffect(.degrees(-90.0), anchor: .center)
                 } else if isShutterSelected {
-                    Slider(value: $shutterValue, in: device.activeFormat.minExposureDuration.time...device.activeFormat.maxExposureDuration.time)
+                    Slider(value: $shutterValue, in: 0.001...device.activeFormat.maxExposureDuration.time)
                         .frame(width: 100)
                         .offset(x: -50, y: 0)
                         .rotationEffect(.degrees(-90.0), anchor: .center)
