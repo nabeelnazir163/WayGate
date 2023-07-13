@@ -334,6 +334,7 @@ struct CustomToggle: UIViewRepresentable {
         toggle.offImage = UIImage(named: "MOff")
         toggle.onImage = UIImage(named: "AOff")
         toggle.onTintColor = .theme
+        toggle.offTintColor = .theme
         toggle.thumbImage = UIImage(named: "AutoThumb")
         toggle.valueChange = { value in
             if value {
