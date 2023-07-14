@@ -50,8 +50,9 @@ struct CameraAdvance: View {
                     } label: {
                         Image(systemName: "xmark.circle.fill")
                             .resizable()
-                            .foregroundColor(Color.gray)
-                            .frame(width: 24, height: 24)
+                            .foregroundColor(Color.white)
+                            .padding(8)
+                            .frame(width: 40, height: 40)
                     }
                     
                     CustomToggle(isOn: $isManualOn)
