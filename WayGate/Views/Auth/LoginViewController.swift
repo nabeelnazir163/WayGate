@@ -96,8 +96,9 @@ class LoginViewController: UIViewController {
         }
     }
     
-    @IBAction func didTapPasswordEye(_ sender: Any) {
+    @IBAction func didTapPasswordEye(_ sender: UIButton) {
         passwordTF.isSecureTextEntry.toggle()
+        sender.setImage(UIImage(named: passwordTF.isSecureTextEntry ? "EyeIcon" : "EyeOffIcon"), for: .normal)
     }
 }
 

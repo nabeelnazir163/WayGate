@@ -31,13 +31,15 @@ struct ModelDisplay: View {
                 HStack {
                     Spacer()
                     
-                    Button {
-                        dismissAction()
-                    } label: {
-                        Image(systemName: "xmark.circle.fill")
-                            .resizable()
-                            .foregroundColor(Color.gray)
-                            .frame(width: 40, height: 40)
+                    if !startLoadingView {
+                        Button {
+                            dismissAction()
+                        } label: {
+                            Image(systemName: "xmark.circle.fill")
+                                .resizable()
+                                .foregroundColor(Color.gray)
+                                .frame(width: 40, height: 40)
+                        }
                     }
                 }
                 Spacer()
