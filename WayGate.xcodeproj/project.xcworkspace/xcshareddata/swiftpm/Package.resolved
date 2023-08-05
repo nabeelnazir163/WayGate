@@ -10,6 +10,15 @@
       }
     },
     {
+      "identity" : "kiri-engine-sdk-api",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Kiri-Innovation/KIRI-ENGINE-SDK-API.git",
+      "state" : {
+        "branch" : "ios",
+        "revision" : "e8bb79b669b19e9016e64052e21cc5aec3db9e11"
+      }
+    },
+    {
       "identity" : "lottie-spm",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/airbnb/lottie-spm.git",

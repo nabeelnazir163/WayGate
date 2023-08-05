@@ -7,6 +7,7 @@
 
 import KiriAdvanceCameraKit
 import SwiftUI
+import KIRIEngineSDK
 
 class HomeViewController: UIViewController {
     //MARK:- Outlets
@@ -97,13 +98,23 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let item = nfts[indexPath.row]
         if item.status == .DRAFT {
-            openCamera(item: item)
+            openPopup(item: item)
         } else if item.status == .PROCESSED {
             open3DModel(item: item)
         } else if item.status == .INPROCESSING {
             Commons.showAlert(msg: "Please wait, your 3D model is in process")
         } else if item.status == .FAILED {
             Commons.showAlert(msg: "The image quality does not meet the minimum requirements. Please retry creating a new model with higher resolution and improved clarity for accurate model rendering.")
+        }
+    }
+    
+    private func openPopup(item: NFTItem?) {
+        if let vc: PopupViewController = UIStoryboard.initiate(storyboard: .main) {
+            vc.modalTransitionStyle = .crossDissolve
+            vc.modalPresentationStyle = .overCurrentContext
+            vc.delegte = self
+            vc.item = item
+            present(vc, animated: true)
         }
     }
     
@@ -126,5 +137,32 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         vc.modalTransitionStyle = .crossDissolve
         vc.modalPresentationStyle = .overCurrentContext
         self.present(vc, animated: true)
+    }
+}
+
+extension HomeViewController: PopupViewControllerDelegate {
+    func didSelectVideo(item: NFTItem) {
+        Commons.showActivityIndicator()
+        KIRISDK.share.setup(envType: .test, appKey: Constants.AppKey) { result in
+            DispatchQueue.main.async {
+                
+                print("result:\(result)")
+                Commons.hideActivityIndicator()
+                switch result {
+                case .success:
+                    let camera = VideoCaptureContentView()
+                    let vc = UIHostingController(rootView: camera)
+                    vc.modalTransitionStyle = .crossDissolve
+                    vc.modalPresentationStyle = .overCurrentContext
+                    self.present(vc, animated: true)
+                case .failure:
+                    print("Failed")
+                }
+            }
+        }
+    }
+    
+    func didSelectPhotos(item: NFTItem) {
+        openCamera(item: item)
     }
 }

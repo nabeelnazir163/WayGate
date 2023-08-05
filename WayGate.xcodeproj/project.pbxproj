@@ -22,6 +22,7 @@
 		425C3ABF2A42E42500C5DD41 /* UIScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425C3ABE2A42E42500C5DD41 /* UIScreen.swift */; };
 		426DC02C2A46CA8800BA1FB1 /* UITapGestureExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426DC02B2A46CA8800BA1FB1 /* UITapGestureExtension.swift */; };
 		42713CB42A2BB700008B63D6 /* CameraAdvance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42713CB32A2BB700008B63D6 /* CameraAdvance.swift */; };
+		427313BA2A7D0AAA00CD2AE9 /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427313B92A7D0AAA00CD2AE9 /* PopupViewController.swift */; };
 		42772DEC2A2B468E00AFE194 /* Camera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42772DEB2A2B468E00AFE194 /* Camera.storyboard */; };
 		42772DEF2A2B46A600AFE194 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42772DEE2A2B46A600AFE194 /* CameraViewController.swift */; };
 		428699872A37822D00D496B9 /* 3DModelDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428699862A37822D00D496B9 /* 3DModelDisplay.swift */; };
@@ -29,6 +30,8 @@
 		4292E0282A43446E009A14A4 /* IntroSliderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4292E0262A43446E009A14A4 /* IntroSliderCollectionViewCell.swift */; };
 		4292E0292A43446E009A14A4 /* IntroSliderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4292E0272A43446E009A14A4 /* IntroSliderCollectionViewCell.xib */; };
 		4292E02B2A434699009A14A4 /* IntroSliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4292E02A2A434699009A14A4 /* IntroSliderViewController.swift */; };
+		42BDF0042A7E2EC70002F45A /* KIRIEngineSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 42BDF0032A7E2EC70002F45A /* KIRIEngineSDK */; };
+		42BDF0062A7E42370002F45A /* VideoSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BDF0052A7E42370002F45A /* VideoSuccessViewController.swift */; };
 		42C4270B2A4230A700567ACA /* UIScrollViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C4270A2A4230A700567ACA /* UIScrollViewExtension.swift */; };
 		42DCA4D02A2A0F7B001EA88F /* LogoutPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424026682A29CA8C009F4594 /* LogoutPopupViewController.swift */; };
 		42DCA4D12A2A0F7B001EA88F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424026662A29C910009F4594 /* SettingsViewController.swift */; };
@@ -78,6 +81,7 @@
 		42ED47ED2A2FA0C700C63786 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42ED47EC2A2FA0C700C63786 /* UIButtonExtension.swift */; };
 		42ED47EF2A2FA88400C63786 /* NFT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42ED47EE2A2FA88400C63786 /* NFT.swift */; };
 		42FCCB692A45AF1400C768B8 /* Switches in Frameworks */ = {isa = PBXBuildFile; productRef = 42FCCB682A45AF1400C768B8 /* Switches */; };
+		42FDF92B2A7E2CDC0074DA4D /* VideoRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FDF92A2A7E2CDC0074DA4D /* VideoRenderer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -122,6 +126,7 @@
 		426DC02B2A46CA8800BA1FB1 /* UITapGestureExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITapGestureExtension.swift; sourceTree = "<group>"; };
 		42713CB32A2BB700008B63D6 /* CameraAdvance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraAdvance.swift; sourceTree = "<group>"; };
 		427209BF2A29FAA3002256A8 /* CameraKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CameraKit.framework; path = ../../../../Downloads/CameraKit.framework; sourceTree = "<group>"; };
+		427313B92A7D0AAA00CD2AE9 /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
 		42772DEB2A2B468E00AFE194 /* Camera.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Camera.storyboard; sourceTree = "<group>"; };
 		42772DEE2A2B46A600AFE194 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		428699862A37822D00D496B9 /* 3DModelDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3DModelDisplay.swift; sourceTree = "<group>"; };
@@ -139,6 +144,7 @@
 		42AC6DD52A2924A700717E46 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		42AC6DD72A2924B800717E46 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		42AC6DD82A2924B800717E46 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		42BDF0052A7E42370002F45A /* VideoSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoSuccessViewController.swift; sourceTree = "<group>"; };
 		42C4270A2A4230A700567ACA /* UIScrollViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScrollViewExtension.swift; sourceTree = "<group>"; };
 		42DCA4B32A2A0D7E001EA88F /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		42DCA4B42A2A0D7F001EA88F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -163,6 +169,7 @@
 		42F3E21D2A2908F6007485B0 /* CircularStd-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Black.otf"; sourceTree = "<group>"; };
 		42F3E21E2A2908F6007485B0 /* CircularStd-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Bold.otf"; sourceTree = "<group>"; };
 		42F3E21F2A2908F6007485B0 /* CircularStd-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Book.otf"; sourceTree = "<group>"; };
+		42FDF92A2A7E2CDC0074DA4D /* VideoRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRenderer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +181,7 @@
 				42ED47E92A2F9BBB00C63786 /* Lottie in Frameworks */,
 				4223033A2A38C8A900B83982 /* Model3DKit.framework in Frameworks */,
 				42DCA4F92A2A1054001EA88F /* ObjectMapper in Frameworks */,
+				42BDF0042A7E2EC70002F45A /* KIRIEngineSDK in Frameworks */,
 				423E42402A2E652F0039B0B2 /* KiriAdvanceCameraKit.xcframework in Frameworks */,
 				42FCCB692A45AF1400C768B8 /* Switches in Frameworks */,
 				42DCA4F62A2A103E001EA88F /* Alamofire in Frameworks */,
@@ -225,6 +233,8 @@
 				42772DEE2A2B46A600AFE194 /* CameraViewController.swift */,
 				423D8FC22A333232001B90ED /* CameraSettingsViewController.swift */,
 				42713CB32A2BB700008B63D6 /* CameraAdvance.swift */,
+				42BDF0052A7E42370002F45A /* VideoSuccessViewController.swift */,
+				42FDF92A2A7E2CDC0074DA4D /* VideoRenderer.swift */,
 			);
 			path = Camera;
 			sourceTree = "<group>";
@@ -277,6 +287,7 @@
 			isa = PBXGroup;
 			children = (
 				42AC6DD52A2924A700717E46 /* HomeViewController.swift */,
+				427313B92A7D0AAA00CD2AE9 /* PopupViewController.swift */,
 				42AC6DD72A2924B800717E46 /* HomeTableViewCell.swift */,
 				42AC6DD82A2924B800717E46 /* HomeTableViewCell.xib */,
 			);
@@ -439,6 +450,7 @@
 				42ED47E82A2F9BBB00C63786 /* Lottie */,
 				421E949D2A335A9A007F6981 /* MultiProgressView */,
 				42FCCB682A45AF1400C768B8 /* Switches */,
+				42BDF0032A7E2EC70002F45A /* KIRIEngineSDK */,
 			);
 			productName = WayGate;
 			productReference = 42DCA4BC2A2A0EE5001EA88F /* WayGate.app */;
@@ -474,6 +486,7 @@
 				42ED47E72A2F9BBB00C63786 /* XCRemoteSwiftPackageReference "lottie-spm" */,
 				421E949C2A335A9A007F6981 /* XCRemoteSwiftPackageReference "MultiProgressView" */,
 				42FCCB672A45AF1400C768B8 /* XCRemoteSwiftPackageReference "Switch-Animations" */,
+				42BDF0022A7E2EC70002F45A /* XCRemoteSwiftPackageReference "KIRI-ENGINE-SDK-API" */,
 			);
 			productRefGroup = 42F3E1EF2A28F906007485B0 /* Products */;
 			projectDirPath = "";
@@ -522,6 +535,7 @@
 				4292E0282A43446E009A14A4 /* IntroSliderCollectionViewCell.swift in Sources */,
 				42DCA4E52A2A0FA4001EA88F /* UIFontExtension.swift in Sources */,
 				428699872A37822D00D496B9 /* 3DModelDisplay.swift in Sources */,
+				427313BA2A7D0AAA00CD2AE9 /* PopupViewController.swift in Sources */,
 				42ED47DB2A2F931E00C63786 /* User.swift in Sources */,
 				4292E02B2A434699009A14A4 /* IntroSliderViewController.swift in Sources */,
 				42DCA4E32A2A0FA4001EA88F /* UIColorExtension.swift in Sources */,
@@ -530,6 +544,7 @@
 				42DCA4D32A2A0F7E001EA88F /* MainNavController.swift in Sources */,
 				42DCA4E42A2A0FA4001EA88F /* UIViewControllerExtension.swift in Sources */,
 				42DCA4E22A2A0FA4001EA88F /* DataDictionary.swift in Sources */,
+				42FDF92B2A7E2CDC0074DA4D /* VideoRenderer.swift in Sources */,
 				426DC02C2A46CA8800BA1FB1 /* UITapGestureExtension.swift in Sources */,
 				42DCA4E62A2A0FA4001EA88F /* NSObjectExtension.swift in Sources */,
 				42DCA4D42A2A0F83001EA88F /* EmailVerificationSuccessVCViewController.swift in Sources */,
@@ -554,6 +569,7 @@
 				42ED47D92A2F92F800C63786 /* WebServiceManager.swift in Sources */,
 				42DCA4D82A2A0F86001EA88F /* HomeTableViewCell.swift in Sources */,
 				42ED47DF2A2F941200C63786 /* APIConstants.swift in Sources */,
+				42BDF0062A7E42370002F45A /* VideoSuccessViewController.swift in Sources */,
 				42ED47E22A2F979B00C63786 /* UserDefaultConfig.swift in Sources */,
 				42DCA4DD2A2A0F9B001EA88F /* AppDelegate.swift in Sources */,
 				42C4270B2A4230A700567ACA /* UIScrollViewExtension.swift in Sources */,
@@ -794,6 +810,14 @@
 				minimumVersion = 1.2.0;
 			};
 		};
+		42BDF0022A7E2EC70002F45A /* XCRemoteSwiftPackageReference "KIRI-ENGINE-SDK-API" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Kiri-Innovation/KIRI-ENGINE-SDK-API.git";
+			requirement = {
+				branch = ios;
+				kind = branch;
+			};
+		};
 		42DCA4F42A2A103E001EA88F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -833,6 +857,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 421E949C2A335A9A007F6981 /* XCRemoteSwiftPackageReference "MultiProgressView" */;
 			productName = MultiProgressView;
+		};
+		42BDF0032A7E2EC70002F45A /* KIRIEngineSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42BDF0022A7E2EC70002F45A /* XCRemoteSwiftPackageReference "KIRI-ENGINE-SDK-API" */;
+			productName = KIRIEngineSDK;
 		};
 		42DCA4F52A2A103E001EA88F /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
