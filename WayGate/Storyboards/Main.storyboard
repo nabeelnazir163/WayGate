@@ -58,10 +58,10 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0uc-et-chq">
-                                <rect key="frame" x="0.0" y="614.33333333333337" width="393" height="267.66666666666663"/>
+                                <rect key="frame" x="0.0" y="518.33333333333337" width="393" height="363.66666666666663"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="hr6-wg-cnR">
-                                        <rect key="frame" x="30" y="10" width="333" height="163.66666666666666"/>
+                                        <rect key="frame" x="30" y="10" width="333" height="259.66666666666669"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UH4-Ga-3wx">
                                                 <rect key="frame" x="126.66666666666666" y="0.0" width="80" height="5"/>
@@ -146,13 +146,13 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PgE-tZ-8WJ">
-                                                <rect key="frame" x="0.0" y="113.66666666666663" width="333" height="50"/>
+                                                <rect key="frame" x="0.0" y="113.66666666666663" width="333" height="146"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="46m-Qu-NRc">
-                                                        <rect key="frame" x="0.0" y="0.0" width="333" height="50"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="333" height="146"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ujj-QB-lv9">
-                                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                                <rect key="frame" x="0.0" y="48" width="50" height="50"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VideoIcon" translatesAutoresizingMaskIntoConstraints="NO" id="5SO-Ex-qr5">
                                                                         <rect key="frame" x="8" y="8" width="34" height="34"/>
@@ -174,16 +174,52 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="yXq-Kl-YXn">
-                                                                <rect key="frame" x="65" y="4.6666666666666288" width="268" height="41"/>
+                                                                <rect key="frame" x="65" y="56" width="268" height="34"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NeRF" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZuQ-SG-jDt">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="268" height="23"/>
-                                                                        <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="18"/>
-                                                                        <color key="textColor" name="BlackBG"/>
-                                                                        <nil key="highlightedColor"/>
-                                                                    </label>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fYe-yl-nWG">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="268" height="16"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="NeRF" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZuQ-SG-jDt">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="122.33333333333333" height="16"/>
+                                                                                <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="18"/>
+                                                                                <color key="textColor" name="BlackBG"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sDL-hF-03a">
+                                                                                <rect key="frame" x="122.33333333333334" y="0.0" width="35" height="16"/>
+                                                                                <subviews>
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4S8-JT-TiR">
+                                                                                        <rect key="frame" x="3" y="3" width="29" height="10"/>
+                                                                                        <fontDescription key="fontDescription" name="CircularStd-Medium" family="Circular Std" pointSize="10"/>
+                                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                    </label>
+                                                                                </subviews>
+                                                                                <color key="backgroundColor" name="Theme"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="trailing" secondItem="4S8-JT-TiR" secondAttribute="trailing" constant="3" id="IFQ-Oe-7HP"/>
+                                                                                    <constraint firstAttribute="width" constant="35" id="T43-Dr-lJY"/>
+                                                                                    <constraint firstAttribute="height" constant="16" id="Toh-fQ-7UW"/>
+                                                                                    <constraint firstItem="4S8-JT-TiR" firstAttribute="leading" secondItem="sDL-hF-03a" secondAttribute="leading" constant="3" id="lv5-l4-Ybj"/>
+                                                                                    <constraint firstItem="4S8-JT-TiR" firstAttribute="top" secondItem="sDL-hF-03a" secondAttribute="top" constant="3" id="nz8-us-3GG"/>
+                                                                                    <constraint firstAttribute="bottom" secondItem="4S8-JT-TiR" secondAttribute="bottom" constant="3" id="vSF-Oz-WMS"/>
+                                                                                </constraints>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                        <real key="value" value="4"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                </userDefinedRuntimeAttributes>
+                                                                            </view>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9eC-i1-ld0">
+                                                                                <rect key="frame" x="157.33333333333334" y="0.0" width="110.66666666666666" height="16"/>
+                                                                                <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="18"/>
+                                                                                <color key="textColor" name="BlackBG"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Record a video to generate a 3D model" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yYm-PU-3Sv">
-                                                                        <rect key="frame" x="0.0" y="23" width="268" height="18"/>
+                                                                        <rect key="frame" x="0.0" y="16" width="268" height="18"/>
                                                                         <fontDescription key="fontDescription" name="CircularStd-Medium" family="Circular Std" pointSize="14"/>
                                                                         <color key="textColor" name="SecondaryText"/>
                                                                         <nil key="highlightedColor"/>
@@ -193,7 +229,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e5J-hr-X1L">
-                                                        <rect key="frame" x="0.0" y="0.0" width="333" height="50"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="333" height="146"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <connections>
                                                             <action selector="didTapVideoSelection:" destination="TG6-O5-WRf" eventType="touchUpInside" id="I5q-Fd-ifX"/>
