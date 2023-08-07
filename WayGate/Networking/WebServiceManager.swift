@@ -53,4 +53,8 @@ class WebServicesManager {
         params["selectedFileFormat"] = selectedFileFormat
         CoreWebService.sendRequest(requestURL: URLs.SERVER_BASE_URL + EndPoint.updateStatus.path(), method: .post, paramters: params, showMessageType: .none, callBack: callBack)
     }
+    
+    func uploadVideoToKiri(video: Data, params: [String: Any], callBack: RequestCompletionBlock<BaseResponse<String>>.CompletionResponse?) {
+        CoreWebService.sendUploadRequest(requestURL: URLs.KIRI_BASE_URL + EndPoint.uploadVideo.path(), paramters: params, videoKey: "videoFile", videoData: video, callBack: callBack)
+    }
 }

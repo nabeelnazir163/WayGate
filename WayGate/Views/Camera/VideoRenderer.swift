@@ -30,9 +30,11 @@ struct VideoCaptureContentView: View {
     var isPresented = false
     @State
     var fileURL: URL?
+    var nftId: String?
     
-    init() {
+    init(nftId: String?) {
         vc.delegate = proxy
+        self.nftId = nftId
     }
     
     var body: some View {
@@ -60,7 +62,7 @@ struct VideoCaptureContentView: View {
             case .success(let response):
                 if let token = response.dataObject {
                     Constants.token = token
-                    openViewController()
+                    checkVideo()
                 } else {
                     Commons.showAlert(msg: response.message ?? "")
                 }
@@ -70,10 +72,29 @@ struct VideoCaptureContentView: View {
         }
     }
     
-    private func openViewController() {
+    func checkVideo() {
+        guard let url = self.fileURL else { return }
+        Commons.showActivityIndicator()
+        VideoTools.checkVideoFile(url) { result in
+            DispatchQueue.main.async {
+                Commons.hideActivityIndicator()
+                switch result {
+                case .success(let response):
+                    openViewController(result: response)
+                case .failure(let error):
+                    print("error:\(error)")
+                }
+            }
+        }
+    }
+    
+    private func openViewController(result: KIRIEngineSDK.VideoParameter) {
         if let vc: VideoSuccessViewController = UIStoryboard.initiate(storyboard: .camera) {
             vc.modalTransitionStyle = .crossDissolve
             vc.modalPresentationStyle = .overFullScreen
+            vc.result = result
+            vc.fileURL = fileURL
+            vc.nftId = nftId
             UIApplication.topViewController()?.present(vc, animated: true)
         }
     }
@@ -81,18 +102,6 @@ struct VideoCaptureContentView: View {
 
 struct VideoCaptureContentView_Previews: PreviewProvider {
     static var previews: some View {
-        VideoCaptureContentView()
+        VideoCaptureContentView(nftId: "")
     }
-}
-
-public struct UIViewControllerPreview<VC: UIViewController>: UIViewControllerRepresentable {
-
-  public let builder: () -> VC
-
-  public init(builder: @escaping () -> VC) {
-    self.builder = builder
-  }
-
-  public func makeUIViewController(context: Context) -> VC { builder() }
-  public func updateUIViewController(_ uiViewController: VC, context: Context) {}
 }

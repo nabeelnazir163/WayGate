@@ -200,10 +200,12 @@ public class CoreWebService: NSObject {
         paramters: [String:Any]? = nil,
         imagesKey: String? = nil,
         imagesArr: [UIImage]? = nil,
+        videoKey: String? = nil,
+        videoData: Data? = nil,
         mapContext: MapContext? = nil,
         showMessageType: MessageType = .allMessage,
         cacheRequest: Bool = false,
-        progressCallback: @escaping (Double) -> Void,
+        progressCallback: ((Double) -> Void)? = nil,
         callBack: RequestCompletionBlock<T>.CompletionResponse?) {
             let headers = HTTPHeaders(authHeader(isMultipart: true))
             var URL = try! URLRequest(url: requestURL, method: (HTTPMethod(rawValue: method.rawValue)), headers: headers)
@@ -214,9 +216,7 @@ public class CoreWebService: NSObject {
             print("\n\n------------Request Body-------------\n\n")
             
             URL.timeoutInterval = TimeInterval(Int.max)
-            
-            print("IMAGES_COUNT", imagesArr?.count ?? 0)
-            
+                        
             let requestModel = AF.upload(multipartFormData: { multipartFormData in
                 if paramters != nil {
                     for (key, value) in paramters! {
@@ -231,12 +231,16 @@ public class CoreWebService: NSObject {
                 if imagesArr != nil {
                     for i in 0..<imagesArr!.count {
                         let timestamp = "\(Date().timeIntervalSince1970)"
-                        multipartFormData.append(imagesArr![i].jpegData(compressionQuality: 1.0)!, withName: imagesKey!, fileName: "\(timestamp)image.jpg", mimeType: "image/jpeg")
+                        multipartFormData.append(imagesArr![i].jpegData(compressionQuality: 1.0)!, withName: imagesKey!, fileName: "\(timestamp)image.jpg", mimeType: "image/*")
                     }
+                }
+                
+                if videoData != nil {
+                    multipartFormData.append(videoData!, withName: videoKey!, fileName: "file.mp4", mimeType: "video/*")
                 }
             }, with: URL)
             requestModel.uploadProgress { progress in
-                progressCallback(progress.fractionCompleted)
+                progressCallback?(progress.fractionCompleted)
             }
             requestModel.response { response in
                 parseResponse(data: response.data, error: response.error, mapContext: mapContext, showMessageType: showMessageType, cacheKey: nil, callBack: callBack)

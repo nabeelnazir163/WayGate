@@ -150,7 +150,7 @@ extension HomeViewController: PopupViewControllerDelegate {
                 Commons.hideActivityIndicator()
                 switch result {
                 case .success:
-                    let camera = VideoCaptureContentView()
+                    let camera = VideoCaptureContentView(nftId: item._id)
                     let vc = UIHostingController(rootView: camera)
                     vc.modalTransitionStyle = .crossDissolve
                     vc.modalPresentationStyle = .overCurrentContext
