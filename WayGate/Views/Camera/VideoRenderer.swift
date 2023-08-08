@@ -24,6 +24,8 @@ class VideoCaptureProxy: VideoCaptureVCDelegate {
 }
 
 struct VideoCaptureContentView: View {
+    @Environment(\.safeAreaInsets) private var safeAreaInsets
+    
     let vc = VideoCaptureVC()!
     let proxy = VideoCaptureProxy()
     @State
@@ -31,17 +33,32 @@ struct VideoCaptureContentView: View {
     @State
     var fileURL: URL?
     var nftId: String?
+    var dismissAction: (() -> Void)
     
-    init(nftId: String?) {
+    init(nftId: String?,
+         dismissAction: @escaping () -> Void) {
         vc.delegate = proxy
         self.nftId = nftId
+        self.dismissAction = dismissAction
     }
     
     var body: some View {
-        VStack {
+        ZStack(alignment: .topTrailing) {
             UIViewControllerPreview {
                 vc
             }
+            
+            Button {
+                dismissAction()
+            } label: {
+                Image(systemName: "xmark.circle.fill")
+                    .resizable()
+                    .foregroundColor(Color.white)
+                    .padding(8)
+                    .frame(width: 40, height: 40)
+            }
+            .padding(.top, safeAreaInsets.top + 20)
+            .padding(.trailing, 20)
         }
         .onAppear {
             proxy.finishRecordingClosure = { fileURL, error in
@@ -100,8 +117,3 @@ struct VideoCaptureContentView: View {
     }
 }
 
-struct VideoCaptureContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        VideoCaptureContentView(nftId: "")
-    }
-}
