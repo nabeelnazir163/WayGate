@@ -135,9 +135,11 @@ struct ModelDisplay: View {
                         print("Successfully downloaded. Status code: \(statusCode)")
                         completion(tempLocalUrl, true)
                     } else {
+                        dismissAction()
                         completion(nil, false)
                     }
                 } else {
+                    dismissAction()
                     completion(nil, false)
                 }
             }
