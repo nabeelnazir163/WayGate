@@ -255,6 +255,7 @@ public class CoreWebService: NSObject {
         callBack: RequestCompletionBlock<T>.CompletionResponse?) {
             
             guard let data = data else {
+                callBack?(.failed(AppError.gernalError(message: "Something went wrong")))
                 return
             }
             

@@ -8,7 +8,7 @@
 import Foundation
 
 class URLs {
-    static let SERVER_BASE_URL = "https://stg-api.thewaygate.io/"
+    static let SERVER_BASE_URL = "https://dev-api.thewaygate.io/"
 //    static let KIRI_BASE_URL = "https://partner.kiri-engine.com/v2/"
     static let KIRI_BASE_URL = "https://test.partner.kiri-engine.com/v1/"
 }
