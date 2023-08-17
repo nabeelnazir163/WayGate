@@ -38,7 +38,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
     
     private func initializeSDK() {
-        CameraKit.share.setup(envType: .test, account: Constants.KIRI_ACCOUNT, password: Constants.KIRI_PASSWORD) { result in
+        CameraKit.share.setup(envType: .product, account: Constants.KIRI_ACCOUNT, password: Constants.KIRI_PASSWORD) { result in
             switch result {
             case .success:
                 break

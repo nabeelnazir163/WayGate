@@ -266,7 +266,7 @@ struct CameraAdvance: View {
     }
     
     private func setupCameraKit() {
-        CameraKit.share.setup(envType: .test, account: Constants.KIRI_ACCOUNT, password: Constants.KIRI_PASSWORD) { result in
+        CameraKit.share.setup(envType: .product, account: Constants.KIRI_ACCOUNT, password: Constants.KIRI_PASSWORD) { result in
             switch result {
             case .success:
                 self.startPreviewingCamera()

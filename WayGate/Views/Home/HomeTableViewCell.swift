@@ -32,7 +32,7 @@ class HomeTableViewCell: UITableViewCell {
                 statusBtn.borderWidth = 2
                 statusBtn.borderColor = .primaryRed
                 statusBtn.setTitleColor(.white, for: .normal)
-                statusBtn.setTitle("DRAFT", for: .normal)
+                statusBtn.setTitle("FAILED", for: .normal)
             case .COMPLETED, .PROCESSED:
                 statusBtn.backgroundColor = .JungleGreen
                 statusBtn.borderWidth = 0

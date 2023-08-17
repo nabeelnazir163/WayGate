@@ -18,5 +18,5 @@ class Constants {
     
     static let privacyPolicyURL = "https://dev.thewaygate.io/privacy-policy-mobile"
     static let termsAndConditionURL = "https://dev.thewaygate.io/terms-and-conditions-mobile"
-    static let AppKey = "d0aa6e9c3d331bc3e27901c9a636d8ec"
+    static let AppKey = "5cd1176cb3bc4222b31179cb5abe6eab" //"d0aa6e9c3d331bc3e27901c9a636d8ec"
 }

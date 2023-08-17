@@ -143,7 +143,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
 extension HomeViewController: PopupViewControllerDelegate {
     func didSelectVideo(item: NFTItem) {
         Commons.showActivityIndicator()
-        KIRISDK.share.setup(envType: .test, appKey: Constants.AppKey) { result in
+        KIRISDK.share.setup(envType: .product, appKey: Constants.AppKey) { result in
             DispatchQueue.main.async {
                 
                 print("result:\(result)")
