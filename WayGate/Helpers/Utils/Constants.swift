@@ -10,7 +10,7 @@ import Foundation
 class Constants {
     static var KIRI_ACCOUNT = "faisal10"
     static var KIRI_PASSWORD = "faisal10"
-    
+        
     static var token = ""
     static var serializeToken = ""
     

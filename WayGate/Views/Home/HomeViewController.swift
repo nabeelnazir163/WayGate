@@ -152,7 +152,7 @@ extension HomeViewController: PopupViewControllerDelegate {
                 case .success:
                     let camera = VideoCaptureContentView(nftId: item._id, dismissAction: {
                         self.viewWillAppear(false)
-                        self.dismiss( animated: true, completion: nil )
+                        self.dismiss(animated: true, completion: nil )
                     })
                     let vc = UIHostingController(rootView: camera)
                     vc.modalTransitionStyle = .crossDissolve

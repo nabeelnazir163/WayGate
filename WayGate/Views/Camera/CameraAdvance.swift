@@ -7,8 +7,8 @@
 
 import SwiftUI
 import UIKit
-import KiriAdvanceCameraKit
 import Switches
+import KIRIEngineSDK
 
 struct CameraAdvance: View {
     let cameraView = CameraView<AdvanceImageCaptureModel>()
@@ -266,7 +266,7 @@ struct CameraAdvance: View {
     }
     
     private func setupCameraKit() {
-        CameraKit.share.setup(envType: .product, account: Constants.KIRI_ACCOUNT, password: Constants.KIRI_PASSWORD) { result in
+        KIRISDK.share.setup(envType: .product, appKey: Constants.AppKey) { result in
             switch result {
             case .success:
                 self.startPreviewingCamera()
