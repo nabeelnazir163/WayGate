@@ -46,11 +46,12 @@ class WebServicesManager {
     }
     
     //Upload token to our server
-    func updateNFtStatus(nftId: String?, id: String?, selectedFileFormat: String?, callBack: RequestCompletionBlock<BaseResponse<EmptyResponse>>.CompletionResponse?) {
+    func updateNFtStatus(nftId: String?, id: String?, selectedFileFormat: String?, media_type: String, callBack: RequestCompletionBlock<BaseResponse<EmptyResponse>>.CompletionResponse?) {
         var params = [String: Any]()
         params["nftId"] = nftId
         params["id"] = id
         params["selectedFileFormat"] = selectedFileFormat
+        params["media_type"] = media_type
         CoreWebService.sendRequest(requestURL: URLs.SERVER_BASE_URL + EndPoint.updateStatus.path(), method: .post, paramters: params, showMessageType: .none, callBack: callBack)
     }
     

@@ -45,7 +45,7 @@ class VideoSuccessViewController: UIViewController {
     
     private func updateNFTStatus() {
         Commons.showActivityIndicator()
-        WebServicesManager.shared.updateNFtStatus(nftId: nftId, id: Constants.serializeToken, selectedFileFormat: FileFormatType.OBJ.rawValue) { result in
+        WebServicesManager.shared.updateNFtStatus(nftId: nftId, id: Constants.serializeToken, selectedFileFormat: FileFormatType.OBJ.rawValue, media_type: "video") { result in
             Commons.hideActivityIndicator()
             switch result {
             case .success(let response):

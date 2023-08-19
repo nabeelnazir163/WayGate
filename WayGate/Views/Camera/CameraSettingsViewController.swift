@@ -139,7 +139,7 @@ class CameraSettingsViewController: UIViewController {
     
     private func updateNFTStatus() {
         Commons.showActivityIndicator()
-        WebServicesManager.shared.updateNFtStatus(nftId: nftId, id: Constants.serializeToken, selectedFileFormat: fileFormat.rawValue) { result in
+        WebServicesManager.shared.updateNFtStatus(nftId: nftId, id: Constants.serializeToken, selectedFileFormat: fileFormat.rawValue, media_type: "image") { result in
             Commons.hideActivityIndicator()
             switch result {
             case .success(let response):
