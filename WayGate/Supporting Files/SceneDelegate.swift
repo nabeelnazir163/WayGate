@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import KiriAdvanceCameraKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -19,7 +18,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         Thread.sleep(forTimeInterval: 1.5)
         UIApplication.shared.isIdleTimerDisabled = true
-        initializeSDK()
         setupLandingScreen()
         
         guard let _ = (scene as? UIWindowScene) else { return }
@@ -33,17 +31,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                 Commons.goToMain()
             } else {
                 Commons.goToLogin()
-            }
-        }
-    }
-    
-    private func initializeSDK() {
-        CameraKit.share.setup(envType: .product, account: Constants.KIRI_ACCOUNT, password: Constants.KIRI_PASSWORD) { result in
-            switch result {
-            case .success:
-                break
-            case .failure:
-                print("Error")
             }
         }
     }

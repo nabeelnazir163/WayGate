@@ -348,6 +348,8 @@ public class CoreWebService: NSObject {
         } else {
             headers["Content-Type"] = "application/json"
         }
+        print("\n\n------------HEADERS-------------\n\n")
+        print(headers as Any)
         return headers
     }
 }
