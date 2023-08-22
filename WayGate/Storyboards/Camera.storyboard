@@ -671,19 +671,83 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vbK-aK-ye0">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6km-Xk-SMt">
+                                        <rect key="frame" x="20" y="350.66666666666669" width="350" height="143"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Daw-dK-b3k">
+                                                <rect key="frame" x="24" y="24" width="302" height="95"/>
+                                                <subviews>
+                                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S8p-QU-BqS" customClass="MultiProgressView" customModule="MultiProgressView">
+                                                        <rect key="frame" x="0.0" y="0.0" width="302" height="10"/>
+                                                        <color key="backgroundColor" name="SecondaryText"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="10" id="XEN-Ds-T1E"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Uploading" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SEq-ud-hMG">
+                                                        <rect key="frame" x="108" y="22" width="86" height="23"/>
+                                                        <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="18"/>
+                                                        <color key="textColor" name="SecondaryButton"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We are uploading the photos, do not close the app" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g9J-li-Btg">
+                                                        <rect key="frame" x="6.6666666666666572" y="57" width="289" height="38"/>
+                                                        <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="15"/>
+                                                        <color key="textColor" name="SecondaryButton"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="S8p-QU-BqS" firstAttribute="leading" secondItem="Daw-dK-b3k" secondAttribute="leading" id="KA7-ll-gdF"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" name="BlackBG"/>
+                                        <constraints>
+                                            <constraint firstItem="Daw-dK-b3k" firstAttribute="leading" secondItem="6km-Xk-SMt" secondAttribute="leading" constant="24" id="ga2-jn-Kbb"/>
+                                            <constraint firstAttribute="trailing" secondItem="Daw-dK-b3k" secondAttribute="trailing" constant="24" id="hNr-s0-Joi"/>
+                                            <constraint firstAttribute="bottom" secondItem="Daw-dK-b3k" secondAttribute="bottom" constant="24" id="wRu-72-UoB"/>
+                                            <constraint firstItem="Daw-dK-b3k" firstAttribute="top" secondItem="6km-Xk-SMt" secondAttribute="top" constant="24" id="zOX-5Y-zGc"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.18039215689999999" green="0.18039215689999999" blue="0.18039215689999999" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="6km-Xk-SMt" firstAttribute="leading" secondItem="vbK-aK-ye0" secondAttribute="leading" constant="20" id="MvO-U3-9fG"/>
+                                    <constraint firstItem="6km-Xk-SMt" firstAttribute="centerY" secondItem="vbK-aK-ye0" secondAttribute="centerY" id="SUo-ga-QqQ"/>
+                                    <constraint firstItem="6km-Xk-SMt" firstAttribute="centerX" secondItem="vbK-aK-ye0" secondAttribute="centerX" id="bYc-Z5-k71"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sFQ-If-Dw5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="sFQ-If-Dw5" firstAttribute="bottom" secondItem="2ul-7h-cAc" secondAttribute="bottom" constant="10" id="1ms-83-1Wd"/>
+                            <constraint firstItem="vbK-aK-ye0" firstAttribute="leading" secondItem="sFQ-If-Dw5" secondAttribute="leading" id="6cN-VQ-5tD"/>
                             <constraint firstItem="sFQ-If-Dw5" firstAttribute="trailing" secondItem="tHQ-RG-dRp" secondAttribute="trailing" constant="25" id="8D9-bE-czl"/>
+                            <constraint firstItem="vbK-aK-ye0" firstAttribute="trailing" secondItem="sFQ-If-Dw5" secondAttribute="trailing" id="Qjn-5G-abc"/>
                             <constraint firstItem="tHQ-RG-dRp" firstAttribute="centerY" secondItem="jaK-hr-Btq" secondAttribute="centerY" id="UEm-0k-FdJ"/>
+                            <constraint firstItem="vbK-aK-ye0" firstAttribute="top" secondItem="jaK-hr-Btq" secondAttribute="top" id="Ycs-fL-fsd"/>
                             <constraint firstItem="sFQ-If-Dw5" firstAttribute="trailing" secondItem="2ul-7h-cAc" secondAttribute="trailing" constant="25" id="bQI-2b-Ngu"/>
                             <constraint firstItem="tHQ-RG-dRp" firstAttribute="centerX" secondItem="jaK-hr-Btq" secondAttribute="centerX" id="cYv-Yc-D1I"/>
                             <constraint firstItem="tHQ-RG-dRp" firstAttribute="leading" secondItem="sFQ-If-Dw5" secondAttribute="leading" constant="25" id="ela-df-YE9"/>
+                            <constraint firstAttribute="bottom" secondItem="vbK-aK-ye0" secondAttribute="bottom" id="qQ4-zI-XUA"/>
                             <constraint firstItem="2ul-7h-cAc" firstAttribute="leading" secondItem="sFQ-If-Dw5" secondAttribute="leading" constant="25" id="ydl-jn-e88"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="loaderView" destination="vbK-aK-ye0" id="xeI-Zy-KMs"/>
+                        <outlet property="progressView" destination="S8p-QU-BqS" id="rJb-Di-5aL"/>
+                        <outlet property="uploadLbl" destination="SEq-ud-hMG" id="cn7-qm-q9Y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WlB-fv-m3D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
