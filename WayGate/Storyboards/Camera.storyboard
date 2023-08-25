@@ -515,8 +515,8 @@
                                                         <color key="textColor" name="SecondaryButton"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We are uploading the photos, do not close the app" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hsk-yB-4ea">
-                                                        <rect key="frame" x="6.6666666666666572" y="57" width="289" height="38"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We are uploading the media files, do not close the app" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hsk-yB-4ea">
+                                                        <rect key="frame" x="12.666666666666657" y="57" width="276.66666666666674" height="38"/>
                                                         <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="15"/>
                                                         <color key="textColor" name="SecondaryButton"/>
                                                         <nil key="highlightedColor"/>
@@ -693,8 +693,8 @@
                                                         <color key="textColor" name="SecondaryButton"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We are uploading the photos, do not close the app" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g9J-li-Btg">
-                                                        <rect key="frame" x="6.6666666666666572" y="57" width="289" height="38"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We are uploading the media files, do not close the app" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g9J-li-Btg">
+                                                        <rect key="frame" x="12.666666666666657" y="57" width="276.66666666666674" height="38"/>
                                                         <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="15"/>
                                                         <color key="textColor" name="SecondaryButton"/>
                                                         <nil key="highlightedColor"/>

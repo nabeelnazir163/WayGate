@@ -187,6 +187,7 @@ public class CoreWebService: NSObject {
                 let httpResponse = response.response
                 if httpResponse?.statusCode == 401 {
                     DispatchQueue.main.async {
+                        Commons.goToLogin()
                     }
                     return
                 }
@@ -243,6 +244,13 @@ public class CoreWebService: NSObject {
                 progressCallback?(progress.fractionCompleted)
             }
             requestModel.response { response in
+                let httpResponse = response.response
+                if httpResponse?.statusCode == 401 {
+                    DispatchQueue.main.async {
+                        Commons.goToLogin()
+                    }
+                    return
+                }
                 parseResponse(data: response.data, error: response.error, mapContext: mapContext, showMessageType: showMessageType, cacheKey: nil, callBack: callBack)
             }
         }
