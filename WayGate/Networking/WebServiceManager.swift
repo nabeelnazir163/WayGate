@@ -66,4 +66,9 @@ class WebServicesManager {
         params["status"] = NFTStatus.DRAFT.rawValue
         CoreWebService.sendRequest(requestURL: URLs.SERVER_BASE_URL + EndPoint.createNFT.path(), method: .post, paramters: params, callBack: callBack)
     }
+    
+    func deleteNFT(id: String?, callBack: RequestCompletionBlock<BaseResponse<EmptyResponse>>.CompletionResponse?) {
+        var params = [String: Any]()
+        CoreWebService.sendRequest(requestURL: URLs.SERVER_BASE_URL + EndPoint.deleteNFT.path() + "\(id ?? "")", method: .get, paramters: params, callBack: callBack)
+    }
 }

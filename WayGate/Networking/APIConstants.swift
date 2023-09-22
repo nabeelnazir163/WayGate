@@ -22,6 +22,7 @@ enum EndPoint: String {
     case homeNFTs = "nftDraft/list_nft"
     case updateStatus = "nftDraft/nft_status"
     case createNFT = "nftDraft/create_nft"
+    case deleteNFT = "nftDraft/"
     
     //KIRI
     case getKiriToken = "app/auth/open/getToken"

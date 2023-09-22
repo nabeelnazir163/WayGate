@@ -78,6 +78,26 @@ class HomeViewController: UIViewController {
             }
         }
     }
+    
+    private func deleteNFT(with id: String?) {
+        Commons.showActivityIndicator()
+        WebServicesManager.shared.deleteNFT(id: id) { [weak self] result in
+            guard let `self` = self else { return }
+            Commons.hideActivityIndicator()
+            switch result {
+            case .success(let baseResponse):
+                if baseResponse.status == 200 {
+                    if let id = self.nfts.firstIndex(where: { $0._id == id }) {
+                        self.nfts.remove(at: id)
+                    }
+                } else {
+                    Commons.showAlert(msg: baseResponse.message ?? "")
+                }
+            case .failed(let error):
+                Commons.showAlert(msg: error.localizedDescription)
+            }
+        }
+    }
 }
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
@@ -177,8 +197,9 @@ extension HomeViewController: HomeTableViewCellProtocol {
         
         let alert = UIAlertController(title: "Delete Asset?", message: nil, preferredStyle: .actionSheet)
         
-        alert.addAction(UIAlertAction(title: item.status == .DRAFT ? "Remove Draft" : "Remove 3D Model", style: .destructive , handler:{ (UIAlertAction)in
-            print("User click Approve button")
+        alert.addAction(UIAlertAction(title: item.status == .DRAFT ? "Remove Draft" : "Remove 3D Model", style: .destructive , handler: { [weak self] (UIAlertAction)in
+            guard let `self` = self else { return }
+            self.deleteNFT(with: item._id)
         }))
         
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel , handler: nil))
