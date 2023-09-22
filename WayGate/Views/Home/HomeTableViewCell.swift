@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol HomeTableViewCellProtocol: AnyObject {
+    func didTapDeleteItem(item: NFTItem?)
+}
+
 class HomeTableViewCell: UITableViewCell {
     //MARK:- Outlets
     @IBOutlet weak var titleLbl: UILabel!
@@ -14,12 +18,16 @@ class HomeTableViewCell: UITableViewCell {
     
     @IBOutlet weak var statusBtn: UIButton!
     
+    @IBOutlet weak var settingsBtn: UIButton!
+    
+    weak var delegate: HomeTableViewCellProtocol?
+    
     var nft: NFTItem? {
         didSet {
             guard let nft = nft else { return }
             titleLbl.text = nft.title
             descLbl.text = nft.description
-                        
+            settingsBtn.isHidden = false
             switch nft.status {
             case .DRAFT:
                 statusBtn.backgroundColor = .clear
@@ -43,7 +51,12 @@ class HomeTableViewCell: UITableViewCell {
                 statusBtn.borderWidth = 0
                 statusBtn.setTitleColor(.primaryText, for: .normal)
                 statusBtn.setTitle("IN PROCESS", for: .normal)
+                settingsBtn.isHidden = true
             }
         }
+    }
+    
+    @IBAction func didTapSettings(_ sender: Any) {
+        delegate?.didTapDeleteItem(item: nft)
     }
 }

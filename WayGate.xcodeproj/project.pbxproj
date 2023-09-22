@@ -10,6 +10,8 @@
 		421E949E2A335A9A007F6981 /* MultiProgressView in Frameworks */ = {isa = PBXBuildFile; productRef = 421E949D2A335A9A007F6981 /* MultiProgressView */; };
 		4223033A2A38C8A900B83982 /* Model3DKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 422303382A38C87700B83982 /* Model3DKit.framework */; };
 		4223033B2A38C8A900B83982 /* Model3DKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 422303382A38C87700B83982 /* Model3DKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		422DD1AC2ABDB88D006C6374 /* DraftPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422DD1AB2ABDB88D006C6374 /* DraftPopupViewController.swift */; };
+		422DD1AE2ABDB8FF006C6374 /* EmptyTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422DD1AD2ABDB8FF006C6374 /* EmptyTabbarViewController.swift */; };
 		422F9B842A2B4DDC0005182F /* Camera.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 422F9B832A2B4DDC0005182F /* Camera.xcassets */; };
 		423D8FC12A3330C6001B90ED /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423D8FC02A3330C6001B90ED /* UIApplicationExtension.swift */; };
 		423D8FC32A333232001B90ED /* CameraSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423D8FC22A333232001B90ED /* CameraSettingsViewController.swift */; };
@@ -107,6 +109,8 @@
 		4220427D2A29BD8900C0C5C1 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		4220427F2A29BE9C00C0C5C1 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		422303382A38C87700B83982 /* Model3DKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Model3DKit.framework; sourceTree = "<group>"; };
+		422DD1AB2ABDB88D006C6374 /* DraftPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraftPopupViewController.swift; sourceTree = "<group>"; };
+		422DD1AD2ABDB8FF006C6374 /* EmptyTabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyTabbarViewController.swift; sourceTree = "<group>"; };
 		422F9B832A2B4DDC0005182F /* Camera.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Camera.xcassets; sourceTree = "<group>"; };
 		423D8FC02A3330C6001B90ED /* UIApplicationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtension.swift; sourceTree = "<group>"; };
 		423D8FC22A333232001B90ED /* CameraSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraSettingsViewController.swift; sourceTree = "<group>"; };
@@ -201,6 +205,15 @@
 			path = Auth;
 			sourceTree = "<group>";
 		};
+		422DD1AA2ABDB865006C6374 /* DraftPopup */ = {
+			isa = PBXGroup;
+			children = (
+				422DD1AB2ABDB88D006C6374 /* DraftPopupViewController.swift */,
+				422DD1AD2ABDB8FF006C6374 /* EmptyTabbarViewController.swift */,
+			);
+			path = DraftPopup;
+			sourceTree = "<group>";
+		};
 		4240265E2A29C551009F4594 /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -272,6 +285,7 @@
 		42AC6DD32A29248C00717E46 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				422DD1AA2ABDB865006C6374 /* DraftPopup */,
 				4292E0252A434451009A14A4 /* IntroSliders */,
 				428699852A37821100D496B9 /* 3D Model Display */,
 				42772DED2A2B469D00AFE194 /* Camera */,
@@ -532,6 +546,7 @@
 			files = (
 				42DCA4D52A2A0F83001EA88F /* LoginViewController.swift in Sources */,
 				42DCA4D62A2A0F83001EA88F /* ForgotPasswordViewController.swift in Sources */,
+				422DD1AE2ABDB8FF006C6374 /* EmptyTabbarViewController.swift in Sources */,
 				4292E0282A43446E009A14A4 /* IntroSliderCollectionViewCell.swift in Sources */,
 				42DCA4E52A2A0FA4001EA88F /* UIFontExtension.swift in Sources */,
 				428699872A37822D00D496B9 /* 3DModelDisplay.swift in Sources */,
@@ -559,6 +574,7 @@
 				42DCA4E92A2A0FA8001EA88F /* CoreWebService.swift in Sources */,
 				42DCA4E82A2A0FA4001EA88F /* StringExtension.swift in Sources */,
 				42DCA4D12A2A0F7B001EA88F /* SettingsViewController.swift in Sources */,
+				422DD1AC2ABDB88D006C6374 /* DraftPopupViewController.swift in Sources */,
 				42DCA4E72A2A0FA4001EA88F /* NSMutableAttributedString.swift in Sources */,
 				4255C35F2A32FEFE00FD7995 /* UIEdgeInsetsExtension.swift in Sources */,
 				42ED47ED2A2FA0C700C63786 /* UIButtonExtension.swift in Sources */,

@@ -16,7 +16,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var noDraftView: UIStackView!
     
     //MARK:- Constants
-    private var nfts: [NFTItem] = [NFTItem]() {
+    var nfts: [NFTItem] = [NFTItem]() {
         didSet {
             noDraftView.isHidden = !nfts.isEmpty
             descriptiveStackView.isHidden = nfts.isEmpty
@@ -90,6 +90,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             return UITableViewCell()
         }
         
+        cell.delegate = self
         cell.nft = nfts[indexPath.row]
         
         return cell
@@ -167,5 +168,22 @@ extension HomeViewController: PopupViewControllerDelegate {
     
     func didSelectPhotos(item: NFTItem) {
         openCamera(item: item)
+    }
+}
+
+extension HomeViewController: HomeTableViewCellProtocol {
+    func didTapDeleteItem(item: NFTItem?) {
+        guard let item = item else { return }
+        
+        let alert = UIAlertController(title: "Delete Asset?", message: nil, preferredStyle: .actionSheet)
+        
+        alert.addAction(UIAlertAction(title: item.status == .DRAFT ? "Remove Draft" : "Remove 3D Model", style: .destructive , handler:{ (UIAlertAction)in
+            print("User click Approve button")
+        }))
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel , handler: nil))
+        present(alert, animated: true, completion: {
+            print("completion block")
+        })
     }
 }

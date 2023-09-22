@@ -58,4 +58,12 @@ class WebServicesManager {
     func uploadVideoToKiri(video: Data, params: [String: Any], progressCallback: @escaping (Double) -> Void, callBack: RequestCompletionBlock<BaseResponse<String>>.CompletionResponse?) {
         CoreWebService.sendUploadRequest(requestURL: URLs.KIRI_BASE_URL + EndPoint.uploadVideo.path(), paramters: params, videoKey: "videoFile", videoData: video, progressCallback: progressCallback, callBack: callBack)
     }
+    
+    //Create NFT
+    func createNFT(title: String?, callBack: RequestCompletionBlock<BaseResponse<NFTItem>>.CompletionResponse?) {
+        var params = [String: Any]()
+        params["title"] = title
+        params["status"] = NFTStatus.DRAFT.rawValue
+        CoreWebService.sendRequest(requestURL: URLs.SERVER_BASE_URL + EndPoint.createNFT.path(), method: .post, paramters: params, callBack: callBack)
+    }
 }
