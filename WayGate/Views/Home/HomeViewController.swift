@@ -159,10 +159,8 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         vc.modalPresentationStyle = .overCurrentContext
         self.present(vc, animated: true)
     }
-}
-
-extension HomeViewController: PopupViewControllerDelegate {
-    func didSelectVideo(item: NFTItem) {
+    
+    private func openVideoMode(item: NFTItem) {
         Commons.showActivityIndicator()
         KIRISDK.share.setup(envType: .product, appKey: Constants.AppKey) { result in
             DispatchQueue.main.async {
@@ -186,8 +184,35 @@ extension HomeViewController: PopupViewControllerDelegate {
         }
     }
     
+    private func openConfirmationPopup(for assetType: AssetType, item: NFTItem) {
+        if let vc: AnimatingGifViewController = UIStoryboard.initiate(storyboard: .main) {
+            vc.modalPresentationStyle = .overCurrentContext
+            vc.modalTransitionStyle = .crossDissolve
+            vc.delegate = self
+            vc.assetType = assetType
+            vc.nftItem = item
+            present(vc, animated: true)
+        }
+    }
+}
+
+extension HomeViewController: PopupViewControllerDelegate {
+    func didSelectVideo(item: NFTItem) {
+        openConfirmationPopup(for: .video, item: item)
+    }
+    
     func didSelectPhotos(item: NFTItem) {
-        openCamera(item: item)
+        openConfirmationPopup(for: .image, item: item)
+    }
+}
+
+extension HomeViewController: AnimatingGifViewControllerProtocol {
+    func createAsset(for type: AssetType, item: NFTItem) {
+        if type == .image {
+            openCamera(item: item)
+        } else {
+            openVideoMode(item: item)
+        }
     }
 }
 

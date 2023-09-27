@@ -28,6 +28,7 @@ class DraftPopupViewController: UIViewController {
     //MARK:- Outlets
     @IBOutlet weak var titleTF: UITextField!
     @IBOutlet weak var createBtn: UIButton!
+    @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
     
     weak var delegate: DraftPopupViewControllerProtocol?
     
@@ -43,6 +44,26 @@ class DraftPopupViewController: UIViewController {
         super.viewDidLoad()
         enableButton = false
         titleTF.delegate = self
+        addObserver()
+        hideKeyboardWhenTappedAround()
+    }
+    
+    private func addObserver() {
+        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
+    @objc func keyboardWillShow(_ notification: Notification) {
+        if let keyboardFrame: NSValue = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue {
+            let keyboardRectangle = keyboardFrame.cgRectValue
+            let keyboardHeight = keyboardRectangle.height
+            bottomConstraint.constant = keyboardHeight - 50
+            view.layoutIfNeeded()
+        }
+    }
+    
+    @objc func keyboardWillHide(_ notification: Notification) {
+        bottomConstraint.constant = -30
     }
     
     //MARK:- UI Actions

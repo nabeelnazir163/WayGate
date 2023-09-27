@@ -32,6 +32,8 @@
 		4292E0282A43446E009A14A4 /* IntroSliderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4292E0262A43446E009A14A4 /* IntroSliderCollectionViewCell.swift */; };
 		4292E0292A43446E009A14A4 /* IntroSliderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4292E0272A43446E009A14A4 /* IntroSliderCollectionViewCell.xib */; };
 		4292E02B2A434699009A14A4 /* IntroSliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4292E02A2A434699009A14A4 /* IntroSliderViewController.swift */; };
+		42AFE8CE2AC3361100FAE517 /* AnimatingGifViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AFE8CD2AC3361100FAE517 /* AnimatingGifViewController.swift */; };
+		42AFE8D42AC3384500FAE517 /* AnimateView.json in Resources */ = {isa = PBXBuildFile; fileRef = 42AFE8D32AC3384500FAE517 /* AnimateView.json */; };
 		42BDF0042A7E2EC70002F45A /* KIRIEngineSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 42BDF0032A7E2EC70002F45A /* KIRIEngineSDK */; };
 		42BDF0062A7E42370002F45A /* VideoSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BDF0052A7E42370002F45A /* VideoSuccessViewController.swift */; };
 		42C4270B2A4230A700567ACA /* UIScrollViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C4270A2A4230A700567ACA /* UIScrollViewExtension.swift */; };
@@ -148,6 +150,8 @@
 		42AC6DD52A2924A700717E46 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		42AC6DD72A2924B800717E46 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		42AC6DD82A2924B800717E46 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		42AFE8CD2AC3361100FAE517 /* AnimatingGifViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatingGifViewController.swift; sourceTree = "<group>"; };
+		42AFE8D32AC3384500FAE517 /* AnimateView.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AnimateView.json; sourceTree = "<group>"; };
 		42BDF0052A7E42370002F45A /* VideoSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoSuccessViewController.swift; sourceTree = "<group>"; };
 		42C4270A2A4230A700567ACA /* UIScrollViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScrollViewExtension.swift; sourceTree = "<group>"; };
 		42DCA4B32A2A0D7E001EA88F /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -210,6 +214,7 @@
 			children = (
 				422DD1AB2ABDB88D006C6374 /* DraftPopupViewController.swift */,
 				422DD1AD2ABDB8FF006C6374 /* EmptyTabbarViewController.swift */,
+				42AFE8CD2AC3361100FAE517 /* AnimatingGifViewController.swift */,
 			);
 			path = DraftPopup;
 			sourceTree = "<group>";
@@ -433,6 +438,7 @@
 		42F3E2252A290963007485B0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				42AFE8D32AC3384500FAE517 /* AnimateView.json */,
 				42ED47EA2A2F9BFF00C63786 /* Loader.json */,
 				42DCA4B42A2A0D7F001EA88F /* AppDelegate.swift */,
 				42DCA4B32A2A0D7E001EA88F /* SceneDelegate.swift */,
@@ -520,6 +526,7 @@
 				422F9B842A2B4DDC0005182F /* Camera.xcassets in Resources */,
 				42772DEC2A2B468E00AFE194 /* Camera.storyboard in Resources */,
 				42DCA4F02A2A0FB2001EA88F /* CircularStd-Bold.otf in Resources */,
+				42AFE8D42AC3384500FAE517 /* AnimateView.json in Resources */,
 				42DCA4DB2A2A0F93001EA88F /* LaunchScreen.storyboard in Resources */,
 				42DCA4EF2A2A0FB2001EA88F /* CircularStd-Book.otf in Resources */,
 				42DCA4EC2A2A0FAD001EA88F /* Color.xcassets in Resources */,
@@ -550,6 +557,7 @@
 				4292E0282A43446E009A14A4 /* IntroSliderCollectionViewCell.swift in Sources */,
 				42DCA4E52A2A0FA4001EA88F /* UIFontExtension.swift in Sources */,
 				428699872A37822D00D496B9 /* 3DModelDisplay.swift in Sources */,
+				42AFE8CE2AC3361100FAE517 /* AnimatingGifViewController.swift in Sources */,
 				427313BA2A7D0AAA00CD2AE9 /* PopupViewController.swift in Sources */,
 				42ED47DB2A2F931E00C63786 /* User.swift in Sources */,
 				4292E02B2A434699009A14A4 /* IntroSliderViewController.swift in Sources */,
