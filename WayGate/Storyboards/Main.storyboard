@@ -600,7 +600,7 @@
             </objects>
             <point key="canvasLocation" x="868" y="600"/>
         </scene>
-        <!--Item-->
+        <!--Empty Tabbar View Controller-->
         <scene sceneID="P8i-7y-MsV">
             <objects>
                 <viewController storyboardIdentifier="EmptyTabbarViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BtB-89-AV4" customClass="EmptyTabbarViewController" customModule="WayGate" customModuleProvider="target" sceneMemberID="viewController">
@@ -610,7 +610,7 @@
                         <viewLayoutGuide key="safeArea" id="htO-In-MvS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="PlusIcon" id="AOo-Il-jk2"/>
+                    <tabBarItem key="tabBarItem" title="" image="PlusIcon" id="AOo-Il-jk2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hxN-TK-NX7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
