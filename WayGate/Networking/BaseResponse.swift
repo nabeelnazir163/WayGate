@@ -20,7 +20,4 @@ class BaseResponse<T: Codable>: Codable {
 }
 
 struct EmptyResponse: Codable{
-    var status: Int?
-    var message: String?
-    var success: Bool?
 }
