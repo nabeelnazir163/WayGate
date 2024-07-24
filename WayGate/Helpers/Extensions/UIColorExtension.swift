@@ -19,6 +19,9 @@ extension UIColor {
     static let introGray = UIColor(named: "IntroGray")!
     static let introPink = UIColor(named: "IntroPink")!
     static let introBlue = UIColor(named: "IntroBlue")!
+    static let placeHolderColor = UIColor(named: "PlaceHolderColor")!
+    static let gradientColors = [UIColor(named: "GradientStartColor")!.cgColor,
+                                 UIColor(named: "GradientEndColor")!.cgColor]
 }
 
 extension Color {

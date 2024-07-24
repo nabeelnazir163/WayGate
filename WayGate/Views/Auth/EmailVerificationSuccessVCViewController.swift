@@ -12,6 +12,7 @@ class EmailVerificationSuccessVCViewController: UIViewController {
     //MARK:- Life Cycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.applyGradient()
     }
     
     //MARK:- UI Actions

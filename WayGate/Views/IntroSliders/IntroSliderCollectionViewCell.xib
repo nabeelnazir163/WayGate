@@ -8,8 +8,8 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="CircularStd-Medium.otf">
-            <string>CircularStd-Medium</string>
+        <array key="PlusJakartaSans-Medium.ttf">
+            <string>PlusJakartaSans-Medium</string>
         </array>
     </customFonts>
     <objects>
@@ -29,14 +29,15 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start with an object." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQJ-BZ-WA4">
-                        <rect key="frame" x="102.33333333333334" y="41" width="298.33333333333326" height="40.666666666666657"/>
-                        <fontDescription key="fontDescription" name="CircularStd-Medium" family="Circular Std" pointSize="32"/>
-                        <nil key="textColor"/>
+                        <rect key="frame" x="98.333333333333343" y="41.333333333333329" width="306.33333333333326" height="40.333333333333329"/>
+                        <fontDescription key="fontDescription" name="PlusJakartaSans-Medium" family="Plus Jakarta Sans" pointSize="32"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="zbd-WI-AG9" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="CLc-uQ-Fcz"/>
                 <constraint firstItem="MQJ-BZ-WA4" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="NvU-sZ-WfV"/>

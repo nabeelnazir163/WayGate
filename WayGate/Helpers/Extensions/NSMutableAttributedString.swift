@@ -9,8 +9,8 @@ import UIKit
 
 extension NSMutableAttributedString {
     var fontSize: CGFloat { return 14 }
-    var boldFont :UIFont { return UIFont.CircularSTDBold?.withSize(fontSize) ?? UIFont.boldSystemFont(ofSize: fontSize) }
-    var normalFont: UIFont { return UIFont.CircularSTDRegular?.withSize(fontSize) ?? UIFont.systemFont(ofSize: fontSize)}
+    var boldFont :UIFont { return UIFont.JakartaSansBold?.withSize(fontSize) ?? UIFont.boldSystemFont(ofSize: fontSize) }
+    var normalFont: UIFont { return UIFont.JakartaSansRegular?.withSize(fontSize) ?? UIFont.systemFont(ofSize: fontSize)}
     
     public func bold(_ value:String, color: UIColor? = .theme) -> NSMutableAttributedString {
         

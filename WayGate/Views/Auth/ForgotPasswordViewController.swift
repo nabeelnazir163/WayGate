@@ -17,7 +17,9 @@ class ForgotPasswordViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        view.applyGradient()
         emailTF.delegate = self
+        resetPasswordBtn.setButton(enabled: false)
     }
     
     //MARK:- WebServices

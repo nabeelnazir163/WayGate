@@ -11,6 +11,6 @@ extension UIButton {
     func setButton(enabled: Bool) {
         isUserInteractionEnabled = enabled
         backgroundColor = enabled ? .theme : .secondaryButton
-        setTitleColor(enabled ? .white : .secondaryText , for: .normal)
+        setTitleColor(enabled ? .white : .primaryText , for: .normal)
     }
 }

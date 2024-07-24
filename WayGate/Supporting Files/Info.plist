@@ -4,11 +4,12 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>CircularStd-Bold.otf</string>
-		<string>CircularStd-Black.otf</string>
-		<string>CircularStd-Book.otf</string>
-		<string>CircularStd-Light.otf</string>
-		<string>CircularStd-Medium.otf</string>
+		<string>PlusJakartaSans-Bold.ttf</string>
+		<string>PlusJakartaSans-Regular.ttf</string>
+		<string>PlusJakartaSans-Light.ttf</string>
+		<string>PlusJakartaSans-Medium.ttf</string>
+		<string>PlusJakartaSans-SemiBold.ttf</string>
+		<string>NulShock.ttf</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>

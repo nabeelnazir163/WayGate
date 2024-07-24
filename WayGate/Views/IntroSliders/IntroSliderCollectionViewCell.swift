@@ -16,14 +16,11 @@ class IntroSliderCollectionViewCell: UICollectionViewCell {
     var currentIndex: Int = 0 {
         didSet {
             if currentIndex == 0 {
-                titleLbl.text = "Start with an object"
-                backgroundColor = .introGray
+                titleLbl.text = "Start with an object."
             } else if currentIndex == 1 {
                 titleLbl.text = "Capture crisp images"
-                backgroundColor = .introBlue
             } else {
                 titleLbl.text = "Get all angles"
-                backgroundColor = .introPink
             }
             imageLbl.image = UIImage(named: "Slider\(currentIndex)")
         }

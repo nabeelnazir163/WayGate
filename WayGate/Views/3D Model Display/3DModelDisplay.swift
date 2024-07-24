@@ -62,11 +62,11 @@ struct ModelDisplay: View {
                     .progressViewStyle(CircularProgressViewStyle(tint: Color.white))
                 
                 Text("Please wait")
-                    .font(.CircularSTDMedium(with: 16))
+                    .font(.JakartaSansMedium(with: 16))
                     .foregroundColor(.white)
                 
                 Text("Rendering in process")
-                    .font(.CircularSTDRegular(with: 14))
+                    .font(.JakartaSansRegular(with: 14))
                     .foregroundColor(.white)
             }
             .padding(40)

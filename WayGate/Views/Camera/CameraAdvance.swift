@@ -123,19 +123,19 @@ struct CameraAdvance: View {
                     
                     HStack {
                         Text("Acceptable")
-                            .font(Font.CircularSTDMedium(with: 15))
+                            .font(Font.JakartaSansMedium(with: 15))
                             .foregroundColor(.white)
                         
                         Spacer()
                         
                         Text("Optimal")
-                            .font(Font.CircularSTDRegular(with: 15))
+                            .font(Font.JakartaSansRegular(with: 15))
                             .foregroundColor(.white)
                         
                         Spacer()
                         
                         Text("Ultimate")
-                            .font(Font.CircularSTDMedium(with: 15))
+                            .font(Font.JakartaSansMedium(with: 15))
                             .foregroundColor(.white)
                     }
                     .padding(.horizontal, 15)
@@ -195,14 +195,14 @@ struct CameraAdvance: View {
             } label: {
                 VStack {
                     Text("EV")
-                        .font(Font.CircularSTDMedium(with: 15))
+                        .font(Font.JakartaSansMedium(with: 15))
                         .frame(width: 30, height: 30)
                         .foregroundColor(.black)
                         .background(isExposureSelected ? Color.white : .gray)
                         .cornerRadius(15)
                     
                     Text("EV: \(Int(evValue))")
-                        .font(Font.CircularSTDRegular(with: 15))
+                        .font(Font.JakartaSansRegular(with: 15))
                         .foregroundColor(isExposureSelected ? Color.white : .gray)
                 }
             }
@@ -214,14 +214,14 @@ struct CameraAdvance: View {
             } label: {
                 VStack {
                     Text("ISO")
-                        .font(Font.CircularSTDRegular(with: 15))
+                        .font(Font.JakartaSansRegular(with: 15))
                         .foregroundColor(.black)
                         .frame(width: 42, height: 20)
                         .background(isISOSelected ? Color.white : .gray)
                         .cornerRadius(2)
                     
                     Text("ISO: \(Int(isoValue))")
-                        .font(Font.CircularSTDRegular(with: 15))
+                        .font(Font.JakartaSansRegular(with: 15))
                         .foregroundColor(isISOSelected ? Color.white : .gray)
                 }
             }
@@ -239,7 +239,7 @@ struct CameraAdvance: View {
                         .foregroundColor(isShutterSelected ? Color.white : .gray)
                     
                     Text("SS: 1/\(Int(shutterValue * 100))")
-                        .font(Font.CircularSTDRegular(with: 15))
+                        .font(Font.JakartaSansRegular(with: 15))
                         .foregroundColor(isShutterSelected ? Color.white : .gray)
                 }
             }

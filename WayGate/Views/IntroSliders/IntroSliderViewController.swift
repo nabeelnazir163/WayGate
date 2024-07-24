@@ -14,8 +14,13 @@ class IntroSliderViewController: UIViewController {
     @IBOutlet weak var pageController: UIPageControl!
     @IBOutlet weak var getStartedBtn: UIButton!
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        .lightContent
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.applyGradient()
         setupCollectionView()
         view.layoutIfNeeded()
         collectionView.layoutIfNeeded()

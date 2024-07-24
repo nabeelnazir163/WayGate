@@ -26,6 +26,7 @@ class LoginViewController: UIViewController {
     }
     
     private func setupUI (){
+        view.applyGradient()
         setupAttributedLabel()
         setupTextField()
         addGesture()
@@ -38,11 +39,11 @@ class LoginViewController: UIViewController {
     
     private func setupAttributedLabel() {
         termsAndConditionLabel.attributedText = NSMutableAttributedString()
-            .normal("By using this app, you agree to ")
-            .bold("Waygate Terms of service")
-            .normal(" and ")
+            .normal("By using this app, you agree to ", color: .secondaryText)
+            .bold("Depicted Terms of service")
+            .normal(" and ", color: .secondaryText)
             .bold("Privacy policy")
-            .normal(".")
+            .normal(".", color: .secondaryText)
     }
     
     private func addGesture() {

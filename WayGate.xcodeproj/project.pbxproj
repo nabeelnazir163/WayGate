@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		420C42AE2ACDEE580092AA30 /* Model3DKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 420C42AC2ACDEE3C0092AA30 /* Model3DKit.framework */; };
+		420C42AF2ACDEE580092AA30 /* Model3DKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 420C42AC2ACDEE3C0092AA30 /* Model3DKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		421E949E2A335A9A007F6981 /* MultiProgressView in Frameworks */ = {isa = PBXBuildFile; productRef = 421E949D2A335A9A007F6981 /* MultiProgressView */; };
-		4223033A2A38C8A900B83982 /* Model3DKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 422303382A38C87700B83982 /* Model3DKit.framework */; };
-		4223033B2A38C8A900B83982 /* Model3DKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 422303382A38C87700B83982 /* Model3DKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		422DD1AC2ABDB88D006C6374 /* DraftPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422DD1AB2ABDB88D006C6374 /* DraftPopupViewController.swift */; };
 		422DD1AE2ABDB8FF006C6374 /* EmptyTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422DD1AD2ABDB8FF006C6374 /* EmptyTabbarViewController.swift */; };
 		422F9B842A2B4DDC0005182F /* Camera.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 422F9B832A2B4DDC0005182F /* Camera.xcassets */; };
@@ -25,6 +25,8 @@
 		426DC02C2A46CA8800BA1FB1 /* UITapGestureExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426DC02B2A46CA8800BA1FB1 /* UITapGestureExtension.swift */; };
 		42713CB42A2BB700008B63D6 /* CameraAdvance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42713CB32A2BB700008B63D6 /* CameraAdvance.swift */; };
 		427313BA2A7D0AAA00CD2AE9 /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427313B92A7D0AAA00CD2AE9 /* PopupViewController.swift */; };
+		42752A622C503DD2001429E0 /* NulShock.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42752A612C503DD2001429E0 /* NulShock.ttf */; };
+		42752A642C5176FF001429E0 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42752A632C5176FF001429E0 /* UITextFieldExtension.swift */; };
 		42772DEC2A2B468E00AFE194 /* Camera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42772DEB2A2B468E00AFE194 /* Camera.storyboard */; };
 		42772DEF2A2B46A600AFE194 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42772DEE2A2B46A600AFE194 /* CameraViewController.swift */; };
 		428699872A37822D00D496B9 /* 3DModelDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428699862A37822D00D496B9 /* 3DModelDisplay.swift */; };
@@ -32,6 +34,11 @@
 		4292E0282A43446E009A14A4 /* IntroSliderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4292E0262A43446E009A14A4 /* IntroSliderCollectionViewCell.swift */; };
 		4292E0292A43446E009A14A4 /* IntroSliderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4292E0272A43446E009A14A4 /* IntroSliderCollectionViewCell.xib */; };
 		4292E02B2A434699009A14A4 /* IntroSliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4292E02A2A434699009A14A4 /* IntroSliderViewController.swift */; };
+		429BC96E2C50381D00F8CB9D /* PlusJakartaSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 429BC96D2C50381D00F8CB9D /* PlusJakartaSans-Regular.ttf */; };
+		429BC9702C50383D00F8CB9D /* PlusJakartaSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 429BC96F2C50383D00F8CB9D /* PlusJakartaSans-Bold.ttf */; };
+		429BC9722C50384900F8CB9D /* PlusJakartaSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 429BC9712C50384900F8CB9D /* PlusJakartaSans-Medium.ttf */; };
+		429BC9742C50385700F8CB9D /* PlusJakartaSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 429BC9732C50385700F8CB9D /* PlusJakartaSans-Light.ttf */; };
+		42A0D2362C503B6C0093F8DD /* PlusJakartaSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42A0D2352C503B6B0093F8DD /* PlusJakartaSans-SemiBold.ttf */; };
 		42AFE8CE2AC3361100FAE517 /* AnimatingGifViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AFE8CD2AC3361100FAE517 /* AnimatingGifViewController.swift */; };
 		42AFE8D42AC3384500FAE517 /* AnimateView.json in Resources */ = {isa = PBXBuildFile; fileRef = 42AFE8D32AC3384500FAE517 /* AnimateView.json */; };
 		42BDF0042A7E2EC70002F45A /* KIRIEngineSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 42BDF0032A7E2EC70002F45A /* KIRIEngineSDK */; };
@@ -66,11 +73,6 @@
 		42DCA4EB2A2A0FAD001EA88F /* Auth.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42AC6DCC2A291BC800717E46 /* Auth.xcassets */; };
 		42DCA4EC2A2A0FAD001EA88F /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42AC6DC82A29116A00717E46 /* Color.xcassets */; };
 		42DCA4ED2A2A0FAD001EA88F /* MainTabbar.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42AC6DD12A291F1B00717E46 /* MainTabbar.xcassets */; };
-		42DCA4EE2A2A0FB2001EA88F /* CircularStd-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 42F3E21D2A2908F6007485B0 /* CircularStd-Black.otf */; };
-		42DCA4EF2A2A0FB2001EA88F /* CircularStd-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 42F3E21F2A2908F6007485B0 /* CircularStd-Book.otf */; };
-		42DCA4F02A2A0FB2001EA88F /* CircularStd-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 42F3E21E2A2908F6007485B0 /* CircularStd-Bold.otf */; };
-		42DCA4F12A2A0FB2001EA88F /* CircularStd-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 42F3E21B2A2908F6007485B0 /* CircularStd-Light.otf */; };
-		42DCA4F22A2A0FB2001EA88F /* CircularStd-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 42F3E21C2A2908F6007485B0 /* CircularStd-Medium.otf */; };
 		42DCA4F62A2A103E001EA88F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 42DCA4F52A2A103E001EA88F /* Alamofire */; };
 		42DCA4F92A2A1054001EA88F /* ObjectMapper in Frameworks */ = {isa = PBXBuildFile; productRef = 42DCA4F82A2A1054001EA88F /* ObjectMapper */; };
 		42ED47D92A2F92F800C63786 /* WebServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42ED47D82A2F92F800C63786 /* WebServiceManager.swift */; };
@@ -95,7 +97,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4223033B2A38C8A900B83982 /* Model3DKit.framework in Embed Frameworks */,
+				420C42AF2ACDEE580092AA30 /* Model3DKit.framework in Embed Frameworks */,
 				423E42412A2E652F0039B0B2 /* KiriAdvanceCameraKit.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -104,13 +106,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		420C42AC2ACDEE3C0092AA30 /* Model3DKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Model3DKit.framework; sourceTree = "<group>"; };
 		422042742A29B9B400C0C5C1 /* NSMutableAttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSMutableAttributedString.swift; sourceTree = "<group>"; };
 		422042762A29B9D800C0C5C1 /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
 		422042792A29BA7100C0C5C1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4220427B2A29BCA400C0C5C1 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		4220427D2A29BD8900C0C5C1 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		4220427F2A29BE9C00C0C5C1 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
-		422303382A38C87700B83982 /* Model3DKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Model3DKit.framework; sourceTree = "<group>"; };
 		422DD1AB2ABDB88D006C6374 /* DraftPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraftPopupViewController.swift; sourceTree = "<group>"; };
 		422DD1AD2ABDB8FF006C6374 /* EmptyTabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyTabbarViewController.swift; sourceTree = "<group>"; };
 		422F9B832A2B4DDC0005182F /* Camera.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Camera.xcassets; sourceTree = "<group>"; };
@@ -133,6 +135,8 @@
 		42713CB32A2BB700008B63D6 /* CameraAdvance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraAdvance.swift; sourceTree = "<group>"; };
 		427209BF2A29FAA3002256A8 /* CameraKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CameraKit.framework; path = ../../../../Downloads/CameraKit.framework; sourceTree = "<group>"; };
 		427313B92A7D0AAA00CD2AE9 /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
+		42752A612C503DD2001429E0 /* NulShock.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NulShock.ttf; sourceTree = "<group>"; };
+		42752A632C5176FF001429E0 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
 		42772DEB2A2B468E00AFE194 /* Camera.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Camera.storyboard; sourceTree = "<group>"; };
 		42772DEE2A2B46A600AFE194 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		428699862A37822D00D496B9 /* 3DModelDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3DModelDisplay.swift; sourceTree = "<group>"; };
@@ -142,6 +146,11 @@
 		4292E02A2A434699009A14A4 /* IntroSliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroSliderViewController.swift; sourceTree = "<group>"; };
 		429620612A2E63FC006AEF27 /* KiriAdvanceCameraKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = KiriAdvanceCameraKit.xcframework; sourceTree = "<group>"; };
 		4297EAB52A2926E6007AE286 /* NSObjectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
+		429BC96D2C50381D00F8CB9D /* PlusJakartaSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-Regular.ttf"; sourceTree = "<group>"; };
+		429BC96F2C50383D00F8CB9D /* PlusJakartaSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-Bold.ttf"; sourceTree = "<group>"; };
+		429BC9712C50384900F8CB9D /* PlusJakartaSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-Medium.ttf"; sourceTree = "<group>"; };
+		429BC9732C50385700F8CB9D /* PlusJakartaSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-Light.ttf"; sourceTree = "<group>"; };
+		42A0D2352C503B6B0093F8DD /* PlusJakartaSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-SemiBold.ttf"; sourceTree = "<group>"; };
 		42AC6DC82A29116A00717E46 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
 		42AC6DCA2A29176E00717E46 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		42AC6DCC2A291BC800717E46 /* Auth.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Auth.xcassets; sourceTree = "<group>"; };
@@ -172,11 +181,6 @@
 		42F3E2092A28FB52007485B0 /* CoreWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreWebService.swift; sourceTree = "<group>"; };
 		42F3E2102A28FD59007485B0 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		42F3E2122A290079007485B0 /* DataDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataDictionary.swift; sourceTree = "<group>"; };
-		42F3E21B2A2908F6007485B0 /* CircularStd-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Light.otf"; sourceTree = "<group>"; };
-		42F3E21C2A2908F6007485B0 /* CircularStd-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Medium.otf"; sourceTree = "<group>"; };
-		42F3E21D2A2908F6007485B0 /* CircularStd-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Black.otf"; sourceTree = "<group>"; };
-		42F3E21E2A2908F6007485B0 /* CircularStd-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Bold.otf"; sourceTree = "<group>"; };
-		42F3E21F2A2908F6007485B0 /* CircularStd-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Book.otf"; sourceTree = "<group>"; };
 		42FDF92A2A7E2CDC0074DA4D /* VideoRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRenderer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -185,9 +189,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				420C42AE2ACDEE580092AA30 /* Model3DKit.framework in Frameworks */,
 				421E949E2A335A9A007F6981 /* MultiProgressView in Frameworks */,
 				42ED47E92A2F9BBB00C63786 /* Lottie in Frameworks */,
-				4223033A2A38C8A900B83982 /* Model3DKit.framework in Frameworks */,
 				42DCA4F92A2A1054001EA88F /* ObjectMapper in Frameworks */,
 				42BDF0042A7E2EC70002F45A /* KIRIEngineSDK in Frameworks */,
 				423E42402A2E652F0039B0B2 /* KiriAdvanceCameraKit.xcframework in Frameworks */,
@@ -344,7 +348,7 @@
 		42F3E1F02A28F906007485B0 /* WayGate */ = {
 			isa = PBXGroup;
 			children = (
-				422303382A38C87700B83982 /* Model3DKit.framework */,
+				420C42AC2ACDEE3C0092AA30 /* Model3DKit.framework */,
 				429620612A2E63FC006AEF27 /* KiriAdvanceCameraKit.xcframework */,
 				42AC6DD32A29248C00717E46 /* Views */,
 				42AC6DCE2A291E1900717E46 /* Storyboards */,
@@ -382,6 +386,7 @@
 			isa = PBXGroup;
 			children = (
 				42F3E2102A28FD59007485B0 /* StringExtension.swift */,
+				42752A632C5176FF001429E0 /* UITextFieldExtension.swift */,
 				426DC02B2A46CA8800BA1FB1 /* UITapGestureExtension.swift */,
 				4297EAB52A2926E6007AE286 /* NSObjectExtension.swift */,
 				42F3E2122A290079007485B0 /* DataDictionary.swift */,
@@ -414,11 +419,12 @@
 		42F3E2192A2908D1007485B0 /* Font */ = {
 			isa = PBXGroup;
 			children = (
-				42F3E21D2A2908F6007485B0 /* CircularStd-Black.otf */,
-				42F3E21E2A2908F6007485B0 /* CircularStd-Bold.otf */,
-				42F3E21F2A2908F6007485B0 /* CircularStd-Book.otf */,
-				42F3E21B2A2908F6007485B0 /* CircularStd-Light.otf */,
-				42F3E21C2A2908F6007485B0 /* CircularStd-Medium.otf */,
+				42752A612C503DD2001429E0 /* NulShock.ttf */,
+				42A0D2352C503B6B0093F8DD /* PlusJakartaSans-SemiBold.ttf */,
+				429BC96D2C50381D00F8CB9D /* PlusJakartaSans-Regular.ttf */,
+				429BC96F2C50383D00F8CB9D /* PlusJakartaSans-Bold.ttf */,
+				429BC9712C50384900F8CB9D /* PlusJakartaSans-Medium.ttf */,
+				429BC9732C50385700F8CB9D /* PlusJakartaSans-Light.ttf */,
 			);
 			path = Font;
 			sourceTree = "<group>";
@@ -525,22 +531,23 @@
 				42DCA4ED2A2A0FAD001EA88F /* MainTabbar.xcassets in Resources */,
 				422F9B842A2B4DDC0005182F /* Camera.xcassets in Resources */,
 				42772DEC2A2B468E00AFE194 /* Camera.storyboard in Resources */,
-				42DCA4F02A2A0FB2001EA88F /* CircularStd-Bold.otf in Resources */,
+				42752A622C503DD2001429E0 /* NulShock.ttf in Resources */,
 				42AFE8D42AC3384500FAE517 /* AnimateView.json in Resources */,
+				429BC9722C50384900F8CB9D /* PlusJakartaSans-Medium.ttf in Resources */,
 				42DCA4DB2A2A0F93001EA88F /* LaunchScreen.storyboard in Resources */,
-				42DCA4EF2A2A0FB2001EA88F /* CircularStd-Book.otf in Resources */,
 				42DCA4EC2A2A0FAD001EA88F /* Color.xcassets in Resources */,
 				4292E0242A4343D0009A14A4 /* SplashIntermediate.storyboard in Resources */,
+				429BC9742C50385700F8CB9D /* PlusJakartaSans-Light.ttf in Resources */,
+				429BC9702C50383D00F8CB9D /* PlusJakartaSans-Bold.ttf in Resources */,
 				42DCA4DA2A2A0F8F001EA88F /* Auth.storyboard in Resources */,
-				42DCA4EE2A2A0FB2001EA88F /* CircularStd-Black.otf in Resources */,
 				42DCA4D72A2A0F86001EA88F /* HomeTableViewCell.xib in Resources */,
 				42ED47EB2A2F9BFF00C63786 /* Loader.json in Resources */,
+				429BC96E2C50381D00F8CB9D /* PlusJakartaSans-Regular.ttf in Resources */,
 				42DCA4EA2A2A0FAD001EA88F /* Assets.xcassets in Resources */,
 				42DCA4EB2A2A0FAD001EA88F /* Auth.xcassets in Resources */,
 				4292E0292A43446E009A14A4 /* IntroSliderCollectionViewCell.xib in Resources */,
 				42DCA4DC2A2A0F95001EA88F /* Main.storyboard in Resources */,
-				42DCA4F12A2A0FB2001EA88F /* CircularStd-Light.otf in Resources */,
-				42DCA4F22A2A0FB2001EA88F /* CircularStd-Medium.otf in Resources */,
+				42A0D2362C503B6C0093F8DD /* PlusJakartaSans-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -573,6 +580,7 @@
 				42DCA4D42A2A0F83001EA88F /* EmailVerificationSuccessVCViewController.swift in Sources */,
 				42DCA4D02A2A0F7B001EA88F /* LogoutPopupViewController.swift in Sources */,
 				42DCA4D92A2A0F86001EA88F /* HomeViewController.swift in Sources */,
+				42752A642C5176FF001429E0 /* UITextFieldExtension.swift in Sources */,
 				42ED47EF2A2FA88400C63786 /* NFT.swift in Sources */,
 				42772DEF2A2B46A600AFE194 /* CameraViewController.swift in Sources */,
 				42DCA4E02A2A0FA4001EA88F /* UIViewExtension.swift in Sources */,
@@ -637,6 +645,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Auth;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -647,9 +656,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.waygatetest.waygate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -672,6 +684,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Auth;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -682,9 +695,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.waygatetest.waygate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
