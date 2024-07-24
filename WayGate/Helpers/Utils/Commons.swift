@@ -20,7 +20,7 @@ class Commons {
     static let ActivityViewTag = 121
     static let LoaderBGView = 122
     
-    static func showAlert(title: String = "WayGate", msg: String)  {
+    static func showAlert(title: String = "Depicted", msg: String)  {
         window?.endEditing(true)
         let alert = UIAlertController(title: title, message: msg, preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))

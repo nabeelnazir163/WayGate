@@ -58,7 +58,7 @@ class LoginViewController: UIViewController {
             if let url = URL(string: Constants.privacyPolicyURL), UIApplication.shared.canOpenURL(url) {
                 UIApplication.shared.open(url, options: [:], completionHandler: nil)
             }
-        } else if gesture.didTapAttributedString("Waygate Terms of service", in: termsAndConditionLabel) {
+        } else if gesture.didTapAttributedString("Depicted Terms of service", in: termsAndConditionLabel) {
             if let url = URL(string: Constants.termsAndConditionURL), UIApplication.shared.canOpenURL(url) {
                 UIApplication.shared.open(url, options: [:], completionHandler: nil)
             }

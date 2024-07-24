@@ -398,13 +398,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="hcF-i4-WTa">
-                                <rect key="frame" x="24" y="222" width="345" height="408"/>
+                                <rect key="frame" x="24" y="193.66666666666663" width="345" height="465"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EmailSent" translatesAutoresizingMaskIntoConstraints="NO" id="Etp-5m-H8z">
-                                        <rect key="frame" x="35.333333333333343" y="0.0" width="274.33333333333326" height="187.33333333333334"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="345" height="244.33333333333334"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="zJy-k2-LaU">
-                                        <rect key="frame" x="9" y="237.33333333333329" width="327.33333333333331" height="72.666666666666657"/>
+                                        <rect key="frame" x="9" y="294.33333333333337" width="327.33333333333331" height="72.666666666666686"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email has been sent successfully" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vg7-8k-W38">
                                                 <rect key="frame" x="6.6666666666666572" y="0.0" width="313.66666666666674" height="25.333333333333332"/>
@@ -421,7 +421,7 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EYN-HV-Esi">
-                                        <rect key="frame" x="0.0" y="360" width="345" height="48"/>
+                                        <rect key="frame" x="0.0" y="417" width="345" height="48"/>
                                         <color key="backgroundColor" name="Theme"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="48" id="FV3-nf-yCt"/>
@@ -461,7 +461,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="EmailSent" width="274.33334350585938" height="187.33332824707031"/>
+        <image name="EmailSent" width="359" height="244.33332824707031"/>
         <image name="EyeIcon" width="24" height="24"/>
         <image name="Logo" width="276" height="39.333332061767578"/>
         <namedColor name="Border">

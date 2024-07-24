@@ -12,8 +12,7 @@ class SettingsViewController: UIViewController {
     //MARK:- Life Cycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        view.applyGradient()
     }
     
     //MARK:- UI Actions

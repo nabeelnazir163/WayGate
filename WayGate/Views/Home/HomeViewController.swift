@@ -27,6 +27,7 @@ class HomeViewController: UIViewController {
     //MARK:- Life Cycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.applyGradient()
         noDraftView.isHidden = true
         descriptiveStackView.isHidden = true
         Commons.deleteDirectory(name: "/CameraKit/")

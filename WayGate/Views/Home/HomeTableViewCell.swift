@@ -31,26 +31,26 @@ class HomeTableViewCell: UITableViewCell {
             switch nft.status {
             case .DRAFT:
                 statusBtn.backgroundColor = .clear
-                statusBtn.borderWidth = 2
-                statusBtn.borderColor = .primaryRed
-                statusBtn.setTitleColor(.primaryRed, for: .normal)
-                statusBtn.setTitle("DRAFT", for: .normal)
+                statusBtn.borderWidth = 1
+                statusBtn.borderColor = .theme
+                statusBtn.setTitleColor(.theme, for: .normal)
+                statusBtn.setTitle("Draft", for: .normal)
             case .FAILED, .none:
                 statusBtn.backgroundColor = .primaryRed
                 statusBtn.borderWidth = 2
                 statusBtn.borderColor = .primaryRed
                 statusBtn.setTitleColor(.white, for: .normal)
-                statusBtn.setTitle("FAILED", for: .normal)
+                statusBtn.setTitle("Failed", for: .normal)
             case .COMPLETED, .PROCESSED:
                 statusBtn.backgroundColor = .JungleGreen
                 statusBtn.borderWidth = 0
                 statusBtn.setTitleColor(.white, for: .normal)
-                statusBtn.setTitle("VIEW", for: .normal)
+                statusBtn.setTitle("View", for: .normal)
             case .INPROCESSING:
-                statusBtn.backgroundColor = .secondaryButton
+                statusBtn.backgroundColor = .grayColor
                 statusBtn.borderWidth = 0
-                statusBtn.setTitleColor(.primaryText, for: .normal)
-                statusBtn.setTitle("IN PROCESS", for: .normal)
+                statusBtn.setTitleColor(.white, for: .normal)
+                statusBtn.setTitle("In Progress", for: .normal)
                 settingsBtn.isHidden = true
             }
         }

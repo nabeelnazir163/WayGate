@@ -641,6 +641,7 @@
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "WayGate/Supporting Files/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Depicted;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow access";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -680,6 +681,7 @@
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "WayGate/Supporting Files/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Depicted;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow access";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
