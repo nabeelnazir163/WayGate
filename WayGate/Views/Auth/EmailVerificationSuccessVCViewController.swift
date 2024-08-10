@@ -10,6 +10,10 @@ import UIKit
 class EmailVerificationSuccessVCViewController: UIViewController {
 
     //MARK:- Life Cycle Methods
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        .lightContent
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.applyGradient()

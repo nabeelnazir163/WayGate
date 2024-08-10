@@ -41,6 +41,7 @@
 		42A0D2362C503B6C0093F8DD /* PlusJakartaSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42A0D2352C503B6B0093F8DD /* PlusJakartaSans-SemiBold.ttf */; };
 		42AFE8CE2AC3361100FAE517 /* AnimatingGifViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AFE8CD2AC3361100FAE517 /* AnimatingGifViewController.swift */; };
 		42AFE8D42AC3384500FAE517 /* AnimateView.json in Resources */ = {isa = PBXBuildFile; fileRef = 42AFE8D32AC3384500FAE517 /* AnimateView.json */; };
+		42B742722C674C5300B357AD /* Loader.json in Resources */ = {isa = PBXBuildFile; fileRef = 42B742712C674C5300B357AD /* Loader.json */; };
 		42BDF0042A7E2EC70002F45A /* KIRIEngineSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 42BDF0032A7E2EC70002F45A /* KIRIEngineSDK */; };
 		42BDF0062A7E42370002F45A /* VideoSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BDF0052A7E42370002F45A /* VideoSuccessViewController.swift */; };
 		42C4270B2A4230A700567ACA /* UIScrollViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C4270A2A4230A700567ACA /* UIScrollViewExtension.swift */; };
@@ -83,7 +84,6 @@
 		42ED47E42A2F99C700C63786 /* OptionalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42ED47E32A2F99C700C63786 /* OptionalExtension.swift */; };
 		42ED47E62A2F9A6800C63786 /* Commons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42ED47E52A2F9A6800C63786 /* Commons.swift */; };
 		42ED47E92A2F9BBB00C63786 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 42ED47E82A2F9BBB00C63786 /* Lottie */; };
-		42ED47EB2A2F9BFF00C63786 /* Loader.json in Resources */ = {isa = PBXBuildFile; fileRef = 42ED47EA2A2F9BFF00C63786 /* Loader.json */; };
 		42ED47ED2A2FA0C700C63786 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42ED47EC2A2FA0C700C63786 /* UIButtonExtension.swift */; };
 		42ED47EF2A2FA88400C63786 /* NFT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42ED47EE2A2FA88400C63786 /* NFT.swift */; };
 		42FCCB692A45AF1400C768B8 /* Switches in Frameworks */ = {isa = PBXBuildFile; productRef = 42FCCB682A45AF1400C768B8 /* Switches */; };
@@ -161,6 +161,7 @@
 		42AC6DD82A2924B800717E46 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 		42AFE8CD2AC3361100FAE517 /* AnimatingGifViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatingGifViewController.swift; sourceTree = "<group>"; };
 		42AFE8D32AC3384500FAE517 /* AnimateView.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AnimateView.json; sourceTree = "<group>"; };
+		42B742712C674C5300B357AD /* Loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Loader.json; sourceTree = "<group>"; };
 		42BDF0052A7E42370002F45A /* VideoSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoSuccessViewController.swift; sourceTree = "<group>"; };
 		42C4270A2A4230A700567ACA /* UIScrollViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScrollViewExtension.swift; sourceTree = "<group>"; };
 		42DCA4B32A2A0D7E001EA88F /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -173,7 +174,6 @@
 		42ED47E12A2F979B00C63786 /* UserDefaultConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultConfig.swift; sourceTree = "<group>"; };
 		42ED47E32A2F99C700C63786 /* OptionalExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalExtension.swift; sourceTree = "<group>"; };
 		42ED47E52A2F9A6800C63786 /* Commons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commons.swift; sourceTree = "<group>"; };
-		42ED47EA2A2F9BFF00C63786 /* Loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Loader.json; sourceTree = "<group>"; };
 		42ED47EC2A2FA0C700C63786 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		42ED47EE2A2FA88400C63786 /* NFT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFT.swift; sourceTree = "<group>"; };
 		42F3E1FA2A28F90A007485B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -444,8 +444,8 @@
 		42F3E2252A290963007485B0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				42B742712C674C5300B357AD /* Loader.json */,
 				42AFE8D32AC3384500FAE517 /* AnimateView.json */,
-				42ED47EA2A2F9BFF00C63786 /* Loader.json */,
 				42DCA4B42A2A0D7F001EA88F /* AppDelegate.swift */,
 				42DCA4B32A2A0D7E001EA88F /* SceneDelegate.swift */,
 				42F3E1FF2A28F90A007485B0 /* Info.plist */,
@@ -541,8 +541,8 @@
 				429BC9702C50383D00F8CB9D /* PlusJakartaSans-Bold.ttf in Resources */,
 				42DCA4DA2A2A0F8F001EA88F /* Auth.storyboard in Resources */,
 				42DCA4D72A2A0F86001EA88F /* HomeTableViewCell.xib in Resources */,
-				42ED47EB2A2F9BFF00C63786 /* Loader.json in Resources */,
 				429BC96E2C50381D00F8CB9D /* PlusJakartaSans-Regular.ttf in Resources */,
+				42B742722C674C5300B357AD /* Loader.json in Resources */,
 				42DCA4EA2A2A0FAD001EA88F /* Assets.xcassets in Resources */,
 				42DCA4EB2A2A0FAD001EA88F /* Auth.xcassets in Resources */,
 				4292E0292A43446E009A14A4 /* IntroSliderCollectionViewCell.xib in Resources */,

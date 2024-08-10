@@ -10,6 +10,10 @@ import UIKit
 class TabbarViewController: UITabBarController {
 
     //MARK:- Life Cycle Methods
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        .lightContent
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         delegate = self

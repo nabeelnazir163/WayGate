@@ -35,11 +35,15 @@ class DraftPopupViewController: UIViewController {
     private var enableButton: Bool = false {
         didSet {
             createBtn.isUserInteractionEnabled = enableButton
-            createBtn.setTitleColor(enableButton ? .theme : .systemGray2, for: .normal)
+            createBtn.alpha = enableButton ? 1 : 0.5
         }
     }
     
     //MARK:- Life Cycle Methods
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        .lightContent
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         enableButton = false

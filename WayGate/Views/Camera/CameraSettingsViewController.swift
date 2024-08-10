@@ -94,9 +94,13 @@ class CameraSettingsViewController: UIViewController {
     
     var nftId: String?
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        .lightContent
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        view.applyGradient()
         modelQuality = .high
         textureQuality = .high
         fileFormat = .OBJ

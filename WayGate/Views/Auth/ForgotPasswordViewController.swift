@@ -14,6 +14,10 @@ class ForgotPasswordViewController: UIViewController {
     @IBOutlet weak var resetPasswordBtn: UIButton!
     
     //MARK:- Life Cycle Methods
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        .lightContent
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

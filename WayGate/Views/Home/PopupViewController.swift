@@ -17,6 +17,10 @@ class PopupViewController: UIViewController {
     weak var delegte: PopupViewControllerDelegate?
     var item: NFTItem?
 
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        .lightContent
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

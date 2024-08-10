@@ -17,6 +17,9 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var termsAndConditionLabel: UILabel!
     
     //MARK:- Life Cycle Methods
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        .lightContent
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
