@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		420C42AE2ACDEE580092AA30 /* Model3DKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 420C42AC2ACDEE3C0092AA30 /* Model3DKit.framework */; };
-		420C42AF2ACDEE580092AA30 /* Model3DKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 420C42AC2ACDEE3C0092AA30 /* Model3DKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		421E949E2A335A9A007F6981 /* MultiProgressView in Frameworks */ = {isa = PBXBuildFile; productRef = 421E949D2A335A9A007F6981 /* MultiProgressView */; };
 		422DD1AC2ABDB88D006C6374 /* DraftPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422DD1AB2ABDB88D006C6374 /* DraftPopupViewController.swift */; };
 		422DD1AE2ABDB8FF006C6374 /* EmptyTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422DD1AD2ABDB8FF006C6374 /* EmptyTabbarViewController.swift */; };
@@ -22,6 +20,7 @@
 		4255C3632A32FF8600FD7995 /* UIViewPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4255C3622A32FF8600FD7995 /* UIViewPreview.swift */; };
 		4255C3652A3303E900FD7995 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4255C3642A3303E900FD7995 /* Constants.swift */; };
 		425C3ABF2A42E42500C5DD41 /* UIScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425C3ABE2A42E42500C5DD41 /* UIScreen.swift */; };
+		425E86372C6F5A55003D07F4 /* Switches in Frameworks */ = {isa = PBXBuildFile; productRef = 425E86362C6F5A55003D07F4 /* Switches */; };
 		426DC02C2A46CA8800BA1FB1 /* UITapGestureExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426DC02B2A46CA8800BA1FB1 /* UITapGestureExtension.swift */; };
 		42713CB42A2BB700008B63D6 /* CameraAdvance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42713CB32A2BB700008B63D6 /* CameraAdvance.swift */; };
 		427313BA2A7D0AAA00CD2AE9 /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427313B92A7D0AAA00CD2AE9 /* PopupViewController.swift */; };
@@ -86,7 +85,6 @@
 		42ED47E92A2F9BBB00C63786 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 42ED47E82A2F9BBB00C63786 /* Lottie */; };
 		42ED47ED2A2FA0C700C63786 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42ED47EC2A2FA0C700C63786 /* UIButtonExtension.swift */; };
 		42ED47EF2A2FA88400C63786 /* NFT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42ED47EE2A2FA88400C63786 /* NFT.swift */; };
-		42FCCB692A45AF1400C768B8 /* Switches in Frameworks */ = {isa = PBXBuildFile; productRef = 42FCCB682A45AF1400C768B8 /* Switches */; };
 		42FDF92B2A7E2CDC0074DA4D /* VideoRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FDF92A2A7E2CDC0074DA4D /* VideoRenderer.swift */; };
 /* End PBXBuildFile section */
 
@@ -97,7 +95,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				420C42AF2ACDEE580092AA30 /* Model3DKit.framework in Embed Frameworks */,
 				423E42412A2E652F0039B0B2 /* KiriAdvanceCameraKit.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -106,7 +103,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		420C42AC2ACDEE3C0092AA30 /* Model3DKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Model3DKit.framework; sourceTree = "<group>"; };
 		422042742A29B9B400C0C5C1 /* NSMutableAttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSMutableAttributedString.swift; sourceTree = "<group>"; };
 		422042762A29B9D800C0C5C1 /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
 		422042792A29BA7100C0C5C1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -189,13 +185,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				420C42AE2ACDEE580092AA30 /* Model3DKit.framework in Frameworks */,
 				421E949E2A335A9A007F6981 /* MultiProgressView in Frameworks */,
 				42ED47E92A2F9BBB00C63786 /* Lottie in Frameworks */,
 				42DCA4F92A2A1054001EA88F /* ObjectMapper in Frameworks */,
 				42BDF0042A7E2EC70002F45A /* KIRIEngineSDK in Frameworks */,
 				423E42402A2E652F0039B0B2 /* KiriAdvanceCameraKit.xcframework in Frameworks */,
-				42FCCB692A45AF1400C768B8 /* Switches in Frameworks */,
+				425E86372C6F5A55003D07F4 /* Switches in Frameworks */,
 				42DCA4F62A2A103E001EA88F /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,7 +343,6 @@
 		42F3E1F02A28F906007485B0 /* WayGate */ = {
 			isa = PBXGroup;
 			children = (
-				420C42AC2ACDEE3C0092AA30 /* Model3DKit.framework */,
 				429620612A2E63FC006AEF27 /* KiriAdvanceCameraKit.xcframework */,
 				42AC6DD32A29248C00717E46 /* Views */,
 				42AC6DCE2A291E1900717E46 /* Storyboards */,
@@ -475,8 +469,8 @@
 				42DCA4F82A2A1054001EA88F /* ObjectMapper */,
 				42ED47E82A2F9BBB00C63786 /* Lottie */,
 				421E949D2A335A9A007F6981 /* MultiProgressView */,
-				42FCCB682A45AF1400C768B8 /* Switches */,
 				42BDF0032A7E2EC70002F45A /* KIRIEngineSDK */,
+				425E86362C6F5A55003D07F4 /* Switches */,
 			);
 			productName = WayGate;
 			productReference = 42DCA4BC2A2A0EE5001EA88F /* WayGate.app */;
@@ -511,8 +505,8 @@
 				42DCA4F72A2A1054001EA88F /* XCRemoteSwiftPackageReference "ObjectMapper" */,
 				42ED47E72A2F9BBB00C63786 /* XCRemoteSwiftPackageReference "lottie-spm" */,
 				421E949C2A335A9A007F6981 /* XCRemoteSwiftPackageReference "MultiProgressView" */,
-				42FCCB672A45AF1400C768B8 /* XCRemoteSwiftPackageReference "Switch-Animations" */,
 				42BDF0022A7E2EC70002F45A /* XCRemoteSwiftPackageReference "KIRI-ENGINE-SDK-API" */,
+				42D5F4C22C6F57BA0022AC2C /* XCRemoteSwiftPackageReference "Switch-Animations" */,
 			);
 			productRefGroup = 42F3E1EF2A28F906007485B0 /* Products */;
 			projectDirPath = "";
@@ -633,7 +627,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = JNN7UAFH9P;
+				DEVELOPMENT_TEAM = 49TF9Z3JYC;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WayGate",
@@ -673,7 +667,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = JNN7UAFH9P;
+				DEVELOPMENT_TEAM = 49TF9Z3JYC;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WayGate",
@@ -860,6 +854,14 @@
 				kind = branch;
 			};
 		};
+		42D5F4C22C6F57BA0022AC2C /* XCRemoteSwiftPackageReference "Switch-Animations" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jwd-ali/Switch-Animations.git";
+			requirement = {
+				kind = exactVersion;
+				version = 3.0.0;
+			};
+		};
 		42DCA4F42A2A103E001EA88F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -884,14 +886,6 @@
 				minimumVersion = 4.2.0;
 			};
 		};
-		42FCCB672A45AF1400C768B8 /* XCRemoteSwiftPackageReference "Switch-Animations" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/jwd-ali/Switch-Animations.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 3.0.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -899,6 +893,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 421E949C2A335A9A007F6981 /* XCRemoteSwiftPackageReference "MultiProgressView" */;
 			productName = MultiProgressView;
+		};
+		425E86362C6F5A55003D07F4 /* Switches */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42D5F4C22C6F57BA0022AC2C /* XCRemoteSwiftPackageReference "Switch-Animations" */;
+			productName = Switches;
 		};
 		42BDF0032A7E2EC70002F45A /* KIRIEngineSDK */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -919,11 +918,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 42ED47E72A2F9BBB00C63786 /* XCRemoteSwiftPackageReference "lottie-spm" */;
 			productName = Lottie;
-		};
-		42FCCB682A45AF1400C768B8 /* Switches */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 42FCCB672A45AF1400C768B8 /* XCRemoteSwiftPackageReference "Switch-Animations" */;
-			productName = Switches;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

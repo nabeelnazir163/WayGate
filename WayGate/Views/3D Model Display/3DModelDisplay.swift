@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import Model3DKit
+import KIRIEngineSDK
 
 struct ModelDisplay: View {
     @Environment(\.safeAreaInsets) private var safeAreaInsets
