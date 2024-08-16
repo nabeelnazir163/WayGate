@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -179,7 +179,7 @@
                                                         </subviews>
                                                     </stackView>
                                                 </subviews>
-                                                <color key="backgroundColor" name="SecondaryButton"/>
+                                                <color key="backgroundColor" name="1A1A1A"/>
                                                 <constraints>
                                                     <constraint firstAttribute="trailing" secondItem="WrA-MO-0Lj" secondAttribute="trailing" constant="6" id="A1J-x7-5rT"/>
                                                     <constraint firstAttribute="height" constant="64" id="MLq-bw-UGB"/>
@@ -261,7 +261,7 @@
                                                         </subviews>
                                                     </stackView>
                                                 </subviews>
-                                                <color key="backgroundColor" name="SecondaryButton"/>
+                                                <color key="backgroundColor" name="1A1A1A"/>
                                                 <constraints>
                                                     <constraint firstItem="k1y-CR-4uf" firstAttribute="top" secondItem="XU3-wA-MxL" secondAttribute="top" constant="6" id="JZL-BG-e0R"/>
                                                     <constraint firstAttribute="trailing" secondItem="k1y-CR-4uf" secondAttribute="trailing" constant="6" id="Nlg-vv-CnD"/>
@@ -294,7 +294,7 @@
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYP-s1-thM">
                                                                 <rect key="frame" x="0.0" y="0.0" width="81" height="52"/>
-                                                                <color key="backgroundColor" name="Border"/>
+                                                                <color key="backgroundColor" name="SecondaryButton"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="52" id="z9F-QT-rxZ"/>
                                                                 </constraints>
@@ -314,7 +314,7 @@
                                                             </button>
                                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VMk-i1-XF2">
                                                                 <rect key="frame" x="87" y="0.0" width="81" height="52"/>
-                                                                <color key="backgroundColor" name="Border"/>
+                                                                <color key="backgroundColor" name="SecondaryButton"/>
                                                                 <fontDescription key="fontDescription" name="PlusJakartaSans-Medium" family="Plus Jakarta Sans" pointSize="16"/>
                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                 <state key="normal" title="FBX">
@@ -331,7 +331,7 @@
                                                             </button>
                                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8q3-o7-Ras">
                                                                 <rect key="frame" x="174" y="0.0" width="81" height="52"/>
-                                                                <color key="backgroundColor" name="Border"/>
+                                                                <color key="backgroundColor" name="SecondaryButton"/>
                                                                 <fontDescription key="fontDescription" name="PlusJakartaSans-Medium" family="Plus Jakarta Sans" pointSize="16"/>
                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                 <state key="normal" title="STL">
@@ -348,7 +348,7 @@
                                                             </button>
                                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FLm-m2-KZJ">
                                                                 <rect key="frame" x="261" y="0.0" width="81" height="52"/>
-                                                                <color key="backgroundColor" name="Border"/>
+                                                                <color key="backgroundColor" name="SecondaryButton"/>
                                                                 <fontDescription key="fontDescription" name="PlusJakartaSans-Medium" family="Plus Jakarta Sans" pointSize="16"/>
                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                 <state key="normal" title="GLB">
@@ -370,7 +370,7 @@
                                                         <subviews>
                                                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5JY-5g-AIg">
                                                                 <rect key="frame" x="0.0" y="0.0" width="81" height="52"/>
-                                                                <color key="backgroundColor" name="Border"/>
+                                                                <color key="backgroundColor" name="SecondaryButton"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="52" id="kwM-fS-NFZ"/>
                                                                 </constraints>
@@ -390,7 +390,7 @@
                                                             </button>
                                                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZSr-0h-NhN">
                                                                 <rect key="frame" x="87" y="0.0" width="81" height="52"/>
-                                                                <color key="backgroundColor" name="Border"/>
+                                                                <color key="backgroundColor" name="SecondaryButton"/>
                                                                 <fontDescription key="fontDescription" name="PlusJakartaSans-Medium" family="Plus Jakarta Sans" pointSize="16"/>
                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                 <state key="normal" title="USDZ">
@@ -407,7 +407,7 @@
                                                             </button>
                                                             <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FDB-4M-sjR">
                                                                 <rect key="frame" x="174" y="0.0" width="81" height="52"/>
-                                                                <color key="backgroundColor" name="Border"/>
+                                                                <color key="backgroundColor" name="SecondaryButton"/>
                                                                 <fontDescription key="fontDescription" name="PlusJakartaSans-Medium" family="Plus Jakarta Sans" pointSize="16"/>
                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                 <state key="normal" title="PLY">
@@ -424,7 +424,7 @@
                                                             </button>
                                                             <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lJJ-k7-pWT">
                                                                 <rect key="frame" x="261" y="0.0" width="81" height="52"/>
-                                                                <color key="backgroundColor" name="Border"/>
+                                                                <color key="backgroundColor" name="SecondaryButton"/>
                                                                 <fontDescription key="fontDescription" name="PlusJakartaSans-Medium" family="Plus Jakarta Sans" pointSize="16"/>
                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                 <state key="normal" title="XYZ">
@@ -540,7 +540,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.1803921568627451" green="0.1803921568627451" blue="0.1803921568627451" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="YOr-XT-0bG" firstAttribute="centerY" secondItem="Hke-EU-4PC" secondAttribute="centerY" id="KGj-zJ-GDc"/>
                                     <constraint firstItem="YOr-XT-0bG" firstAttribute="centerX" secondItem="Hke-EU-4PC" secondAttribute="centerX" id="L4D-Qj-YKk"/>
@@ -757,11 +757,11 @@
         <image name="TakePhoto" width="62" height="62"/>
         <image name="TickIcon" width="136" height="136"/>
         <image name="arrow.backward" catalog="system" width="128" height="95"/>
+        <namedColor name="1A1A1A">
+            <color red="0.10196078431372549" green="0.10196078431372549" blue="0.10196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="BlackBG">
             <color red="0.1803921568627451" green="0.1803921568627451" blue="0.1803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="Border">
-            <color red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="PrimaryText">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

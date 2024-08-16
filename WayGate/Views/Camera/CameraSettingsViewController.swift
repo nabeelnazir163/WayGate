@@ -53,9 +53,9 @@ class CameraSettingsViewController: UIViewController {
             modelMediumBtn.backgroundColor = modelQuality == .medium ? .theme : .clear
             modelLowBtn.backgroundColor = modelQuality == .low ? .theme : .clear
             
-            modelHighBtn.setTitleColor(modelQuality == .high ? .white : .primaryText, for: .normal)
-            modelMediumBtn.setTitleColor(modelQuality == .medium ? .white : .primaryText, for: .normal)
-            modelLowBtn.setTitleColor(modelQuality == .low ? .white : .primaryText, for: .normal)
+            modelHighBtn.setTitleColor(modelQuality == .high ? .primaryText : .secondaryButton, for: .normal)
+            modelMediumBtn.setTitleColor(modelQuality == .medium ? .primaryText : .secondaryButton, for: .normal)
+            modelLowBtn.setTitleColor(modelQuality == .low ? .primaryText : .secondaryButton, for: .normal)
         }
     }
     var textureQuality: TextureQuality = .medium {
@@ -64,30 +64,30 @@ class CameraSettingsViewController: UIViewController {
             textureMediumBtn.backgroundColor = textureQuality == .medium ? .theme : .clear
             textureLowBtn.backgroundColor = textureQuality == .low ? .theme : .clear
             
-            textureHighBtn.setTitleColor(textureQuality == .high ? .white : .primaryText, for: .normal)
-            textureMediumBtn.setTitleColor(textureQuality == .medium ? .white : .primaryText, for: .normal)
-            textureLowBtn.setTitleColor(textureQuality == .low ? .white : .primaryText, for: .normal)
+            textureHighBtn.setTitleColor(textureQuality == .high ? .primaryText : .secondaryButton, for: .normal)
+            textureMediumBtn.setTitleColor(textureQuality == .medium ? .primaryText : .secondaryButton, for: .normal)
+            textureLowBtn.setTitleColor(textureQuality == .low ? .primaryText : .secondaryButton, for: .normal)
         }
     }
     var fileFormat: FileFormatType = .OBJ {
         didSet {
-            OBJFileFormatBtn.backgroundColor = fileFormat == .OBJ ? .theme : .border
-            FBXFileFormatBtn.backgroundColor = fileFormat == .FBX ? .theme : .border
-            STLFileFormatBtn.backgroundColor = fileFormat == .STL ? .theme : .border
-            GLBFileFormatBtn.backgroundColor = fileFormat == .GLB ? .theme : .border
-            GLTFFileFormatBtn.backgroundColor = fileFormat == .GLTF ? .theme : .border
-            USDZFileFormatBtn.backgroundColor = fileFormat == .USDZ ? .theme : .border
-            PLYFileFormatBtn.backgroundColor = fileFormat == .PLY ? .theme : .border
-            XYZFileFormatBtn.backgroundColor = fileFormat == .XYZ ? .theme : .border
+            OBJFileFormatBtn.backgroundColor = fileFormat == .OBJ ? .theme : .OneA
+            FBXFileFormatBtn.backgroundColor = fileFormat == .FBX ? .theme : .OneA
+            STLFileFormatBtn.backgroundColor = fileFormat == .STL ? .theme : .OneA
+            GLBFileFormatBtn.backgroundColor = fileFormat == .GLB ? .theme : .OneA
+            GLTFFileFormatBtn.backgroundColor = fileFormat == .GLTF ? .theme : .OneA
+            USDZFileFormatBtn.backgroundColor = fileFormat == .USDZ ? .theme : .OneA
+            PLYFileFormatBtn.backgroundColor = fileFormat == .PLY ? .theme : .OneA
+            XYZFileFormatBtn.backgroundColor = fileFormat == .XYZ ? .theme : .OneA
             
-            OBJFileFormatBtn.setTitleColor(fileFormat == .OBJ ? .white : .primaryText, for: .normal)
-            FBXFileFormatBtn.setTitleColor(fileFormat == .FBX ? .white : .primaryText, for: .normal)
-            STLFileFormatBtn.setTitleColor(fileFormat == .STL ? .white : .primaryText, for: .normal)
-            GLBFileFormatBtn.setTitleColor(fileFormat == .GLB ? .white : .primaryText, for: .normal)
-            GLTFFileFormatBtn.setTitleColor(fileFormat == .GLTF ? .white : .primaryText, for: .normal)
-            USDZFileFormatBtn.setTitleColor(fileFormat == .USDZ ? .white : .primaryText, for: .normal)
-            PLYFileFormatBtn.setTitleColor(fileFormat == .PLY ? .white : .primaryText, for: .normal)
-            XYZFileFormatBtn.setTitleColor(fileFormat == .XYZ ? .white : .primaryText, for: .normal)
+            OBJFileFormatBtn.setTitleColor(fileFormat == .OBJ ? .primaryText : .secondaryButton, for: .normal)
+            FBXFileFormatBtn.setTitleColor(fileFormat == .FBX ? .primaryText : .secondaryButton, for: .normal)
+            STLFileFormatBtn.setTitleColor(fileFormat == .STL ? .primaryText : .secondaryButton, for: .normal)
+            GLBFileFormatBtn.setTitleColor(fileFormat == .GLB ? .primaryText : .secondaryButton, for: .normal)
+            GLTFFileFormatBtn.setTitleColor(fileFormat == .GLTF ? .primaryText : .secondaryButton, for: .normal)
+            USDZFileFormatBtn.setTitleColor(fileFormat == .USDZ ? .primaryText : .secondaryButton, for: .normal)
+            PLYFileFormatBtn.setTitleColor(fileFormat == .PLY ? .primaryText : .secondaryButton, for: .normal)
+            XYZFileFormatBtn.setTitleColor(fileFormat == .XYZ ? .primaryText : .secondaryButton, for: .normal)
             
         }
     }

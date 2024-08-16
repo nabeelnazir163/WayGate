@@ -20,6 +20,7 @@ extension UIColor {
     static let placeHolderColor = UIColor(named: "PlaceHolderColor")!
     static let grayColor = UIColor(named: "GrayColor")!
     static let BGColor = UIColor(named: "BGColor")!
+    static let OneA = UIColor(named: "1A1A1A")!
     static let gradientColors = [UIColor(named: "GradientStartColor")!.cgColor,
                                  UIColor(named: "GradientEndColor")!.cgColor]
 }

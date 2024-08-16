@@ -30,7 +30,7 @@ struct CameraAdvance: View {
     @State var cameraButtonDisabled = false
     
     let maximumPhotosLimit = 200
-    let minimumPhotosLimit = 40
+    let minimumPhotosLimit = 4
         
     var nftItem: NFTItem?
     var dismissAction: (() -> Void)
