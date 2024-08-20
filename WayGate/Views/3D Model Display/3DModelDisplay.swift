@@ -82,7 +82,9 @@ struct ModelDisplay: View {
     private func downloadObjFile() {
         guard let objItem = nftItem?.threeDfile?.first(where: { $0.fileName == "3DModel.obj" }),
               let objUrlString = objItem.s3Url,
-              let objUrl = URL(string: objUrlString) else { return }
+              let objUrl = URL(string: objUrlString) else {
+            return
+        }
         // Create destination URL
         let documentsUrl:URL =  FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
         let destinationFileUrl = documentsUrl.appendingPathComponent("modelobject.obj")

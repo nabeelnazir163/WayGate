@@ -7,8 +7,7 @@
 
 import UIKit
 import AVFoundation
-import KiriAdvanceCameraKit
-
+import KIRIEngineSDK
 class CameraViewController: UIViewController {
     
     private var cameraView = CameraView()

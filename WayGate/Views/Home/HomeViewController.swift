@@ -5,7 +5,6 @@
 //  Created by Nabeel Nazir on 02/06/2023.
 //
 
-import KiriAdvanceCameraKit
 import SwiftUI
 import KIRIEngineSDK
 
@@ -155,14 +154,20 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     private func open3DModel(item: NFTItem?) {
-        let camera = ModelDisplay(nftItem: item, dismissAction: {
-            self.viewWillAppear(false)
-            self.dismiss( animated: true, completion: nil )
-        })
-        let vc = UIHostingController(rootView: camera)
-        vc.modalTransitionStyle = .crossDissolve
-        vc.modalPresentationStyle = .overCurrentContext
-        self.present(vc, animated: true)
+        KIRISDK.share.setup(envType: .product, appKey: Constants.AppKey) { result in
+            DispatchQueue.main.async {
+                if case .success = result {
+                    let camera = ModelDisplay(nftItem: item, dismissAction: {
+                        self.viewWillAppear(false)
+                        self.dismiss( animated: true, completion: nil )
+                    })
+                    let vc = UIHostingController(rootView: camera)
+                    vc.modalTransitionStyle = .crossDissolve
+                    vc.modalPresentationStyle = .overCurrentContext
+                    self.present(vc, animated: true)
+                }
+            }
+        }
     }
     
     private func openVideoMode(item: NFTItem) {

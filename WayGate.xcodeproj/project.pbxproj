@@ -13,8 +13,6 @@
 		422F9B842A2B4DDC0005182F /* Camera.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 422F9B832A2B4DDC0005182F /* Camera.xcassets */; };
 		423D8FC12A3330C6001B90ED /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423D8FC02A3330C6001B90ED /* UIApplicationExtension.swift */; };
 		423D8FC32A333232001B90ED /* CameraSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423D8FC22A333232001B90ED /* CameraSettingsViewController.swift */; };
-		423E42402A2E652F0039B0B2 /* KiriAdvanceCameraKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 429620612A2E63FC006AEF27 /* KiriAdvanceCameraKit.xcframework */; };
-		423E42412A2E652F0039B0B2 /* KiriAdvanceCameraKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 429620612A2E63FC006AEF27 /* KiriAdvanceCameraKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4255C35F2A32FEFE00FD7995 /* UIEdgeInsetsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4255C35E2A32FEFE00FD7995 /* UIEdgeInsetsExtension.swift */; };
 		4255C3612A32FF2500FD7995 /* EnvironmentValuesExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4255C3602A32FF2500FD7995 /* EnvironmentValuesExtension.swift */; };
 		4255C3632A32FF8600FD7995 /* UIViewPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4255C3622A32FF8600FD7995 /* UIViewPreview.swift */; };
@@ -95,7 +93,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				423E42412A2E652F0039B0B2 /* KiriAdvanceCameraKit.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,7 +137,6 @@
 		4292E0262A43446E009A14A4 /* IntroSliderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroSliderCollectionViewCell.swift; sourceTree = "<group>"; };
 		4292E0272A43446E009A14A4 /* IntroSliderCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IntroSliderCollectionViewCell.xib; sourceTree = "<group>"; };
 		4292E02A2A434699009A14A4 /* IntroSliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroSliderViewController.swift; sourceTree = "<group>"; };
-		429620612A2E63FC006AEF27 /* KiriAdvanceCameraKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = KiriAdvanceCameraKit.xcframework; sourceTree = "<group>"; };
 		4297EAB52A2926E6007AE286 /* NSObjectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
 		429BC96D2C50381D00F8CB9D /* PlusJakartaSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-Regular.ttf"; sourceTree = "<group>"; };
 		429BC96F2C50383D00F8CB9D /* PlusJakartaSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-Bold.ttf"; sourceTree = "<group>"; };
@@ -189,7 +185,6 @@
 				42ED47E92A2F9BBB00C63786 /* Lottie in Frameworks */,
 				42DCA4F92A2A1054001EA88F /* ObjectMapper in Frameworks */,
 				42BDF0042A7E2EC70002F45A /* KIRIEngineSDK in Frameworks */,
-				423E42402A2E652F0039B0B2 /* KiriAdvanceCameraKit.xcframework in Frameworks */,
 				425E86372C6F5A55003D07F4 /* Switches in Frameworks */,
 				42DCA4F62A2A103E001EA88F /* Alamofire in Frameworks */,
 			);
@@ -343,7 +338,6 @@
 		42F3E1F02A28F906007485B0 /* WayGate */ = {
 			isa = PBXGroup;
 			children = (
-				429620612A2E63FC006AEF27 /* KiriAdvanceCameraKit.xcframework */,
 				42AC6DD32A29248C00717E46 /* Views */,
 				42AC6DCE2A291E1900717E46 /* Storyboards */,
 				42F3E2252A290963007485B0 /* Supporting Files */,
