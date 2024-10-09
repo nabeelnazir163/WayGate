@@ -1,5 +1,5 @@
 {
-  "originHash" : "5a33450a3a55b078b5b4df37a9372002f0b98cb3155e772786c6071e41229bce",
+  "originHash" : "81b258daf445702755f41caad30b514f27658bd6f60cda1ed789e905e03a5886",
   "pins" : [
     {
       "identity" : "alamofire",
@@ -8,15 +8,6 @@
       "state" : {
         "revision" : "bc268c28fb170f494de9e9927c371b8342979ece",
         "version" : "5.7.1"
-      }
-    },
-    {
-      "identity" : "kiri-engine-sdk-api",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/Kiri-Innovation/KIRI-ENGINE-SDK-API.git",
-      "state" : {
-        "branch" : "ios",
-        "revision" : "4c8bb0df33869e702aee6a9a66c00c33d6f4e950"
       }
     },
     {

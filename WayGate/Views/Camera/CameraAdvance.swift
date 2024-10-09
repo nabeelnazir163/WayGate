@@ -8,10 +8,9 @@
 import SwiftUI
 import UIKit
 import Switches
-import KIRIEngineSDK
 
 struct CameraAdvance: View {
-    let cameraView = CameraView<AdvanceImageCaptureModel>()
+//    let cameraView = CameraView<AdvanceImageCaptureModel>()
     
     @Environment(\.safeAreaInsets) private var safeAreaInsets
     
@@ -37,9 +36,9 @@ struct CameraAdvance: View {
     
     var body: some View {
         ZStack() {
-            UIViewPreview {
-                cameraView
-            }
+//            UIViewPreview {
+//                cameraView
+//            }
             
             VStack(alignment: .trailing) {
                 
@@ -146,16 +145,16 @@ struct CameraAdvance: View {
         }
         .edgesIgnoringSafeArea(.all)
         .onChange(of: isManualOn) { newValue in
-            cameraView.captureModel.isOpenAdvance = newValue
+//            cameraView.captureModel.isOpenAdvance = newValue
         }
         .onChange(of: evValue) { newValue in
-            cameraView.captureModel.evValue = newValue
+//            cameraView.captureModel.evValue = newValue
         }
         .onChange(of: isoValue) { newValue in
-            cameraView.captureModel.isoValue = .value(newValue)
+//            cameraView.captureModel.isoValue = .value(newValue)
         }
         .onChange(of: shutterValue) { newValue in
-            cameraView.captureModel.shutterValue = .value(newValue)
+//            cameraView.captureModel.shutterValue = .value(newValue)
         }
         .onAppear {
             setupCameraKit()
@@ -167,7 +166,7 @@ struct CameraAdvance: View {
             Spacer()
             
             Button {
-                cameraView.takePhoto()
+//                cameraView.takePhoto()
                 cameraButtonDisabled = true
                 Timer.scheduledTimer(withTimeInterval: 0.25, repeats: false) { timer in
                     cameraButtonDisabled = false
@@ -244,52 +243,52 @@ struct CameraAdvance: View {
                 }
             }
             
-            if let device = cameraView.captureModel.device {
-                if isExposureSelected {
-                    Slider(value: $evValue, in: -3...3)
-                        .frame(width: 100)
-                        .offset(x: -50, y: 0)
-                        .rotationEffect(.degrees(-90.0), anchor: .center)
-                } else if isISOSelected {
-                    Slider(value: $isoValue, in: CGFloat(device.activeFormat.minISO)...CGFloat(device.activeFormat.maxISO))
-                        .frame(width: 100)
-                        .offset(x: -50, y: 0)
-                        .rotationEffect(.degrees(-90.0), anchor: .center)
-                } else if isShutterSelected {
-                    Slider(value: $shutterValue, in: 0.001...device.activeFormat.maxExposureDuration.time)
-                        .frame(width: 100)
-                        .offset(x: -50, y: 0)
-                        .rotationEffect(.degrees(-90.0), anchor: .center)
-                }
-            }
+//            if let device = cameraView.captureModel.device {
+//                if isExposureSelected {
+//                    Slider(value: $evValue, in: -3...3)
+//                        .frame(width: 100)
+//                        .offset(x: -50, y: 0)
+//                        .rotationEffect(.degrees(-90.0), anchor: .center)
+//                } else if isISOSelected {
+//                    Slider(value: $isoValue, in: CGFloat(device.activeFormat.minISO)...CGFloat(device.activeFormat.maxISO))
+//                        .frame(width: 100)
+//                        .offset(x: -50, y: 0)
+//                        .rotationEffect(.degrees(-90.0), anchor: .center)
+//                } else if isShutterSelected {
+//                    Slider(value: $shutterValue, in: 0.001...device.activeFormat.maxExposureDuration.time)
+//                        .frame(width: 100)
+//                        .offset(x: -50, y: 0)
+//                        .rotationEffect(.degrees(-90.0), anchor: .center)
+//                }
+//            }
         }
     }
     
     private func setupCameraKit() {
-        KIRISDK.share.setup(envType: .product, appKey: Constants.AppKey) { result in
-            switch result {
-            case .success:
-                self.startPreviewingCamera()
-            case .failure:
-                print("Error")
-            }
-        }
-        let docPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
-        cameraView.setPhotoFolderPath("\(docPath)/\(Constants.folderName)")
+//        KIRISDK.share.setup(envType: .product, appKey: Constants.AppKey) { result in
+//            switch result {
+//            case .success:
+//                self.startPreviewingCamera()
+//            case .failure:
+//                print("Error")
+//            }
+//        }
+//        let docPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
+//        cameraView.setPhotoFolderPath("\(docPath)/\(Constants.folderName)")
     }
     
     private func startPreviewingCamera() {
-        cameraView.startPreview { result in
-            print("result:\(result)")
-            switch result {
-            case .success(let status):
-                if status == .authorized {
-                    cameraView.captureModel.isOpenAdvance = true
-                }
-            case .failure:
-                break
-            }
-        }
+//        cameraView.startPreview { result in
+//            print("result:\(result)")
+//            switch result {
+//            case .success(let status):
+//                if status == .authorized {
+//                    cameraView.captureModel.isOpenAdvance = true
+//                }
+//            case .failure:
+//                break
+//            }
+//        }
     }
     
     private func getToken() {

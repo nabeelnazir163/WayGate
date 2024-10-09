@@ -14,54 +14,10 @@
             filePath = "WayGate/Views/3D Model Display/3DModelDisplay.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "86"
-            endingLineNumber = "86"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
             landmarkName = "downloadObjFile()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "980B2244-3B69-4B8D-B1CD-B9048076255C - 272abb5a5de6b79d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "WayGate.ModelDisplay.downloadObjFile() -&gt; ()"
-                  moduleName = "WayGate"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/nabeelnazir/Documents/Waygate/WayGate/Views/3D%20Model%20Display/3DModelDisplay.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "83"
-                  endingLineNumber = "83">
-               </Location>
-               <Location
-                  uuid = "980B2244-3B69-4B8D-B1CD-B9048076255C - c79027b1274ab8a5"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (WayGate.ThreeDFile) -&gt; Swift.Bool in WayGate.ModelDisplay.downloadObjFile() -&gt; ()"
-                  moduleName = "WayGate"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/nabeelnazir/Documents/Waygate/WayGate/Views/3D%20Model%20Display/3DModelDisplay.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "83"
-                  endingLineNumber = "83">
-               </Location>
-               <Location
-                  uuid = "980B2244-3B69-4B8D-B1CD-B9048076255C - 272abb5a5de6b430"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "WayGate.ModelDisplay.downloadObjFile() -&gt; ()"
-                  moduleName = "WayGate"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/nabeelnazir/Documents/Waygate/WayGate/Views/3D%20Model%20Display/3DModelDisplay.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "86"
-                  endingLineNumber = "86">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -74,40 +30,10 @@
             filePath = "WayGate/Views/3D Model Display/3DModelDisplay.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "89"
-            endingLineNumber = "89"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
             landmarkName = "downloadObjFile()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "3A75E6EF-9B71-46A0-8968-4EE36CBF0EB9 - 272abb5a5de6b411"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "WayGate.ModelDisplay.downloadObjFile() -&gt; ()"
-                  moduleName = "WayGate"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/nabeelnazir/Documents/Waygate/WayGate/Views/3D%20Model%20Display/3DModelDisplay.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "87"
-                  endingLineNumber = "87">
-               </Location>
-               <Location
-                  uuid = "3A75E6EF-9B71-46A0-8968-4EE36CBF0EB9 - 272abb5a5de6b4d3"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "WayGate.ModelDisplay.downloadObjFile() -&gt; ()"
-                  moduleName = "WayGate"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/nabeelnazir/Documents/Waygate/WayGate/Views/3D%20Model%20Display/3DModelDisplay.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "89"
-                  endingLineNumber = "89">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

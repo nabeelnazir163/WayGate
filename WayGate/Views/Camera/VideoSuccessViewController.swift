@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import KIRIEngineSDK
 import MultiProgressView
 
 class VideoSuccessViewController: UIViewController {
@@ -16,7 +15,7 @@ class VideoSuccessViewController: UIViewController {
     @IBOutlet weak var uploadLbl: UILabel!
     @IBOutlet weak var progressView: MultiProgressView!
 
-    var result: KIRIEngineSDK.VideoParameter?
+//    var result: KIRIEngineSDK.VideoParameter?
     var fileURL: URL?
     var nftId: String?
     
@@ -28,31 +27,31 @@ class VideoSuccessViewController: UIViewController {
     }
     
     private func uploadVideoToKiri() {
-        guard let data = getDataFromUrl() else { return }
-        var params = [String: Any]()
-        params["length"] = "\(result?.length ?? 0)"
-        params["resolution"] = result?.resolution
-        params["md5"] = result?.specialKey
-        loaderView.isHidden = false
-        WebServicesManager.shared.uploadVideoToKiri(video: data, params: params) { prog in
-            let progress = Int(prog * 100)
-            self.uploadLbl.text = "Uploading \(progress)%"
-            self.progressView.setProgress(section: 0, to: Float(prog))
-        } callBack: { [weak self] result in
-            guard let `self` = self else { return }
-            self.loaderView.isHidden = true
-            switch result {
-            case .success(let baseResponse):
-                if let data = baseResponse.dataObject {
-                    Constants.serializeToken = data
-                    self.updateNFTStatus()
-                } else {
-                    Commons.showAlert(msg: baseResponse.message ?? "")
-                }
-            case .failed(let error):
-                Commons.showAlert(msg: error.localizedDescription)
-            }
-        }
+//        guard let data = getDataFromUrl() else { return }
+//        var params = [String: Any]()
+//        params["length"] = "\(result?.length ?? 0)"
+//        params["resolution"] = result?.resolution
+//        params["md5"] = result?.specialKey
+//        loaderView.isHidden = false
+//        WebServicesManager.shared.uploadVideoToKiri(video: data, params: params) { prog in
+//            let progress = Int(prog * 100)
+//            self.uploadLbl.text = "Uploading \(progress)%"
+//            self.progressView.setProgress(section: 0, to: Float(prog))
+//        } callBack: { [weak self] result in
+//            guard let `self` = self else { return }
+//            self.loaderView.isHidden = true
+//            switch result {
+//            case .success(let baseResponse):
+//                if let data = baseResponse.dataObject {
+//                    Constants.serializeToken = data
+//                    self.updateNFTStatus()
+//                } else {
+//                    Commons.showAlert(msg: baseResponse.message ?? "")
+//                }
+//            case .failed(let error):
+//                Commons.showAlert(msg: error.localizedDescription)
+//            }
+//        }
 
     }
     

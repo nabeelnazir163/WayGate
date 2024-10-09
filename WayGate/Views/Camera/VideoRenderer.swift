@@ -7,27 +7,26 @@
 
 
 import SwiftUI
-import KIRIEngineSDK
 import AVKit
 import UIKit
 
-class VideoCaptureProxy: VideoCaptureVCDelegate {
-    
-    var finishRecordingClosure: ((URL, Error?) -> Void)?
-    
-    init() { }
-     
-    func videoCapture(_ vc: KIRIEngineSDK.VideoCaptureVC, didFinishRecording outputFileURL: URL, error: Error?) {
-        finishRecordingClosure?(outputFileURL, error)
-    }
-    
-}
+//class VideoCaptureProxy: VideoCaptureVCDelegate {
+//    
+//    var finishRecordingClosure: ((URL, Error?) -> Void)?
+//    
+//    init() { }
+//     
+//    func videoCapture(_ vc: KIRIEngineSDK.VideoCaptureVC, didFinishRecording outputFileURL: URL, error: Error?) {
+//        finishRecordingClosure?(outputFileURL, error)
+//    }
+//    
+//}
 
 struct VideoCaptureContentView: View {
     @Environment(\.safeAreaInsets) private var safeAreaInsets
     
-    let vc = VideoCaptureVC()!
-    let proxy = VideoCaptureProxy()
+//    let vc = VideoCaptureVC()!
+//    let proxy = VideoCaptureProxy()
     @State
     var isPresented = false
     @State
@@ -37,16 +36,16 @@ struct VideoCaptureContentView: View {
     
     init(nftId: String?,
          dismissAction: @escaping () -> Void) {
-        vc.delegate = proxy
+//        vc.delegate = proxy
         self.nftId = nftId
         self.dismissAction = dismissAction
     }
     
     var body: some View {
         ZStack(alignment: .topTrailing) {
-            UIViewControllerPreview {
-                vc
-            }
+//            UIViewControllerPreview {
+//                vc
+//            }
             
             Button {
                 dismissAction()
@@ -61,12 +60,12 @@ struct VideoCaptureContentView: View {
             .padding(.trailing, 20)
         }
         .onAppear {
-            proxy.finishRecordingClosure = { fileURL, error in
-                DispatchQueue.main.async {
-                    self.fileURL = fileURL
-                    self.getToken()
-                }
-            }
+//            proxy.finishRecordingClosure = { fileURL, error in
+//                DispatchQueue.main.async {
+//                    self.fileURL = fileURL
+//                    self.getToken()
+//                }
+//            }
         }
         .edgesIgnoringSafeArea(.all)
     }
@@ -92,28 +91,28 @@ struct VideoCaptureContentView: View {
     func checkVideo() {
         guard let url = self.fileURL else { return }
         Commons.showActivityIndicator()
-        VideoTools.checkVideoFile(url) { result in
-            DispatchQueue.main.async {
-                Commons.hideActivityIndicator()
-                switch result {
-                case .success(let response):
-                    openViewController(result: response)
-                case .failure(let error):
-                    print("error:\(error)")
-                }
-            }
-        }
+//        VideoTools.checkVideoFile(url) { result in
+//            DispatchQueue.main.async {
+//                Commons.hideActivityIndicator()
+//                switch result {
+//                case .success(let response):
+//                    openViewController(result: response)
+//                case .failure(let error):
+//                    print("error:\(error)")
+//                }
+//            }
+//        }
     }
     
-    private func openViewController(result: KIRIEngineSDK.VideoParameter) {
-        if let vc: VideoSuccessViewController = UIStoryboard.initiate(storyboard: .camera) {
-            vc.modalTransitionStyle = .crossDissolve
-            vc.modalPresentationStyle = .overFullScreen
-            vc.result = result
-            vc.fileURL = fileURL
-            vc.nftId = nftId
-            UIApplication.topViewController()?.present(vc, animated: true)
-        }
-    }
+//    private func openViewController(result: KIRIEngineSDK.VideoParameter) {
+//        if let vc: VideoSuccessViewController = UIStoryboard.initiate(storyboard: .camera) {
+//            vc.modalTransitionStyle = .crossDissolve
+//            vc.modalPresentationStyle = .overFullScreen
+//            vc.result = result
+//            vc.fileURL = fileURL
+//            vc.nftId = nftId
+//            UIApplication.topViewController()?.present(vc, animated: true)
+//        }
+//    }
 }
 
