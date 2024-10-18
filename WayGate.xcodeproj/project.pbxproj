@@ -23,6 +23,7 @@
 		423213312CB44DC700BAAF8B /* CaptureOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423213302CB44DC700BAAF8B /* CaptureOverlayView.swift */; };
 		423D8FC12A3330C6001B90ED /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423D8FC02A3330C6001B90ED /* UIApplicationExtension.swift */; };
 		423D8FC32A333232001B90ED /* CameraSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423D8FC22A333232001B90ED /* CameraSettingsViewController.swift */; };
+		424D01A22CC2CED200B4061D /* KIRIEngineSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 424D01A12CC2CED200B4061D /* KIRIEngineSDK */; };
 		4255C35F2A32FEFE00FD7995 /* UIEdgeInsetsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4255C35E2A32FEFE00FD7995 /* UIEdgeInsetsExtension.swift */; };
 		4255C3612A32FF2500FD7995 /* EnvironmentValuesExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4255C3602A32FF2500FD7995 /* EnvironmentValuesExtension.swift */; };
 		4255C3632A32FF8600FD7995 /* UIViewPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4255C3622A32FF8600FD7995 /* UIViewPreview.swift */; };
@@ -226,6 +227,7 @@
 				42ED47E92A2F9BBB00C63786 /* Lottie in Frameworks */,
 				42DCA4F92A2A1054001EA88F /* ObjectMapper in Frameworks */,
 				425E86372C6F5A55003D07F4 /* Switches in Frameworks */,
+				424D01A22CC2CED200B4061D /* KIRIEngineSDK in Frameworks */,
 				42DCA4F62A2A103E001EA88F /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -541,6 +543,7 @@
 				42ED47E82A2F9BBB00C63786 /* Lottie */,
 				421E949D2A335A9A007F6981 /* MultiProgressView */,
 				425E86362C6F5A55003D07F4 /* Switches */,
+				424D01A12CC2CED200B4061D /* KIRIEngineSDK */,
 			);
 			productName = WayGate;
 			productReference = 42DCA4BC2A2A0EE5001EA88F /* WayGate.app */;
@@ -576,6 +579,7 @@
 				42ED47E72A2F9BBB00C63786 /* XCRemoteSwiftPackageReference "lottie-spm" */,
 				421E949C2A335A9A007F6981 /* XCRemoteSwiftPackageReference "MultiProgressView" */,
 				42D5F4C22C6F57BA0022AC2C /* XCRemoteSwiftPackageReference "Switch-Animations" */,
+				424D01A02CC2CED200B4061D /* XCRemoteSwiftPackageReference "KIRI-ENGINE-SDK-API" */,
 			);
 			productRefGroup = 42F3E1EF2A28F906007485B0 /* Products */;
 			projectDirPath = "";
@@ -936,6 +940,14 @@
 				minimumVersion = 1.2.0;
 			};
 		};
+		424D01A02CC2CED200B4061D /* XCRemoteSwiftPackageReference "KIRI-ENGINE-SDK-API" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Kiri-Innovation/KIRI-ENGINE-SDK-API.git";
+			requirement = {
+				branch = ios;
+				kind = branch;
+			};
+		};
 		42D5F4C22C6F57BA0022AC2C /* XCRemoteSwiftPackageReference "Switch-Animations" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/jwd-ali/Switch-Animations.git";
@@ -975,6 +987,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 421E949C2A335A9A007F6981 /* XCRemoteSwiftPackageReference "MultiProgressView" */;
 			productName = MultiProgressView;
+		};
+		424D01A12CC2CED200B4061D /* KIRIEngineSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 424D01A02CC2CED200B4061D /* XCRemoteSwiftPackageReference "KIRI-ENGINE-SDK-API" */;
+			productName = KIRIEngineSDK;
 		};
 		425E86362C6F5A55003D07F4 /* Switches */ = {
 			isa = XCSwiftPackageProductDependency;

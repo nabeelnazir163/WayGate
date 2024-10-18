@@ -6,10 +6,11 @@
 //
 
 import SwiftUI
+import KIRIEngineSDK
 
 struct ModelDisplay: View {
     @Environment(\.safeAreaInsets) private var safeAreaInsets
-//    let sceneView = SceneView(frame: .zero)
+    let sceneView = SceneView(frame: .zero)
     
     @State var startLoadingView = false
     
@@ -18,9 +19,9 @@ struct ModelDisplay: View {
     
     var body: some View {
         ZStack() {
-//            UIViewPreview {
-//                sceneView
-//            }
+            UIViewPreview {
+                sceneView
+            }
             
             if startLoadingView {
                 customLoader
@@ -112,7 +113,7 @@ struct ModelDisplay: View {
             if isDownloaded, let jpgURL = jpgURL {
                 do {
                     try FileManager.default.copyItem(at: jpgURL, to: destinationFileUrl)
-//                    sceneView.loadScene(modelUrl: objUrl, textureUrl: destinationFileUrl)
+                    sceneView.loadScene(modelUrl: objUrl, textureUrl: destinationFileUrl)
                 } catch (let writeError) {
                     print("Error creating a file \(destinationFileUrl) : \(writeError)")
                 }
