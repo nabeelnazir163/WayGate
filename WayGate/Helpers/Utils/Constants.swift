@@ -18,5 +18,5 @@ class Constants {
     
     static let privacyPolicyURL = "https://stag.depicted.ai/privacy-policy"
     static let termsAndConditionURL = "https://stag.depicted.ai/terms-and-conditions"
-    static let AppKey = "5cd1176cb3bc4222b31179cb5abe6eab" //"d0aa6e9c3d331bc3e27901c9a636d8ec"
+    static let AppKey = "50fb60481116d5ee01caad906b07f6b9"
 }
