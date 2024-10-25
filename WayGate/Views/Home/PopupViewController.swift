@@ -7,6 +7,7 @@
 
 import UIKit
 protocol PopupViewControllerDelegate: AnyObject {
+    func didSelectObjectCapture(item: NFTItem)
     func didSelectPhotos(item: NFTItem)
     func didSelectVideo(item: NFTItem)
 }
@@ -30,6 +31,14 @@ class PopupViewController: UIViewController {
     //MARK:- UIACtions
     @IBAction func didTapBackBtn(_ sender: Any) {
         dismiss(animated: true)
+    }
+    
+    @IBAction func didSelectObjectCapture(_ sender: Any) {
+        guard let item else { return }
+        dismiss(animated: false) { [weak self] in
+            guard let `self` = self else { return }
+            self.delegte?.didSelectObjectCapture(item: item)
+        }
     }
 
     @IBAction func didTapPhotoSelection(_ sender: Any) {

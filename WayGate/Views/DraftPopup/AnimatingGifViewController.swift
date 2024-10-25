@@ -9,7 +9,7 @@ import UIKit
 import Lottie
 
 enum AssetType {
-    case image, video
+    case image, video, objectCapture
 }
 
 protocol AnimatingGifViewControllerProtocol: AnyObject {

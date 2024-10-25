@@ -7,6 +7,7 @@
 
 import SwiftUI
 import KIRIEngineSDK
+import RealityKit
 
 class HomeViewController: UIViewController {
     //MARK:- Outlets
@@ -144,9 +145,12 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     private func openCamera(item: NFTItem?) {
-//        let camera = CameraAdvance(nftItem: item, dismissAction: {
-//            self.dismiss( animated: true, completion: nil )
-//        })
+        let camera = CameraAdvance(nftItem: item, dismissAction: {
+            self.dismiss( animated: true, completion: nil )
+        })
+    }
+    
+    private func openObjectCaptureView(item: NFTItem) {
         let camera = ContentView()
         let vc = UIHostingController(rootView: camera)
         vc.modalTransitionStyle = .crossDissolve
@@ -215,14 +219,24 @@ extension HomeViewController: PopupViewControllerDelegate {
     func didSelectPhotos(item: NFTItem) {
         openConfirmationPopup(for: .image, item: item)
     }
+    
+    func didSelectObjectCapture(item: NFTItem) {
+        if PhotogrammetrySession.isSupported {
+            openConfirmationPopup(for: .objectCapture, item: item)
+        } else {
+            Commons.showAlert(msg: "Object capture doesn't support on this device.")
+        }
+    }
 }
 
 extension HomeViewController: AnimatingGifViewControllerProtocol {
     func createAsset(for type: AssetType, item: NFTItem) {
         if type == .image {
             openCamera(item: item)
-        } else {
+        } else if type == .video {
             openVideoMode(item: item)
+        } else {
+            openObjectCaptureView(item: item)
         }
     }
 }
