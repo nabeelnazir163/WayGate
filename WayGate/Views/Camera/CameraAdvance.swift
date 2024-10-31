@@ -9,6 +9,7 @@ import SwiftUI
 import UIKit
 import Switches
 import KIRIEngineSDK
+import AVFoundation
 
 struct CameraAdvance: View {
     let cameraView = CameraView<AdvanceImageCaptureModel>()
@@ -167,11 +168,14 @@ struct CameraAdvance: View {
             Spacer()
             
             Button {
-                cameraView.takePhoto()
-                cameraButtonDisabled = true
-                Timer.scheduledTimer(withTimeInterval: 0.25, repeats: false) { timer in
-                    cameraButtonDisabled = false
-                    currentPhotosCount = currentPhotosCount + 1
+                let cameraAuthorizationStatus = AVCaptureDevice.authorizationStatus(for: .video)
+                if case .authorized = cameraAuthorizationStatus {
+                    cameraView.takePhoto()
+                    cameraButtonDisabled = true
+                    Timer.scheduledTimer(withTimeInterval: 0.25, repeats: false) { timer in
+                        cameraButtonDisabled = false
+                        currentPhotosCount = currentPhotosCount + 1
+                    }
                 }
             } label: {
                 Image("TakePhoto")

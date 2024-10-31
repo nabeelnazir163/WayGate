@@ -218,31 +218,35 @@ extension HomeViewController: PopupViewControllerDelegate {
 
 extension HomeViewController: AnimatingGifViewControllerProtocol {
     func createAsset(for type: AssetType, item: NFTItem) {
-        if type == .image {
-            openCamera(item: item)
-        } else {
-            let cameraAuthorizationStatus = AVCaptureDevice.authorizationStatus(for: .video)
-            switch cameraAuthorizationStatus {
-            case .notDetermined:
-                // The user hasn't been asked yet, so request permission
-                AVCaptureDevice.requestAccess(for: .video) { [weak self] granted in
-                    DispatchQueue.main.async { [weak self] in
-                        guard let self else { return }
-                        if granted {
-                            openVideoMode(item: item)
-                        } else {
-                            showCameraAccessDeniedAlert()
-                        }
-                    }
-                }
-            case .restricted, .denied:
-                showCameraAccessDeniedAlert()
-            case .authorized:
+        checkCameraPermission { [weak self] in
+            guard let self else { return }
+            if type == .image {
+                openCamera(item: item)
+            } else {
                 openVideoMode(item: item)
-            @unknown default:
-                // Handle future possible cases
-                print("Unknown authorization status")
             }
+        }
+    }
+    private func checkCameraPermission(completion: @escaping () -> Void) {
+        let cameraAuthorizationStatus = AVCaptureDevice.authorizationStatus(for: .video)
+        switch cameraAuthorizationStatus {
+        case .notDetermined:
+            // The user hasn't been asked yet, so request permission
+            AVCaptureDevice.requestAccess(for: .video) { [weak self] granted in
+                guard let self else { return }
+                if granted {
+                    completion()
+                } else {
+                    showCameraAccessDeniedAlert()
+                }
+            }
+        case .restricted, .denied:
+            showCameraAccessDeniedAlert()
+        case .authorized:
+            completion()
+        @unknown default:
+            // Handle future possible cases
+            print("Unknown authorization status")
         }
     }
     private func showCameraAccessDeniedAlert() {
