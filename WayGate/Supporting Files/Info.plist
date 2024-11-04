@@ -32,5 +32,7 @@
 	</dict>
 	<key>UIStatusBarStyle</key>
 	<string>UIStatusBarStyleLightContent</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Our app uses the camera to capture images or videos for creating 3D models of objects</string>
 </dict>
 </plist>

@@ -7,6 +7,7 @@
 
 import SwiftUI
 import KIRIEngineSDK
+import AVFoundation
 
 class HomeViewController: UIViewController {
     //MARK:- Outlets
@@ -174,7 +175,6 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         Commons.showActivityIndicator()
         KIRISDK.share.setup(envType: .product, appKey: Constants.AppKey) { result in
             DispatchQueue.main.async {
-                
                 print("result:\(result)")
                 Commons.hideActivityIndicator()
                 switch result {
@@ -218,11 +218,59 @@ extension HomeViewController: PopupViewControllerDelegate {
 
 extension HomeViewController: AnimatingGifViewControllerProtocol {
     func createAsset(for type: AssetType, item: NFTItem) {
-        if type == .image {
-            openCamera(item: item)
-        } else {
-            openVideoMode(item: item)
+        checkCameraPermission { [weak self] in
+            guard let self else { return }
+            if type == .image {
+                openCamera(item: item)
+            } else {
+                openVideoMode(item: item)
+            }
         }
+    }
+    private func checkCameraPermission(completion: @escaping () -> Void) {
+        let cameraAuthorizationStatus = AVCaptureDevice.authorizationStatus(for: .video)
+        switch cameraAuthorizationStatus {
+        case .notDetermined:
+            // The user hasn't been asked yet, so request permission
+            AVCaptureDevice.requestAccess(for: .video) { [weak self] granted in
+                guard let self else { return }
+                if granted {
+                    completion()
+                } else {
+                    showCameraAccessDeniedAlert()
+                }
+            }
+        case .restricted, .denied:
+            showCameraAccessDeniedAlert()
+        case .authorized:
+            completion()
+        @unknown default:
+            // Handle future possible cases
+            print("Unknown authorization status")
+        }
+    }
+    private func showCameraAccessDeniedAlert() {
+        let alert = UIAlertController(
+            title: "Camera Access Required",
+            message: "Our app uses the camera to capture images or videos for creating 3D models of objects",
+            preferredStyle: .alert
+        )
+        // Add "Settings" button
+        alert.addAction(UIAlertAction(title: "Settings", style: .default) { _ in
+            guard let settingsUrl = URL(string: UIApplication.openSettingsURLString) else {
+                return
+            }
+            
+            if UIApplication.shared.canOpenURL(settingsUrl) {
+                UIApplication.shared.open(settingsUrl, options: [:], completionHandler: nil)
+            }
+        })
+        
+        // Add "Cancel" button
+        alert.addAction(UIAlertAction(title: "Cancel", style: .destructive, handler: nil))
+        
+        // Present the alert
+        present(alert, animated: true, completion: nil)
     }
 }
 
