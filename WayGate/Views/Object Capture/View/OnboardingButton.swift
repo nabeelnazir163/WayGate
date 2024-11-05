@@ -33,6 +33,7 @@ struct OnboardingButtonView: View {
                 if currentStateInputs.contains(where: { $0 == .continue(isFlippable: false) || $0 == .continue(isFlippable: true) }) {
                     CreateButton(buttonLabel: LocalizedString.continue,
                                  buttonLabelColor: .white,
+                                 buttonBackgroundColor: Color.theme,
                                  shouldApplyBackground: true,
                                  action: { transition(with: .continue(isFlippable: appModel.isObjectFlippable)) }
                     )
@@ -54,7 +55,7 @@ struct OnboardingButtonView: View {
                 }
                 if currentStateInputs.contains(where: { $0 == .finish }) {
                     CreateButton(buttonLabel: LocalizedString.finish,
-                                 buttonLabelColor: onboardingStateMachine.currentState == .thirdSegmentComplete ? .white : .blue,
+                                 buttonLabelColor: onboardingStateMachine.currentState == .thirdSegmentComplete ? .white : .theme,
                                  shouldApplyBackground: onboardingStateMachine.currentState == .thirdSegmentComplete,
                                  showBusyIndicator: session.state == .finishing,
                                  action: { [weak session] in session?.finish() })

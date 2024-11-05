@@ -21,7 +21,9 @@ struct ReconstructionPrimaryView: View {
         if completed && !cancelled {
             ModelView(modelFile: outputFile, endCaptureCallback: { [weak appModel] in
                 appModel?.endCapture()
-            })
+            }).onAppear {
+                uploadFileToAWS(fileURL: outputFile)
+            }
         } else {
             ReconstructionProgressView(outputFile: outputFile,
                                        completed: $completed,
@@ -33,6 +35,22 @@ struct ReconstructionPrimaryView: View {
                 UIApplication.shared.isIdleTimerDisabled = false
             })
             .interactiveDismissDisabled()
+        }
+    }
+    
+    private func uploadFileToAWS(fileURL: URL) {
+        Commons.showActivityIndicator()
+        AWSManager.shared.uploadfile(fileUrl: fileURL, fileName: fileURL.lastPathComponent, contenType:"application/octet-stream") { progress in
+            print("S3 Upload progress: \(progress).")
+        } completion: { response, error in
+            Commons.hideActivityIndicator()
+            if let error = error {
+                let errorMsg = "S3 File Upload error: \(error.localizedDescription)."
+            } else {
+                if let uploadedUrlString = response as? String {
+                    print("S3 File Uploaded to: \(uploadedUrlString).")
+                }
+            }
         }
     }
 }

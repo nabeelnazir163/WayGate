@@ -8,8 +8,8 @@
 import Foundation
 
 class URLs {
-//    static let SERVER_BASE_URL = "https://stag-api.depicted.ai/"
-    static let SERVER_BASE_URL = "https://api.depicted.ai/"
+    static let SERVER_BASE_URL = "https://stag-api.depicted.ai/"
+//    static let SERVER_BASE_URL = "https://api.depicted.ai/"
 //    static let KIRI_BASE_URL = "https://partner.kiri-engine.com/v2/"
     static let KIRI_BASE_URL = "https://partner.kiri-engine.com/v1/"
 }

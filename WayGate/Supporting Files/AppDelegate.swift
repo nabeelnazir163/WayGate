@@ -6,15 +6,26 @@
 //
 
 import UIKit
+import AWSS3
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        configureAWS()
         return true
+    }
+    
+    private func configureAWS() {
+        let credentialsProvider = AWSStaticCredentialsProvider(accessKey: AWSConstants.ACCESS_KEY,
+                                                               secretKey: AWSConstants.SECRET_KEY)
+        let configuration = AWSServiceConfiguration(region: .USEast1,
+                                                    credentialsProvider: credentialsProvider)
+        AWSServiceManager.default().defaultServiceConfiguration = configuration
+        
+        AWSDDLog.sharedInstance.logLevel = .verbose
+        AWSDDLog.add(AWSDDTTYLogger.sharedInstance)
     }
 
     // MARK: UISceneSession Lifecycle
