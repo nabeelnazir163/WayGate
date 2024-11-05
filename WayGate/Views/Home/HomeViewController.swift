@@ -219,11 +219,13 @@ extension HomeViewController: PopupViewControllerDelegate {
 extension HomeViewController: AnimatingGifViewControllerProtocol {
     func createAsset(for type: AssetType, item: NFTItem) {
         checkCameraPermission { [weak self] in
-            guard let self else { return }
-            if type == .image {
-                openCamera(item: item)
-            } else {
-                openVideoMode(item: item)
+            DispatchQueue.main.async { [weak self] in
+                guard let self else { return }
+                if type == .image {
+                    openCamera(item: item)
+                } else {
+                    openVideoMode(item: item)
+                }
             }
         }
     }
