@@ -42,12 +42,19 @@ class HomeViewController: UIViewController {
             guard let `self` = self else { return }
             self.getNFTs(showLoader: false)
         }
+        requestCameraPermission()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         Commons.deleteDirectory(name: "modelobject.obj")
         Commons.deleteDirectory(name: "modeljpg.jpg")
+    }
+    
+    private func requestCameraPermission() {
+        AVCaptureDevice.requestAccess(for: .video) { granted in
+            
+        }
     }
     
     private func setupUI() {
@@ -247,17 +254,7 @@ extension HomeViewController: AnimatingGifViewControllerProtocol {
     private func checkCameraPermission(completion: @escaping () -> Void) {
         let cameraAuthorizationStatus = AVCaptureDevice.authorizationStatus(for: .video)
         switch cameraAuthorizationStatus {
-        case .notDetermined:
-            // The user hasn't been asked yet, so request permission
-            AVCaptureDevice.requestAccess(for: .video) { [weak self] granted in
-                guard let self else { return }
-                if granted {
-                    completion()
-                } else {
-                    showCameraAccessDeniedAlert()
-                }
-            }
-        case .restricted, .denied:
+        case .restricted, .denied, .notDetermined:
             showCameraAccessDeniedAlert()
         case .authorized:
             completion()

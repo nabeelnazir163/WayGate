@@ -68,7 +68,7 @@ class WebServicesManager {
     }
     
     func deleteNFT(id: String?, callBack: RequestCompletionBlock<BaseResponse<EmptyResponse>>.CompletionResponse?) {
-        var params = [String: Any]()
+        let params = [String: Any]()
         CoreWebService.sendRequest(requestURL: URLs.SERVER_BASE_URL + EndPoint.deleteNFT.path() + "\(id ?? "")", method: .get, paramters: params, callBack: callBack)
     }
 }

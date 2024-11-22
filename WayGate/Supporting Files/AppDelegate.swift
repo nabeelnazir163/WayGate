@@ -6,13 +6,16 @@
 //
 
 import UIKit
+import AVFoundation
 import AWSS3
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        AVCaptureDevice.requestAccess(for: .video) { granted in
+            
+        }
         configureAWS()
         return true
     }
