@@ -19,13 +19,15 @@ struct CaptureOverlayView: View {
     @State private var hasDetectionFailed = false
     @Environment(\.horizontalSizeClass) private var horizontalSizeClass
     @State private var deviceOrientation: UIDeviceOrientation = UIDevice.current.orientation
+    
+    var dismissAction: (() -> Void)
 
     var body: some View {
         VStack(spacing: 20) {
             HStack {
-                CancelButton()
+                CancelButton(session: session, dismissAction: dismissAction)
                     .opacity(!shouldShowTutorial ? 1 : 0)
-                    .disabled(shouldDisableCancelButton ? true : false)
+                    .disabled(shouldShowTutorial ? true : false)
                 Spacer()
                 NextButton()
                     .opacity(shouldShowNextButton ? 1 : 0)
@@ -222,7 +224,7 @@ extension CaptureOverlayView {
                         .foregroundColor(.white)
                         .padding(.horizontal, 25)
                         .padding(.vertical, 20)
-                        .background(.blue)
+                        .background(Color.theme)
                         .clipShape(Capsule())
                 })
         }
@@ -379,10 +381,16 @@ extension CaptureOverlayView {
     @available(iOS 17.0, *)
     struct CancelButton: View {
         @EnvironmentObject var appModel: AppDataModel
+        var session: ObjectCaptureSession
+        var dismissAction: (() -> Void)
 
         var body: some View {
             Button(action: {
-                appModel.objectCaptureSession?.cancel()
+                if session.state == .ready || session.state == .initializing {
+                    dismissAction()
+                } else {
+                    appModel.objectCaptureSession?.cancel()
+                }
             }, label: {
                 Text(LocalizedString.cancel)
                     .modifier(VisualEffectRoundedCorner())

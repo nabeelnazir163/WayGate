@@ -11,6 +11,9 @@ import RealityKit
 import AVFoundation
 
 class HomeViewController: UIViewController {
+    
+    static let subsystem: String = "com.waygatetest.waygate"
+    
     //MARK:- Outlets
     @IBOutlet weak var homeTV: UITableView!
     @IBOutlet weak var descriptiveStackView: UIStackView!
@@ -159,7 +162,12 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     private func openObjectCaptureView(item: NFTItem) {
-        let camera = ContentView()
+        let camera = ContentView(nftID: item._id ?? "") {
+            [weak self] in
+            guard let self else { return }
+            getNFTs(showLoader: true)
+            self.dismiss( animated: true, completion: nil)
+        }
         let vc = UIHostingController(rootView: camera)
         vc.modalTransitionStyle = .crossDissolve
         vc.modalPresentationStyle = .overCurrentContext

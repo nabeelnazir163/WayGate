@@ -11,13 +11,18 @@ import os
 
 /// The root of the SwiftUI view graph.
 struct ContentView: View {
-    static let logger = Logger(subsystem: GuidedCaptureSampleApp.subsystem,
+    static let logger = Logger(subsystem: HomeViewController.subsystem,
                                 category: "ContentView")
 
     @StateObject var appModel: AppDataModel = AppDataModel.instance
     
     @State private var showReconstructionView: Bool = false
     @State private var showErrorAlert: Bool = false
+    
+    let nftID: String
+    
+    var dismissAction: (() -> Void)
+    
     private var showProgressView: Bool {
         appModel.state == .completed || appModel.state == .restart || appModel.state == .ready
     }
@@ -26,7 +31,7 @@ struct ContentView: View {
         VStack {
             if appModel.state == .capturing {
                 if let session = appModel.objectCaptureSession {
-                    CapturePrimaryView(session: session)
+                    CapturePrimaryView(session: session, dismissAction: dismissAction)
                 }
             } else if showProgressView {
                 CircularProgressView()
@@ -43,7 +48,7 @@ struct ContentView: View {
         }
         .sheet(isPresented: $showReconstructionView) {
             if let folderManager = appModel.scanFolderManager {
-                ReconstructionPrimaryView(outputFile: folderManager.modelsFolder.appendingPathComponent("model-mobile.usdz"))
+                ReconstructionPrimaryView(outputFile: folderManager.modelsFolder.appendingPathComponent("model-mobile.usdz"), nftID: nftID, dismissAction: dismissAction)
             }
         }
         .alert(
@@ -82,7 +87,9 @@ private struct CircularProgressView: View {
 @available(iOS 17.0, *)
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(nftID: "2") {
+            print("Dismissed")
+        }
     }
 }
 #endif

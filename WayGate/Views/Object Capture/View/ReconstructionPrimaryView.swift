@@ -16,14 +16,20 @@ struct ReconstructionPrimaryView: View {
 
     @State private var completed: Bool = false
     @State private var cancelled: Bool = false
+    
+    let nftID: String
+    var dismissAction: (() -> Void)
 
     var body: some View {
         if completed && !cancelled {
-            ModelView(modelFile: outputFile, endCaptureCallback: { [weak appModel] in
-                appModel?.endCapture()
-            }).onAppear {
-                uploadFileToAWS(fileURL: outputFile)
-            }
+            ProgressView("Loading...")
+                       .progressViewStyle(CircularProgressViewStyle())
+                       .padding()
+                       .foregroundColor(.theme)
+                       .font(.headline)
+                       .onAppear {
+                           uploadFileToAWS(fileURL: outputFile)
+                       }
         } else {
             ReconstructionProgressView(outputFile: outputFile,
                                        completed: $completed,
@@ -46,17 +52,37 @@ struct ReconstructionPrimaryView: View {
             Commons.hideActivityIndicator()
             if let error = error {
                 let errorMsg = "S3 File Upload error: \(error.localizedDescription)."
+                print(errorMsg)
+                dismissAction()
             } else {
                 if let uploadedUrlString = response as? String {
                     print("S3 File Uploaded to: \(uploadedUrlString).")
+                    updateNFTStatus(awsString: uploadedUrlString)
                 }
+            }
+        }
+    }
+    
+    private func updateNFTStatus(awsString: String) {
+        Commons.showActivityIndicator()
+        WebServicesManager.shared.createObjectCaptureNFT(id: nftID, awsURLString: awsString) { result in
+            Commons.hideActivityIndicator()
+            switch result {
+            case .success(let response):
+                if response.status == 200 {
+                    dismissAction()
+                } else {
+                    Commons.showAlert(msg: "Something went wrong")
+                }
+            case .failed(let error):
+                Commons.showAlert(msg: error.localizedDescription)
             }
         }
     }
 }
 
 struct ReconstructionProgressView: View {
-    static let logger = Logger(subsystem: GuidedCaptureSampleApp.subsystem,
+    static let logger = Logger(subsystem: HomeViewController.subsystem,
                                category: "ReconstructionProgressView")
 
     let logger = ReconstructionProgressView.logger
@@ -95,7 +121,7 @@ struct ReconstructionProgressView: View {
                             .font(.headline)
                             .bold()
                             .padding(30)
-                            .foregroundColor(.blue)
+                            .foregroundColor(Color.theme)
                     })
                     .padding(.trailing)
 

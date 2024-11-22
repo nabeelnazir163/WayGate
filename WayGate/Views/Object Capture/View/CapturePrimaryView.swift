@@ -17,6 +17,8 @@ struct CapturePrimaryView: View {
     // a binding to the two views so buttons can change the state.
     @State var showInfo: Bool = false
     @State private var showOnboardingView: Bool = false
+    
+    var dismissAction: (() -> Void)
 
     var body: some View {
         ZStack {
@@ -25,7 +27,7 @@ struct CapturePrimaryView: View {
             .blur(radius: appModel.showPreviewModel ? 45 : 0)
             .transition(.opacity)
             if shouldShowOverlayView {
-                CaptureOverlayView(session: session, showInfo: $showInfo)
+                CaptureOverlayView(session: session, showInfo: $showInfo, dismissAction: dismissAction)
             }
         }
         .sheet(isPresented: $showInfo) {

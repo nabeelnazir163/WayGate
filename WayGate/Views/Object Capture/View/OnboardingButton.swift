@@ -40,7 +40,7 @@ struct OnboardingButtonView: View {
                 }
                 if currentStateInputs.contains(where: { $0 == .flipObjectAnyway }) {
                     CreateButton(buttonLabel: LocalizedString.flipAnyway,
-                                 buttonLabelColor: .blue,
+                                 buttonLabelColor: .theme,
                                  action: {
                         userHasIndicatedFlipObjectAnyway = true
                         transition(with: .flipObjectAnyway)
@@ -48,7 +48,7 @@ struct OnboardingButtonView: View {
                 }
                 if currentStateInputs.contains(where: { $0 == .skip(isFlippable: false) || $0 == .skip(isFlippable: true) }) {
                     CreateButton(buttonLabel: LocalizedString.skip,
-                                 buttonLabelColor: .blue,
+                                 buttonLabelColor: .theme,
                                  action: {
                         transition(with: .skip(isFlippable: appModel.isObjectFlippable))
                     })
@@ -62,7 +62,7 @@ struct OnboardingButtonView: View {
                 }
                 if currentStateInputs.contains(where: { $0 == .objectCannotBeFlipped }) {
                     CreateButton(buttonLabel: LocalizedString.cannotFlipYourObject,
-                                 buttonLabelColor: .blue,
+                                 buttonLabelColor: .theme,
                                  action: {
                         userHasIndicatedObjectCannotBeFlipped = true
                         transition(with: .objectCannotBeFlipped)
@@ -120,13 +120,13 @@ struct OnboardingButtonView: View {
 
 @available(iOS 17.0, *)
 private struct CreateButton: View {
-    static let logger = Logger(subsystem: GuidedCaptureSampleApp.subsystem,
+    static let logger = Logger(subsystem: HomeViewController.subsystem,
                                category: "OnboardingButtonView")
 
     @EnvironmentObject var appModel: AppDataModel
     let buttonLabel: String
     var buttonLabelColor: Color = Color.white
-    var buttonBackgroundColor: Color = Color.blue
+    var buttonBackgroundColor: Color = Color.theme
     var shouldApplyBackground = false
     var showBusyIndicator = false
     let action: () -> Void
@@ -179,7 +179,7 @@ extension View {
 
 @available(iOS 17.0, *)
 private struct CancelButton: View {
-    static let logger = Logger(subsystem: GuidedCaptureSampleApp.subsystem,
+    static let logger = Logger(subsystem: HomeViewController.subsystem,
                                category: "CancelButton")
 
     @EnvironmentObject var appModel: AppDataModel
@@ -196,7 +196,7 @@ private struct CancelButton: View {
                     .font(.headline)
                     .bold()
                     .padding(30)
-                    .foregroundColor(.blue)
+                    .foregroundColor(.theme)
             })
     }
 }

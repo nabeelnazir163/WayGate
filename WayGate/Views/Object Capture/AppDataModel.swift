@@ -6,7 +6,7 @@ import os
 
 @MainActor
 class AppDataModel: ObservableObject, Identifiable {
-    let logger = Logger(subsystem: GuidedCaptureSampleApp.subsystem,
+    let logger = Logger(subsystem: HomeViewController.subsystem,
                                 category: "AppDataModel")
 
     static let instance = AppDataModel()

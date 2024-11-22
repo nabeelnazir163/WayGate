@@ -12,7 +12,7 @@ import os
 /// depending on its `currentState`.
 /// The state transitions happen based on the user inputs in `OnboardingButtonView`.
 class OnboardingStateMachine: ObservableObject {
-    static let logger = Logger(subsystem: GuidedCaptureSampleApp.subsystem,
+    static let logger = Logger(subsystem: HomeViewController.subsystem,
                                 category: "OnboardingStateMachine")
 
     let logger = OnboardingStateMachine.logger

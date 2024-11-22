@@ -21,7 +21,7 @@ struct ModelView: View {
 }
 
 private struct ARQuickLookController: UIViewControllerRepresentable {
-    static let logger = Logger(subsystem: GuidedCaptureSampleApp.subsystem,
+    static let logger = Logger(subsystem: HomeViewController.subsystem,
                                 category: "ARQuickLookController")
 
     let modelFile: URL

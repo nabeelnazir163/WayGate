@@ -10,7 +10,7 @@ import Foundation
 import os
 
 class CaptureFolderManager: ObservableObject {
-    static let logger = Logger(subsystem: GuidedCaptureSampleApp.subsystem,
+    static let logger = Logger(subsystem: HomeViewController.subsystem,
                                 category: "CaptureFolderManager")
 
     private let logger = CaptureFolderManager.logger

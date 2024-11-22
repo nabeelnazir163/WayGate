@@ -71,4 +71,17 @@ class WebServicesManager {
         let params = [String: Any]()
         CoreWebService.sendRequest(requestURL: URLs.SERVER_BASE_URL + EndPoint.deleteNFT.path() + "\(id ?? "")", method: .get, paramters: params, callBack: callBack)
     }
+    
+    func createObjectCaptureNFT(
+        id: String?,
+        awsURLString: String,
+        callBack: RequestCompletionBlock<BaseResponse<EmptyResponse>>.CompletionResponse?
+    ) {
+        var params = [String: Any]()
+        params["id"] = id
+        params["status"] = "PROCESSED"
+        params["nft_type"] = "3D"
+        params["objectCaptureLink"] = awsURLString
+        CoreWebService.sendRequest(requestURL: URLs.SERVER_BASE_URL + EndPoint.updateObjectCaptureNFT.path(), method: .post, paramters: params, callBack: callBack)
+    }
 }
