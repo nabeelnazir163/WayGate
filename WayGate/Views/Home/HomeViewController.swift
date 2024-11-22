@@ -159,6 +159,10 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         let camera = CameraAdvance(nftItem: item, dismissAction: {
             self.dismiss( animated: true, completion: nil )
         })
+        let vc = UIHostingController(rootView: camera)
+        vc.modalTransitionStyle = .crossDissolve
+        vc.modalPresentationStyle = .overCurrentContext
+        present(vc, animated: true)
     }
     
     private func openObjectCaptureView(item: NFTItem) {
