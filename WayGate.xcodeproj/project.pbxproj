@@ -559,6 +559,7 @@
 				42DCA4B92A2A0EE5001EA88F /* Frameworks */,
 				42DCA4BA2A2A0EE5001EA88F /* Resources */,
 				42D569BB2CD93A7700288FD6 /* Embed Frameworks */,
+				42C222A72CF09AAD00CBDBF7 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -647,6 +648,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		42C222A72CF09AAD00CBDBF7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# Path to the Info.plist of the built app\nplist=\"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\n\n# Override the camera usage description\n/usr/libexec/PlistBuddy -c \"Set :NSCameraUsageDescription 'Our app uses the camera to capture images or videos for creating 3D models of objects'\" \"$plist\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		42DCA4B82A2A0EE5001EA88F /* Sources */ = {
