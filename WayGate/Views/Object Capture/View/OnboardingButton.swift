@@ -32,7 +32,7 @@ struct OnboardingButtonView: View {
                 let currentStateInputs = onboardingStateMachine.currentStateInputs()
                 if currentStateInputs.contains(where: { $0 == .continue(isFlippable: false) || $0 == .continue(isFlippable: true) }) {
                     CreateButton(buttonLabel: LocalizedString.continue,
-                                 buttonLabelColor: .white,
+                                 buttonLabelColor: .primaryText,
                                  buttonBackgroundColor: Color.theme,
                                  shouldApplyBackground: true,
                                  action: { transition(with: .continue(isFlippable: appModel.isObjectFlippable)) }
@@ -40,7 +40,7 @@ struct OnboardingButtonView: View {
                 }
                 if currentStateInputs.contains(where: { $0 == .flipObjectAnyway }) {
                     CreateButton(buttonLabel: LocalizedString.flipAnyway,
-                                 buttonLabelColor: .theme,
+                                 buttonLabelColor: .primaryText,
                                  action: {
                         userHasIndicatedFlipObjectAnyway = true
                         transition(with: .flipObjectAnyway)
@@ -48,21 +48,21 @@ struct OnboardingButtonView: View {
                 }
                 if currentStateInputs.contains(where: { $0 == .skip(isFlippable: false) || $0 == .skip(isFlippable: true) }) {
                     CreateButton(buttonLabel: LocalizedString.skip,
-                                 buttonLabelColor: .theme,
+                                 buttonLabelColor: .primaryText,
                                  action: {
                         transition(with: .skip(isFlippable: appModel.isObjectFlippable))
                     })
                 }
                 if currentStateInputs.contains(where: { $0 == .finish }) {
                     CreateButton(buttonLabel: LocalizedString.finish,
-                                 buttonLabelColor: onboardingStateMachine.currentState == .thirdSegmentComplete ? .white : .theme,
+                                 buttonLabelColor: onboardingStateMachine.currentState == .thirdSegmentComplete ? .white : .primaryText,
                                  shouldApplyBackground: onboardingStateMachine.currentState == .thirdSegmentComplete,
                                  showBusyIndicator: session.state == .finishing,
                                  action: { [weak session] in session?.finish() })
                 }
                 if currentStateInputs.contains(where: { $0 == .objectCannotBeFlipped }) {
                     CreateButton(buttonLabel: LocalizedString.cannotFlipYourObject,
-                                 buttonLabelColor: .theme,
+                                 buttonLabelColor: .primaryText,
                                  action: {
                         userHasIndicatedObjectCannotBeFlipped = true
                         transition(with: .objectCannotBeFlipped)
@@ -196,7 +196,7 @@ private struct CancelButton: View {
                     .font(.headline)
                     .bold()
                     .padding(30)
-                    .foregroundColor(.theme)
+                    .foregroundColor(.primaryText)
             })
     }
 }

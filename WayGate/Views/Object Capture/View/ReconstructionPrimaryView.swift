@@ -121,7 +121,7 @@ struct ReconstructionProgressView: View {
                             .font(.headline)
                             .bold()
                             .padding(30)
-                            .foregroundColor(Color.theme)
+                            .foregroundColor(Color.primaryText)
                     })
                     .padding(.trailing)
 

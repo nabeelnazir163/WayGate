@@ -59,9 +59,6 @@ struct CaptureOverlayView: View {
                     } else if case .detecting = session.state {
                         ResetBoundingBoxButton(session: session)
                             .transition(.opacity)
-                    } else if case .ready = session.state {
-                        FilesButton()
-                            .transition(.opacity)
                     }
 
                     Spacer()
@@ -126,11 +123,11 @@ struct CaptureOverlayView: View {
     }
 
     private var shouldShowTutorial: Bool {
-        if appModel.orbitState == .initial,
-           case .capturing = session.state,
-           appModel.orbit == .orbit1 {
-            return true
-        }
+//        if appModel.orbitState == .initial,
+//           case .capturing = session.state,
+//           appModel.orbit == .orbit1 {
+//            return true
+//        }
         return false
     }
 
@@ -221,7 +218,7 @@ extension CaptureOverlayView {
                     Text(buttonlabel)
                         .font(.body)
                         .fontWeight(.bold)
-                        .foregroundColor(.white)
+                        .foregroundColor(.primaryText)
                         .padding(.horizontal, 25)
                         .padding(.vertical, 20)
                         .background(Color.theme)

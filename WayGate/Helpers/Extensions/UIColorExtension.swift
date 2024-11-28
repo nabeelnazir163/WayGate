@@ -30,4 +30,5 @@ extension Color {
     static let primaryRed = Color("PrimaryRed")
     static let JungleGreen = Color("JungleGreen")
     static let theme = Color("Theme")
+    static let primaryText = Color("1A1A1A")
 }
