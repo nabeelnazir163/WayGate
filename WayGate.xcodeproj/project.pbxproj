@@ -108,6 +108,7 @@
 		42ED47E92A2F9BBB00C63786 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 42ED47E82A2F9BBB00C63786 /* Lottie */; };
 		42ED47ED2A2FA0C700C63786 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42ED47EC2A2FA0C700C63786 /* UIButtonExtension.swift */; };
 		42ED47EF2A2FA88400C63786 /* NFT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42ED47EE2A2FA88400C63786 /* NFT.swift */; };
+		42F5BDB72D00C1260046FEE4 /* LoadModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F5BDB62D00C1260046FEE4 /* LoadModelViewController.swift */; };
 		42FDF92B2A7E2CDC0074DA4D /* VideoRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FDF92A2A7E2CDC0074DA4D /* VideoRenderer.swift */; };
 /* End PBXBuildFile section */
 
@@ -223,6 +224,7 @@
 		42F3E2092A28FB52007485B0 /* CoreWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreWebService.swift; sourceTree = "<group>"; };
 		42F3E2102A28FD59007485B0 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		42F3E2122A290079007485B0 /* DataDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataDictionary.swift; sourceTree = "<group>"; };
+		42F5BDB62D00C1260046FEE4 /* LoadModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadModelViewController.swift; sourceTree = "<group>"; };
 		42FDF92A2A7E2CDC0074DA4D /* VideoRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRenderer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -351,6 +353,7 @@
 		42AC6DD32A29248C00717E46 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				42F5BDB52D00C1180046FEE4 /* LoadView */,
 				421CA8DE2CB440FF00A07F16 /* Object Capture */,
 				422DD1AA2ABDB865006C6374 /* DraftPopup */,
 				4292E0252A434451009A14A4 /* IntroSliders */,
@@ -548,6 +551,14 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		42F5BDB52D00C1180046FEE4 /* LoadView */ = {
+			isa = PBXGroup;
+			children = (
+				42F5BDB62D00C1260046FEE4 /* LoadModelViewController.swift */,
+			);
+			path = LoadView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -709,6 +720,7 @@
 				42772DEF2A2B46A600AFE194 /* CameraViewController.swift in Sources */,
 				42DCA4E02A2A0FA4001EA88F /* UIViewExtension.swift in Sources */,
 				42AFB6E02CB6F5ED00EA70F5 /* UntilProcessingCompleteFilter.swift in Sources */,
+				42F5BDB72D00C1260046FEE4 /* LoadModelViewController.swift in Sources */,
 				425C3ABF2A42E42500C5DD41 /* UIScreen.swift in Sources */,
 				423213312CB44DC700BAAF8B /* CaptureOverlayView.swift in Sources */,
 				42713CB42A2BB700008B63D6 /* CameraAdvance.swift in Sources */,

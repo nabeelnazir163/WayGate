@@ -39,6 +39,7 @@ class HomeViewController: UIViewController {
         noDraftView.isHidden = true
         descriptiveStackView.isHidden = true
         Commons.deleteDirectory(name: "/CameraKit/")
+        Commons.deleteDirectory(name: "modelobject.usdz")
         setupUI()
         getNFTs()
         homeTV.setUpRefresherControll(tintColor: .theme) { [weak self] in
@@ -55,9 +56,7 @@ class HomeViewController: UIViewController {
     }
     
     private func requestCameraPermission() {
-        AVCaptureDevice.requestAccess(for: .video) { granted in
-            
-        }
+        AVCaptureDevice.requestAccess(for: .video) { granted in }
     }
     
     private func setupUI() {
@@ -178,7 +177,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         present(vc, animated: true)
     }
     
-    private func open3DModel(item: NFTItem?) {
+    private func open3DModelForKiriKit(item: NFTItem?) {
         KIRISDK.share.setup(envType: .product, appKey: Constants.AppKey) { result in
             DispatchQueue.main.async {
                 if case .success = result {
@@ -192,6 +191,21 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
                     self.present(vc, animated: true)
                 }
             }
+        }
+    }
+    
+    private func open3dModelForUsdz(item: NFTItem?) {
+        guard let vc: LoadModelViewController = UIStoryboard.initiate(storyboard: .camera) else { return }
+        vc.modalTransitionStyle = .crossDissolve
+        vc.modalPresentationStyle = .overCurrentContext
+        self.present(vc, animated: true)
+    }
+    
+    private func open3DModel(item: NFTItem?) {
+        if item?.threeDfile?.isEmpty ?? true {
+            open3dModelForUsdz(item: item)
+        } else {
+            open3DModelForKiriKit(item: item)
         }
     }
     

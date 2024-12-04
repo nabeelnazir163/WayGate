@@ -18,6 +18,7 @@ struct NFTItem: Codable {
     var status: NFTStatus?
     var threeDfile: [ThreeDFile]?
     var createdAt: String?
+    var objectCaptureLink: String?
 }
 
 struct ThreeDFile: Codable {
