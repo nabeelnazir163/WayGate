@@ -21,7 +21,7 @@ class LoadModelViewController: UIViewController {
     
     private func downloadUSdzFile() {
         guard let urlString = nftItem?.objectCaptureLink,
-              let remoteURL = URL(string: "https://s3.us-east-1.amazonaws.com/depicted-prod/model-mobile.usdz") else {
+              let remoteURL = URL(string: urlString) else {
             return
         }
         // Create destination URL

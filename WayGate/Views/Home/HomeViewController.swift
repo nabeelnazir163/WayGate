@@ -198,6 +198,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         guard let vc: LoadModelViewController = UIStoryboard.initiate(storyboard: .camera) else { return }
         vc.modalTransitionStyle = .crossDissolve
         vc.modalPresentationStyle = .overCurrentContext
+        vc.nftItem = item
         self.present(vc, animated: true)
     }
     

@@ -763,44 +763,33 @@
                             <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iGs-vI-bRv">
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                             </sceneKitView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0qe-fL-sL0">
-                                <rect key="frame" x="0.0" y="47" width="390" height="50"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sci-VJ-6Ud">
-                                        <rect key="frame" x="15" y="0.0" width="40" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="40" id="XsX-cU-v6U"/>
-                                        </constraints>
-                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal">
-                                            <imageReference key="image" image="arrow.backward" catalog="system" symbolScale="large"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="didTapBackBtn:" destination="qwb-KA-T3J" eventType="touchUpInside" id="rfl-bu-zd5"/>
-                                            <action selector="didTapBackButton:" destination="O1L-7Z-fLU" eventType="touchUpInside" id="EaG-jW-dHp"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sci-VJ-6Ud">
+                                <rect key="frame" x="330" y="57" width="40" height="40"/>
                                 <constraints>
-                                    <constraint firstItem="sci-VJ-6Ud" firstAttribute="leading" secondItem="0qe-fL-sL0" secondAttribute="leading" constant="15" id="dRr-oU-qfT"/>
-                                    <constraint firstAttribute="height" constant="50" id="gHM-bb-1F0"/>
-                                    <constraint firstAttribute="bottom" secondItem="sci-VJ-6Ud" secondAttribute="bottom" id="vIf-cm-lGp"/>
-                                    <constraint firstItem="sci-VJ-6Ud" firstAttribute="top" secondItem="0qe-fL-sL0" secondAttribute="top" id="xWI-I9-CJH"/>
+                                    <constraint firstAttribute="width" constant="40" id="XsX-cU-v6U"/>
+                                    <constraint firstAttribute="width" secondItem="sci-VJ-6Ud" secondAttribute="height" multiplier="1:1" id="bHw-u0-RkN"/>
                                 </constraints>
-                            </view>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="xmark.circle.fill" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="40" scale="large"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapBackBtn:" destination="qwb-KA-T3J" eventType="touchUpInside" id="rfl-bu-zd5"/>
+                                    <action selector="didTapBackButton:" destination="O1L-7Z-fLU" eventType="touchUpInside" id="EaG-jW-dHp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="laB-aT-8hY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="iGs-vI-bRv" secondAttribute="trailing" id="8yf-rQ-JSb"/>
                             <constraint firstItem="iGs-vI-bRv" firstAttribute="top" secondItem="T4C-Ko-beu" secondAttribute="top" id="AMA-mr-bq8"/>
-                            <constraint firstItem="0qe-fL-sL0" firstAttribute="top" secondItem="laB-aT-8hY" secondAttribute="top" id="Msv-sx-dhn"/>
                             <constraint firstAttribute="bottom" secondItem="iGs-vI-bRv" secondAttribute="bottom" id="crt-xA-ftW"/>
-                            <constraint firstItem="0qe-fL-sL0" firstAttribute="trailing" secondItem="laB-aT-8hY" secondAttribute="trailing" id="neQ-if-9yl"/>
+                            <constraint firstItem="sci-VJ-6Ud" firstAttribute="top" secondItem="laB-aT-8hY" secondAttribute="top" constant="10" id="csy-ct-ilX"/>
                             <constraint firstItem="iGs-vI-bRv" firstAttribute="leading" secondItem="laB-aT-8hY" secondAttribute="leading" id="wA0-D4-YUt"/>
-                            <constraint firstItem="0qe-fL-sL0" firstAttribute="leading" secondItem="laB-aT-8hY" secondAttribute="leading" id="yAb-f5-yDQ"/>
+                            <constraint firstItem="laB-aT-8hY" firstAttribute="trailing" secondItem="sci-VJ-6Ud" secondAttribute="trailing" constant="20" id="wtu-ft-EzT"/>
                         </constraints>
                     </view>
                     <connections>
@@ -816,6 +805,7 @@
         <image name="TakePhoto" width="62" height="62"/>
         <image name="TickIcon" width="136" height="136"/>
         <image name="arrow.backward" catalog="system" width="128" height="95"/>
+        <image name="xmark.circle.fill" catalog="system" width="128" height="123"/>
         <namedColor name="1A1A1A">
             <color red="0.10196078431372549" green="0.10196078431372549" blue="0.10196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
