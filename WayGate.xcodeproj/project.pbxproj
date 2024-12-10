@@ -62,6 +62,7 @@
 		42B742722C674C5300B357AD /* Loader.json in Resources */ = {isa = PBXBuildFile; fileRef = 42B742712C674C5300B357AD /* Loader.json */; };
 		42BDF0062A7E42370002F45A /* VideoSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BDF0052A7E42370002F45A /* VideoSuccessViewController.swift */; };
 		42C4270B2A4230A700567ACA /* UIScrollViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C4270A2A4230A700567ACA /* UIScrollViewExtension.swift */; };
+		42CC047E2D08C91C00CBEF54 /* NonOperationalDeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CC047D2D08C91C00CBEF54 /* NonOperationalDeviceViewController.swift */; };
 		42D569B82CD939F600288FD6 /* AWSManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D569B72CD939F600288FD6 /* AWSManager.swift */; };
 		42D569B92CD93A7700288FD6 /* AWSS3.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42DC405D2CD933810000EB23 /* AWSS3.xcframework */; };
 		42D569BA2CD93A7700288FD6 /* AWSS3.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42DC405D2CD933810000EB23 /* AWSS3.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -204,6 +205,7 @@
 		42B742712C674C5300B357AD /* Loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Loader.json; sourceTree = "<group>"; };
 		42BDF0052A7E42370002F45A /* VideoSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoSuccessViewController.swift; sourceTree = "<group>"; };
 		42C4270A2A4230A700567ACA /* UIScrollViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScrollViewExtension.swift; sourceTree = "<group>"; };
+		42CC047D2D08C91C00CBEF54 /* NonOperationalDeviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonOperationalDeviceViewController.swift; sourceTree = "<group>"; };
 		42D569B72CD939F600288FD6 /* AWSManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AWSManager.swift; sourceTree = "<group>"; };
 		42DC40562CD931200000EB23 /* AWSCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AWSCore.xcframework; sourceTree = "<group>"; };
 		42DC405D2CD933810000EB23 /* AWSS3.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AWSS3.xcframework; sourceTree = "<group>"; };
@@ -374,6 +376,7 @@
 				427313B92A7D0AAA00CD2AE9 /* PopupViewController.swift */,
 				42AC6DD72A2924B800717E46 /* HomeTableViewCell.swift */,
 				42AC6DD82A2924B800717E46 /* HomeTableViewCell.xib */,
+				42CC047D2D08C91C00CBEF54 /* NonOperationalDeviceViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -744,6 +747,7 @@
 				42ED47D92A2F92F800C63786 /* WebServiceManager.swift in Sources */,
 				421CA8E02CB4412900A07F16 /* AppDataModel.swift in Sources */,
 				42DCA4D82A2A0F86001EA88F /* HomeTableViewCell.swift in Sources */,
+				42CC047E2D08C91C00CBEF54 /* NonOperationalDeviceViewController.swift in Sources */,
 				42ED47DF2A2F941200C63786 /* APIConstants.swift in Sources */,
 				423213252CB447E500BAAF8B /* CaptureFolderManager.swift in Sources */,
 				423213272CB4482E00BAAF8B /* ShotFileInfo.swift in Sources */,

@@ -258,7 +258,10 @@ extension HomeViewController: PopupViewControllerDelegate {
         if PhotogrammetrySession.isSupported {
             openConfirmationPopup(for: .objectCapture, item: item)
         } else {
-            Commons.showAlert(msg: "Object capture doesn't support on this device.")
+            guard let vc: NonOperationalDeviceViewController = UIStoryboard.initiate(storyboard: .main) else { return }
+            vc.modalTransitionStyle = .crossDissolve
+            vc.modalPresentationStyle = .overCurrentContext
+            present(vc, animated: true)
         }
     }
 }
