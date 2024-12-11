@@ -9,6 +9,7 @@ import Foundation
 import RealityKit
 import SwiftUI
 
+@available(iOS 17.0, *)
 struct CapturePrimaryView: View {
     @EnvironmentObject var appModel: AppDataModel
     var session: ObjectCaptureSession

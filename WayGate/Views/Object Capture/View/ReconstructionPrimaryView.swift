@@ -10,6 +10,7 @@ import RealityKit
 import SwiftUI
 import os
 
+@available(iOS 17.0, *)
 struct ReconstructionPrimaryView: View {
     @EnvironmentObject var appModel: AppDataModel
     let outputFile: URL
@@ -81,6 +82,7 @@ struct ReconstructionPrimaryView: View {
     }
 }
 
+@available(iOS 17.0, *)
 struct ReconstructionProgressView: View {
     static let logger = Logger(subsystem: HomeViewController.subsystem,
                                category: "ReconstructionProgressView")
@@ -226,6 +228,7 @@ struct ReconstructionProgressView: View {
 
 }
 
+@available(iOS 17.0, *)
 extension PhotogrammetrySession.Output.ProcessingStage {
     var processingStageString: String? {
         switch self {
@@ -277,6 +280,7 @@ extension PhotogrammetrySession.Output.ProcessingStage {
     }
 }
 
+@available(iOS 17.0, *)
 private struct TitleView: View {
     var body: some View {
         Text(LocalizedString.processingTitle)
@@ -285,6 +289,7 @@ private struct TitleView: View {
 
     }
 
+    @available(iOS 17.0, *)
     private struct LocalizedString {
         static let processingTitle = NSLocalizedString(
             "Processing title (Object Capture)",

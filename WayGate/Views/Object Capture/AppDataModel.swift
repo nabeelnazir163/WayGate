@@ -4,6 +4,7 @@ import RealityKit
 import SwiftUI
 import os
 
+@available(iOS 17.0, *)
 @MainActor
 class AppDataModel: ObservableObject, Identifiable {
     let logger = Logger(subsystem: HomeViewController.subsystem,
@@ -330,6 +331,7 @@ class AppDataModel: ObservableObject, Identifiable {
 
 }
 
+@available(iOS 17.0, *)
 extension AppDataModel {
     enum LocString {
         static let segment1FeedbackString = NSLocalizedString(
@@ -362,6 +364,7 @@ extension AppDataModel {
     }
 }
 
+@available(iOS 17.0, *)
 extension AppDataModel {
     enum ModelState: String, CustomStringConvertible {
         var description: String { rawValue }
@@ -378,6 +381,7 @@ extension AppDataModel {
     }
 }
 
+@available(iOS 17.0, *)
 extension AppDataModel {
     enum Orbit: Int, CaseIterable, Identifiable, Comparable {
         case orbit1, orbit2, orbit3
@@ -443,6 +447,7 @@ extension AppDataModel {
     }
 }
 
+@available(iOS 17.0, *)
 extension AppDataModel {
     // A segment can have n orbits. An orbit can reset to go from the capturing state back to it's initial state.
     enum OrbitState {

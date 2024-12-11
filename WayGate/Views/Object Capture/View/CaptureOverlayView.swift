@@ -10,6 +10,7 @@ import RealityKit
 import SwiftUI
 import UniformTypeIdentifiers
 
+@available(iOS 17.0, *)
 struct CaptureOverlayView: View {
     @EnvironmentObject var appModel: AppDataModel
     var session: ObjectCaptureSession
@@ -202,6 +203,7 @@ private struct BoundingBoxGuidanceView: View {
     }
 }
 
+@available(iOS 17.0, *)
 extension CaptureOverlayView {
     @MainActor
     struct CaptureButton: View {
@@ -436,6 +438,7 @@ extension CaptureOverlayView {
     }
 }
 
+@available(iOS 17.0, *)
 extension CaptureOverlayView {
     struct LocalizedString {
         static let startCapture = NSLocalizedString(

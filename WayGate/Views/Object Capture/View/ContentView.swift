@@ -10,6 +10,7 @@ import SwiftUI
 import os
 
 /// The root of the SwiftUI view graph.
+@available(iOS 17.0, *)
 struct ContentView: View {
     static let logger = Logger(subsystem: HomeViewController.subsystem,
                                 category: "ContentView")

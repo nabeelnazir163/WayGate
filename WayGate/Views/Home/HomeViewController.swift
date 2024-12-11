@@ -165,16 +165,23 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     private func openObjectCaptureView(item: NFTItem) {
-        let camera = ContentView(nftID: item._id ?? "") {
-            [weak self] in
-            guard let self else { return }
-            getNFTs(showLoader: true)
-            self.dismiss( animated: true, completion: nil)
+        if #available(iOS 17.0, *) {
+            let camera = ContentView(nftID: item._id ?? "") {
+                [weak self] in
+                guard let self else { return }
+                getNFTs(showLoader: true)
+                self.dismiss( animated: true, completion: nil)
+            }
+            let vc = UIHostingController(rootView: camera)
+            vc.modalTransitionStyle = .crossDissolve
+            vc.modalPresentationStyle = .overCurrentContext
+            present(vc, animated: true)
+        } else {
+            guard let vc: NonOperationalDeviceViewController = UIStoryboard.initiate(storyboard: .main) else { return }
+            vc.modalTransitionStyle = .crossDissolve
+            vc.modalPresentationStyle = .overCurrentContext
+            present(vc, animated: true)
         }
-        let vc = UIHostingController(rootView: camera)
-        vc.modalTransitionStyle = .crossDissolve
-        vc.modalPresentationStyle = .overCurrentContext
-        present(vc, animated: true)
     }
     
     private func open3DModelForKiriKit(item: NFTItem?) {
@@ -255,8 +262,15 @@ extension HomeViewController: PopupViewControllerDelegate {
     }
     
     func didSelectObjectCapture(item: NFTItem) {
-        if PhotogrammetrySession.isSupported {
-            openConfirmationPopup(for: .objectCapture, item: item)
+        if #available(iOS 17.0, *) {
+            if PhotogrammetrySession.isSupported {
+                openConfirmationPopup(for: .objectCapture, item: item)
+            } else {
+                guard let vc: NonOperationalDeviceViewController = UIStoryboard.initiate(storyboard: .main) else { return }
+                vc.modalTransitionStyle = .crossDissolve
+                vc.modalPresentationStyle = .overCurrentContext
+                present(vc, animated: true)
+            }
         } else {
             guard let vc: NonOperationalDeviceViewController = UIStoryboard.initiate(storyboard: .main) else { return }
             vc.modalTransitionStyle = .crossDissolve

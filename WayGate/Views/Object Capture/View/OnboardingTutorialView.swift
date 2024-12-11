@@ -9,6 +9,7 @@ import Foundation
 import RealityKit
 import SwiftUI
 
+@available(iOS 17.0, *)
 struct OnboardingTutorialView: View {
     @EnvironmentObject var appModel: AppDataModel
     var session: ObjectCaptureSession
@@ -144,6 +145,7 @@ struct OnboardingTutorialView: View {
     }
 }
 
+@available(iOS 17.0, *)
 extension OnboardingTutorialView {
     struct LocalizedString {
         static let tooFewImagesTitle = NSLocalizedString(

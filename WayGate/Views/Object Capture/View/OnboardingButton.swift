@@ -201,6 +201,7 @@ private struct CancelButton: View {
     }
 }
 
+@available(iOS 17.0, *)
 extension OnboardingButtonView {
     struct LocalizedString {
         static let `continue` = NSLocalizedString(

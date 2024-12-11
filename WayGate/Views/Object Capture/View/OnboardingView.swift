@@ -9,6 +9,7 @@ import Foundation
 import RealityKit
 import SwiftUI
 
+@available(iOS 17.0, *)
 struct OnboardingView: View {
     @EnvironmentObject var appModel: AppDataModel
     @StateObject private var stateMachine: OnboardingStateMachine

@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 import RealityKit
 
+@available(iOS 17.0, *)
 struct ProgressBarView: View {
     @EnvironmentObject var appModel: AppDataModel
     // The progress value from 0 to 1 which describes how much coverage is done.
