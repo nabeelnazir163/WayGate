@@ -7,6 +7,7 @@
 
 import UIKit
 import SceneKit
+import QuickLook
 
 class LoadModelViewController: UIViewController {
     @IBOutlet weak var sceneView: SCNView!
@@ -80,11 +81,12 @@ class LoadModelViewController: UIViewController {
             
             let ambientLightNode = SCNNode()
             ambientLightNode.light = SCNLight()
-            lightNode.light?.type = .ambient
-            lightNode.light?.color = UIColor.darkGray
+            ambientLightNode.light?.type = .spot
+            ambientLightNode.light?.color = UIColor.darkGray
             scene.rootNode.addChildNode(ambientLightNode)
             
             sceneView.allowsCameraControl = true
+            sceneView.autoenablesDefaultLighting = true
             sceneView.backgroundColor = .white
             sceneView.cameraControlConfiguration.allowsTranslation = false
             
